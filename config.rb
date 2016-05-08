@@ -59,6 +59,9 @@ activate :sprockets do |c|
   c.imported_asset_path = "assets"
 end
 
+activate :relative_assets
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
