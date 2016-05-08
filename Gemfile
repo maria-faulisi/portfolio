@@ -3,8 +3,9 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~>4.1.1"
-gem "middleman-sprockets", "~> 4.0.0.rc"
+gem "middleman-sprockets"
 gem 'middleman-gh-pages'
+gem 'manhattan-sass', '~> 0.5.1'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.4.3"

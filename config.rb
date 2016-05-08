@@ -55,12 +55,14 @@ set :images_dir, 'assets/images'
 
 activate :livereload, :apply_js_live => false
 
-activate :sprockets do |c|
-  c.imported_asset_path = "assets"
-end
+activate :sprockets
+
+activate :livereload
 
 activate :relative_assets
+
 set :relative_links, true
+
 
 # Build-specific configuration
 configure :build do
