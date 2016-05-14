@@ -10,7 +10,7 @@
       
   = partial "layouts/partials/head"
 
-  %body{class: current_page.data.body_class || 'page'}
+  %body{class: current_page.data.title || 'page'}
     = partial "layouts/partials/header"
     = yield
     = partial "layouts/partials/footer"

@@ -1,9 +1,109 @@
-.case-study-about.container
-  %h2.case-study-header Case study: Commonwealthfelt.com
-  %p
+---
+title: "Case-Study"
+---
+
+%section.case-study-hero{style: "background-image: url(#{image_path "case-study-hero.jpg"})"}
+
+%section.case-study-header.container
+  %h3.case-study-header 
+    Case study: 
+    %span
+      Commonwealthfelt.com
+
+%section.case-study-about.container
+  %h3
+    Overview
+  %p.overview-paragraph.col-sm-10.col-sm-centered
     Commonwealthfelt.com is the retail site for the National Nonwovens textile manufacturing corporation.  Founded in 1905 as the National Felt Company, they have a long history of high quality felts and have been supplying material to the U.S. government since World War I.  Being a manufacturer, National Nonwovens typically goes to market via sales representatives and wholesale companies. Today, like most American manufacturers, they are starting to target small volume consumers such as crafters and boutique businesses who specialize in handmade goods.  It is this desire to sell small volumes of product to a large number of consumers that created the Commonwealthfelt.com website
 
-%h3 
-  The Problem:
-  %p
-  
+%section.user-personas.section-alabaster.container
+  %h3
+    User Personas
+  .personas-and-text.row
+    .personas.col-sm-4.col-sm-offset-1
+      .row
+        %a{href: ""}
+          =image_tag "bonnie-square.png", {class: "col-sm-6"}
+          .persona-type-and-arrow.col-sm-6
+            =image_tag "arrow-point-left.png"
+            %h4 Primary Persona
+      .row          
+        %a{href: ""}
+          .persona-type-and-arrow.col-sm-6
+            =image_tag "arrow-point-right.png"
+            %h4 Primary Persona
+          =image_tag "whitney-square.png", {class: "col-sm-6"}      
+
+    .persona-text.col-sm-5.col-sm-offset-1
+      %p
+        Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar. Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops. Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant. Muffin bonbon cheesecake lemon drops cheesecake cookie oat cake. Sweet roll bear claw croissant jelly-o pastry icing danish.
+
+%section.testing.container
+  %h3
+    Testing
+  %p.col-sm-5.col-sm-offset-1
+    Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar. Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops. Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant. Muffin bonbon cheesecake lemon drops cheesecake cookie oat cake. Sweet roll bear claw croissant jelly-o pastry icing danish.
+
+  =image_tag "test-script-img.png", {class: "col-sm-6"}
+
+%section.section-alabaster
+  .video-wrapper.col-sm-8.col-sm-centered
+    %iframe{allowfullscreen: "", frameborder: "0", src: "https://www.youtube.com/embed/f8y4pFl2EMs"}
+
+%section.user-feedback.container
+  %h3 User Feedback
+  .row.feedback-text-and-img
+    .feedback-text.col-sm-5.col-sm-offset-1
+      %p
+        Sugar plum brownie chupa chups. Biscuit sweet roll liquorice candy canes. Pastry chupa chups gingerbread bonbon chocolate carrot cake sesame snaps tart topping.
+
+      %ul.user-feedback-list
+        %li
+          Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar.
+        %li
+          Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops.
+        %li
+          Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant.
+
+    .feedback-img.col-sm-6
+      %a{href: ""}
+      =image_tag "feedback-img.png"
+
+%section.iteration.container
+  .slider.col-sm-10.col-sm-centered
+    I'm where the slider goes
+
+%section.wireframes.section-mortar.container
+  %h3 Wireframes
+  .row.wireframe-images.first-row
+    .col-sm-2.col-sm-offset-2
+      =image_tag "home-wf-thumbnail.jpg"
+  .row.wireframe-images.second-row
+    .col-sm-2.col-sm-offset-2
+      =image_tag "products-page-wf-thumbnail.jpg"
+    .col-sm-2
+      =image_tag "projects-list-page-wf-thumbnail.jpg"
+    .col-sm-2
+      =image_tag "contact-page-wf-thumbnail.jpg"
+    .col-sm-2
+      =image_tag "review-cart-page-wf-thumbnail.jpg"
+
+  .row.wireframe-images.third-row
+    .col-sm-2.col-sm-offset-2
+      =image_tag "swatch-page-1-wf-thumbnail.jpg"
+    .col-sm-2
+      =image_tag "project-page-individual-wf-thumbnail.jpg"
+    .col-sm-2.col-sm-offset-2
+      =image_tag "shipping-and-billing-page-wf-thumbnail.jpg"
+      =image_tag "payment-page-wf-thumbnail.jpg"
+
+  .row.wireframe-images.fourth-row
+    .col-sm-2.col-sm-offset-8
+      =image_tag "order-confirmation-page-wf-thumbnail.jpg"
+
+%section.see-wf-in-action.text-center
+  %h3
+    See the wireframes in action!
+  %a{href: "", class: "btn purple"}
+
+

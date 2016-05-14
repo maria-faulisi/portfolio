@@ -2,19 +2,91 @@
 title: "Home"
 ---
 
-.container
-  %h2
-    A brief introduction
+%section.home-hero
+  .home-hero-text
+    %h1
+      What does it mean to design 
+      %span
+        experience?
 
-  %p.intro-paragraph
-    I'm 36, a scorpio and something of a taco aficionado.
+%section.hard-to-explain.container
+  .hard-to-explain-inner.row
+    .col-sm-3.col-sm-offset-1
+      =image_tag "me-squared.png"
+    .col-sm-6.col-sm-offset-1
+      %p.my-quote
+        It's hard to explain what a user experience designer does.  A well designed experience is intangible.  It's effortless and comfortable, familiar and engaging.  Wireframes, prototypes, and personas are the artifacts of the work, the feeling you walk away with is the product.
 
-    I know people...not Beyonce or Ellen DeGeneres, but people in general. I've worked heavily in client facing roles and I know how to question and communicate.
+%section.good-ux-designer.container
+  %h2.h2-gray.text-center
+    What makes a good UX designer?
 
-    I'm educated.  I studied fine arts at SAIC (You know, where Georgia O'Keefe studied.. though not while I was there) and I have a B.A. in Interactive Arts and Media from Columbia College Chicago.
+  .row.designer-traits.col-sm-10.col-sm-centered.omega-sm-4.omega-md-4.omega-lg-4
+    .col-sm-collapse-6.single-trait
+      %h4.green-header
+        Mindful
+      %ul.trait-explaination-list
+        %li.trait-explaination
+          I notice things.  Big and small.
+        %li.trait-explaination
+          I know how to discover what each stakeholder needs (even if they may not know how to express it.)
+        %li.trait-explaination
+          I know the tech behind the product.
 
-    I can code.  I am expert at HTML, CSS, JQuery, JavaScript and I've worked with PHP, Ruby and databases.  But it's not what I'm passionate about.
+    .col-sm-collapse-6.single-trait
+      %h4.green-header
+        Empathetic
+      %ul.trait-explaination-list
+        %li.trait-explaination
+          I'm not designing for myself, I'm designing and advocating for the user
+        %li.trait-explaination
+          I ask questions and never reject the answers.
+        %li.trait-explaination
+          I'm open to the thoughts of others as well as happy accidents
 
-    Designing how people interact with the fun stuff those languages create; that's what I lose track of time doing.  Problem solving and planning to delight.  
+    .col-sm-collapse-6.single-trait
+      %h4.green-header
+        Curious
+      %ul.trait-explaination-list
+        %li.trait-explaination
+          I want to know why.
+        %li.trait-explaination
+          Why was that confusing?
+        %li.trait-explaination
+          What made it work?
+        %li.trait-explaination
+          Did my work make a measurable difference?
 
-    Whelp, I don't know if it was brief, but it was an introduction.
+    .col-sm-collapse-6.single-trait
+      %h4.green-header
+        Desire to Delight
+      %ul.trait-explaination-list
+        %li.trait-explaination
+          Form follows function, but it can be unexpected too.
+        %li.trait-explaination
+          I want a user to feel something.
+        %li.trait-explaination
+          Put some love into it.
+
+    .col-sm-collapse-6.col-sm-centered.single-trait
+      %h4.green-header
+        Thrives on Complexity
+      %ul.trait-explaination-list
+        %li.trait-explaination
+          Constraints inspire me.
+        %li.trait-explaination
+          Finding a solution that solves two seemingly different problems...bring it on!
+        %li.trait-explaination
+          Making the complex feel simple is a challenge I gladly accept.
+
+%section.get-in-touch.container.text-center
+  %h2.h2-gray
+    Get in touch
+  %p
+    Reach out to me on LinkedIn or view my code samples on Github
+  .btn-wrapper
+    =link_to "LinkedIn", "https://www.linkedin.com/in/mariafaulisi", {target: "blank"}
+    =link_to "Github", "https://github.com/maria-faulisi/", {target: "blank", class: "btn green"}
+
+
+
