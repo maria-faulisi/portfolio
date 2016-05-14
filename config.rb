@@ -57,8 +57,6 @@ activate :livereload, :apply_js_live => false
 
 activate :sprockets
 
-activate :livereload
-
 activate :relative_assets
 
 set :relative_links, true
