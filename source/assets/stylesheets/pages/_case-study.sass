@@ -30,6 +30,67 @@
 
 .user-personas
   padding-top: 100px
+  padding-bottom: 132px
+
+  .personas
+    display: block
+    position: relative
+    overflow: auto
+
+    a
+      position: relative
+      display: block
+      overflow: auto
+
+  .personas-and-text
+    margin-top: 75px
+
+    .persona-link-wrapper:last-of-type
+      img
+        float: right
+
+  .persona-type-and-arrow
+    position: absolute    
+    top: 50%
+    +transform(translateY(-50%))
+    width: 150px
+
+    img
+      vertical-align: middle
+
+    h4
+      display: inline-block
+      font-size: 22px
+      font-weight: $font-weight-semi-bold
+      line-height: 27px
+
+    &.primary
+      right: 0
+
+      img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -21px
+
+      h4
+        padding-left: 10px
+
+    &.secondary
+      left: 0
+
+      img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 21px
+
+.testing
+  padding-top: 100px
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50)
+
+  h3
+    margin-bottom: 69px
 
 .video-wrapper
   position: relative
