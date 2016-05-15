@@ -48,66 +48,90 @@ title: "Case-Study"
     %p.col-sm-5.col-sm-offset-1
       Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar. Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops. Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant. Muffin bonbon cheesecake lemon drops cheesecake cookie oat cake. Sweet roll bear claw croissant jelly-o pastry icing danish.
 
-    =image_tag "test-script-img.png", {class: "col-sm-6"}
+    %a{href: "", class: "script-img-wrapper col-sm-6"}
+      =image_tag "test-script-img.png"
+      .img-filter 
+        %h2 View Testing Script        
 
-%section.section-alabaster
+%section.testing-video.section-gallery
   .video-wrapper.col-sm-8.col-sm-centered
     %iframe{allowfullscreen: "", frameborder: "0", src: "https://www.youtube.com/embed/f8y4pFl2EMs"}
 
-%section.user-feedback.container
-  %h3.h3-mortar User Feedback
-  .row.feedback-text-and-img
-    .feedback-text.col-sm-5.col-sm-offset-1
-      %p
-        Sugar plum brownie chupa chups. Biscuit sweet roll liquorice candy canes. Pastry chupa chups gingerbread bonbon chocolate carrot cake sesame snaps tart topping.
+%section.user-feedback.section-alabaster
+  .container
+    %h3.h3-mortar User Feedback
+    .row.feedback-text-and-img
+      .feedback-text.col-sm-5.col-sm-offset-1
+        %p
+          Sugar plum brownie chupa chups. Biscuit sweet roll liquorice candy canes. Pastry chupa chups gingerbread bonbon chocolate carrot cake sesame snaps tart topping.
 
-      %ul.user-feedback-list
-        %li
-          Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar.
-        %li
-          Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops.
-        %li
-          Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant.
+        %ul.user-feedback-list
+          %li
+            Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar.
+          %li
+            Toffee cake dessert muffin fruitcake macaroon gingerbread. Toffee cotton candy jelly-o gingerbread lemon drops.
+          %li
+            Sweet roll danish topping biscuit icing icing tiramisu liquorice. Brownie chocolate cake jelly beans tart gummi bears chocolate bar lemon drops croissant.
 
-    .feedback-img.col-sm-6
-      %a{href: ""}
-      =image_tag "feedback-img.png"
+      %a{href: "", class: "feedback-img-wrapper col-sm-6"}
+        =image_tag "feedback-img.png"
+        .img-filter 
+          %h2 View Feedback Doc      
 
 %section.iteration.container
+  %h3.h3-mortar Iteration
   .slider.col-sm-10.col-sm-centered
     I'm where the slider goes
 
-%section.wireframes.section-mortar.container
-  %h3.h3-mortar Wireframes
-  .row.wireframe-images.first-row
-    .col-sm-2.col-sm-offset-2
-      =image_tag "home-wf-thumbnail.jpg"
-  .row.wireframe-images.second-row
-    .col-sm-2.col-sm-offset-2
-      =image_tag "products-page-wf-thumbnail.jpg"
-    .col-sm-2
-      =image_tag "projects-list-page-wf-thumbnail.jpg"
-    .col-sm-2
-      =image_tag "contact-page-wf-thumbnail.jpg"
-    .col-sm-2
-      =image_tag "review-cart-page-wf-thumbnail.jpg"
+%section.wireframes.section-mortar
+  .container
+    %h3.h3-white Wireframes
+    .row.wireframe-images.first-row
+      .col-sm-2.col-sm-offset-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "home.jpg"}
+          =image_tag "home-wf-thumbnail.jpg"
+    .row.wireframe-images.second-row
+      .col-sm-2.col-sm-offset-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "products-page.jpg"}
+          =image_tag "products-page-wf-thumbnail.jpg"
+      .col-sm-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "projects-list-page.jpg"}
+          =image_tag "projects-list-page-wf-thumbnail.jpg"
+      .col-sm-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "contact-page.jpg"}
+          =image_tag "contact-page-wf-thumbnail.jpg"
+      .col-sm-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "review-cart-page.jpg"}
+          =image_tag "review-cart-page-wf-thumbnail.jpg"
 
-  .row.wireframe-images.third-row
-    .col-sm-2.col-sm-offset-2
-      =image_tag "swatch-page-1-wf-thumbnail.jpg"
-    .col-sm-2
-      =image_tag "project-page-individual-wf-thumbnail.jpg"
-    .col-sm-2.col-sm-offset-2
-      =image_tag "shipping-and-billing-page-wf-thumbnail.jpg"
-      =image_tag "payment-page-wf-thumbnail.jpg"
+    .row.wireframe-images.third-row
+      .col-sm-2.col-sm-offset-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "swatch-page-1.jpg"}
+          =image_tag "swatch-page-1-wf-thumbnail.jpg"
+      .col-sm-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "project-page-individual.jpg"}
+          =image_tag "project-page-individual-wf-thumbnail.jpg"
+      .col-sm-2.col-sm-offset-2
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "shipping-and-billing-page.jpg"}
+          =image_tag "shipping-and-billing-page-wf-thumbnail.jpg"
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "payment-page.jpg"}
+          =image_tag "payment-page-wf-thumbnail.jpg"
 
-  .row.wireframe-images.fourth-row
-    .col-sm-2.col-sm-offset-8
-      =image_tag "order-confirmation-page-wf-thumbnail.jpg"
+    .row.wireframe-images.fourth-row
+      .col-sm-2.col-sm-offset-8
+        .trigger-div{"data-toggle": "modal","data-target": "#exampleModal", "data-image-src": "order-confirmation-page.jpg"}
+          =image_tag "order-confirmation-page-wf-thumbnail.jpg"
 
 %section.see-wf-in-action.text-center
   %h3.h3-mortar
     See the wireframes in action!
   %a{href: "https://invis.io/B47A6AYS9#/158149018_Home", class: "btn purple", target: "blank"}
 
-
+#exampleModal.modal.fade{"aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} &times;
+      .modal-body
+        =image_tag ""
