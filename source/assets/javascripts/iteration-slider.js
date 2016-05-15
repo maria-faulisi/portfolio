@@ -1,1 +1,5 @@
-$('.iteration-slider').unslider();
+$(document).ready(function(){
+  $('#iteration-slider').unslider();  
+});
+
+

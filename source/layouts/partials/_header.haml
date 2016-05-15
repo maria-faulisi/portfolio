@@ -4,7 +4,7 @@
       Maria Faulisi - UX Architect
 
   %ul.nav-link-wrapper
-    %li.nav-link
+    %li.nav-link{class: "#{'active' if current_page.url == '/'}"}
       = link_to "home", "/index.html"
-    %li.nav-link 
+    %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
       = link_to "case study", "/case-study.html", relative: true
