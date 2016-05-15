@@ -1548,13 +1548,129 @@ html {
   float: left; }
 
 body {
-  font-family: "Open-Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #404040; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-weight: 300;
+  margin: 0; }
+
+p,
+a {
+  font-size: 21px; }
+
+p {
+  font-size: 22px;
+  color: #6C6C6C;
+  padding: 0; }
+
+.h2-gray {
+  font-size: 35px;
+  color: #6C6C6C;
+  font-weight: 400; }
+
+h4.green-header {
+  font-size: 26px;
+  color: #215446;
+  font-weight: 600;
+  margin: 0px; }
 
 .text-center {
   text-align: center; }
 
+.section-alabaster {
+  background: #F8F8F8; }
+
+nav {
+  padding: 30px 0px; }
+
+.name-of-site,
+.nav-link-wrapper,
+.nav-link {
+  display: inline-block; }
+
+.nav-link-wrapper {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0; }
+
+.nav-link {
+  margin-left: 45px; }
+
+.nav-link a {
+  text-decoration: none;
+  color: #404040;
+  text-transform: capitalize; }
+
+.btn {
+  font-family: OpenSans-Semibold;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 17px 44px;
+  display: inline-block; }
+  .btn.green {
+    background: #215456;
+    color: #F8F8F8; }
+
 .intro-paragraph {
   white-space: pre-wrap; }
+
+.home-hero {
+  font-size: 25px;
+  color: #404040;
+  letter-spacing: 0px;
+  height: 589px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 154px; }
+  .home-hero .home-hero-text {
+    width: 587px; }
+    .home-hero .home-hero-text h1 {
+      font-size: 46px;
+      color: white;
+      font-weight: 600; }
+      .home-hero .home-hero-text h1 span {
+        color: #F3E200; }
+
+.hard-to-explain {
+  padding-top: 111px;
+  padding-bottom: 111px; }
+  .hard-to-explain .my-quote {
+    margin-top: 49px;
+    padding-right: 11%; }
+
+.good-ux-designer {
+  padding-top: 100px;
+  padding-bottom: 114px; }
+  .good-ux-designer h2 {
+    margin-bottom: 50px; }
+  .good-ux-designer .trait-explaination-list {
+    font-size: 19px;
+    color: #6C6C6C;
+    margin-top: 24px; }
+  .good-ux-designer .single-trait {
+    padding-top: 80px; }
+    .good-ux-designer .single-trait.right-trait {
+      padding-left: 40px; }
+
+.get-in-touch {
+  padding-top: 121px;
+  padding-bottom: 156px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+  .get-in-touch p {
+    width: 337px;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .get-in-touch .btn-wrapper {
+    margin-top: 55px; }
+    .get-in-touch .btn-wrapper a:first-of-type {
+      margin-right: 21px; }
 
 .video-wrapper {
   position: relative;
