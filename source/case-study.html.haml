@@ -81,7 +81,20 @@ title: "Case-Study"
 %section.iteration.container
   %h3.h3-mortar Iteration
   .slider.col-sm-10.col-sm-centered
-    I'm where the slider goes
+    .iteration-slider
+      %ul
+        %li
+          =image_tag "slider/slide-1.jpg"
+        %li
+          =image_tag "slider/slide-2.jpg"
+        %li
+          =image_tag "slider/slide-3.jpg"          
+        %li
+          =image_tag "slider/slide-4.jpg"
+        %li
+          =image_tag "slider/slide-5.jpg"
+        %li
+          =image_tag "slider/slide-6.jpg"   
 
 %section.wireframes.section-mortar
   .container
@@ -123,9 +136,9 @@ title: "Case-Study"
           =image_tag "order-confirmation-page-wf-thumbnail.jpg"
 
 %section.see-wf-in-action.text-center
-  %h3.h3-mortar
+  %p
     See the wireframes in action!
-  %a{href: "https://invis.io/B47A6AYS9#/158149018_Home", class: "btn purple", target: "blank"}
+  %a{href: "https://invis.io/B47A6AYS9#/158149018_Home", class: "btn purple", target: "blank"} Invision
 
 #exampleModal.modal.fade{"aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
   .modal-dialog{:role => "document"}
@@ -134,4 +147,4 @@ title: "Case-Study"
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} &times;
       .modal-body
-        =image_tag ""
+        =image_tag "wf-full/home.jpg"
