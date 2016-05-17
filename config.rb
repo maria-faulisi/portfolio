@@ -51,7 +51,7 @@ set :css_dir, 'assets/stylesheets'
 
 set :js_dir, 'assets/javascripts'
 
-set :images_dir, '#{root}/assets/images'
+set :images_dir, 'assets/images'
 
 activate :livereload, :apply_js_live => false
 
