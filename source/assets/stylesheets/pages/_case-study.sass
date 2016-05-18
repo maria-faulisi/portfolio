@@ -28,19 +28,28 @@
 
   .overview-paragraph
     font-size: 22px
-    color: $color-dove-gray
-    +column-count(2)
-    +column-span(5)
-    +column-gap(40px)
+    color: $color-dove-gray    
+
+    +media-md
+      +column-count(2)
+      +column-span(5)
+      +column-gap(40px)
 
 .user-personas
   padding-top: 100px
   padding-bottom: 132px
 
   .personas
-    display: block
     position: relative
     overflow: auto
+    +display(flex)
+
+    +media-xs
+      +align-items(center)
+      +justify-content(space-around)
+
+    +media-md
+      display: block
 
     a
       position: relative
@@ -48,17 +57,38 @@
       overflow: auto
 
   .personas-and-text
-    margin-top: 75px    
+    margin-top: 75px
+
+    .persona-link-wrapper
+      width: 50%
+
+      +media-md
+        width: initial  
+
+      img
+        float: right
+
+        +media-sm
+          float: left
 
     .persona-link-wrapper:last-of-type
       img
-        float: right
+        float: left
+        
+        +media-sm
+          float: right
 
   .persona-type-and-arrow
     position: absolute    
     top: 50%
     +transform(translateY(-50%))
     width: 150px
+
+    +media-xs
+      display: none
+
+    +media-sm
+      display: initial
 
     img
       vertical-align: middle
@@ -80,10 +110,20 @@
         position: absolute
         top: 50%
         transform: translateY(-50%)
-        left: -21px
+
+        +media-sm
+          left: 5px
+
+        +media-lg
+          left: -21px
 
       h4
-        padding-left: 10px
+
+        +media-sm
+          padding-left: 35px
+
+        +media-lg
+          padding-left: 10px
 
     &.secondary
       left: 0
@@ -92,11 +132,22 @@
         position: absolute
         top: 50%
         transform: translateY(-50%)
-        right: -21px
 
-      h4
-        text-align: right
-        padding-right: 10px
+        +media-sm
+          right: 0px
+
+        +media-lg
+          right: -21px
+
+      h4        
+        +media-sm
+          padding-right: 35px
+
+        +media-md
+          text-align: right
+
+        +media-lg
+          padding-right: 10px
 
   .persona-text
     p:nth-of-type(2)
