@@ -2,10 +2,23 @@
   h3
     margin-left: 20px
 
+    +media-xs
+      margin-left: 0px
+
+  .container
+    margin-left: 20px
+    margin-right: 20px
+
+    +media-sm
+      margin: auto
+
 .case-study-hero
-  height: 479px
+  height: 215px
   background-position: center
   background-size: cover
+
+  +media-sm
+    height: 479px
 
   h3    
     color: $color-mortar
@@ -38,6 +51,14 @@
 .user-personas
   padding-top: 100px
   padding-bottom: 132px
+
+  h3
+    +media-xs
+      margin-left: 20px
+
+  .container
+    +media-xs
+      margin: 0
 
   .personas
     position: relative
@@ -150,6 +171,11 @@
           padding-right: 10px
 
   .persona-text
+    padding: 0 20px
+
+    +media-sm
+      padding: 0
+
     p:nth-of-type(2)
       margin-top: 20px
 
@@ -165,15 +191,16 @@
 
 .script-img-wrapper,
 .feedback-img-wrapper
+  display: block
   position: relative
+  margin-bottom: -20px
 
   &:hover .img-filter
     opacity: 1
 
   img
     position: relative
-    width: 100%
-    margin-bottom: -25px    
+    width: 100%    
 
 .img-filter
   position: absolute
@@ -198,12 +225,17 @@
 
 .testing-video
   position: relative
-  padding: 180px 0
-  z-index: 10  
+  z-index: 10 
+
+  +media-sm
+    padding: 180px 0 
 
 .video-wrapper
   position: relative
-  padding-top: 41.25%
+  padding-top: 64%
+
+  +media-lg
+    padding-top: 41.25%
 
 .video-wrapper iframe,
 .video-wrapper object,
@@ -257,15 +289,25 @@
     display: none
 
 .wireframes
+  text-align: center
   padding-top: 150px
   padding-bottom: 182px
 
+  +media-sm
+    text-align: initial
+
   h3
+    text-align: left
     margin-bottom: 117px
 
-  .wireframe-images
+  .wireframe-images    
     img
-      width: 100%
+      width: 40%
+      margin-top: 40px
+
+      +media-sm
+        width: 100%
+        margin-top: 0
 
   .trigger-div
     cursor: pointer
