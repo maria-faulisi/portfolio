@@ -1697,11 +1697,23 @@ nav {
 
 .Case-Study h3 {
   margin-left: 20px; }
+  @media screen and (max-width: 767px) {
+    .Case-Study h3 {
+      margin-left: 0px; } }
+.Case-Study .container {
+  margin-left: 20px;
+  margin-right: 20px; }
+  @media screen and (min-width: 768px) {
+    .Case-Study .container {
+      margin: auto; } }
 
 .case-study-hero {
-  height: 479px;
+  height: 215px;
   background-position: center;
   background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .case-study-hero {
+      height: 479px; } }
   .case-study-hero h3 {
     color: #534254; }
 
@@ -1735,6 +1747,12 @@ nav {
 .user-personas {
   padding-top: 100px;
   padding-bottom: 132px; }
+  @media screen and (max-width: 767px) {
+    .user-personas h3 {
+      margin-left: 20px; } }
+  @media screen and (max-width: 767px) {
+    .user-personas .container {
+      margin: 0; } }
   .user-personas .personas {
     position: relative;
     overflow: auto;
@@ -1853,8 +1871,13 @@ nav {
       @media screen and (min-width: 1200px) {
         .user-personas .persona-type-and-arrow.secondary h4 {
           padding-right: 10px; } }
-  .user-personas .persona-text p:nth-of-type(2) {
-    margin-top: 20px; }
+  .user-personas .persona-text {
+    padding: 0 20px; }
+    @media screen and (min-width: 768px) {
+      .user-personas .persona-text {
+        padding: 0; } }
+    .user-personas .persona-text p:nth-of-type(2) {
+      margin-top: 20px; }
 
 .testing {
   padding-top: 100px;
@@ -1866,15 +1889,16 @@ nav {
 
 .script-img-wrapper,
 .feedback-img-wrapper {
-  position: relative; }
+  display: block;
+  position: relative;
+  margin-bottom: -20px; }
   .script-img-wrapper:hover .img-filter,
   .feedback-img-wrapper:hover .img-filter {
     opacity: 1; }
   .script-img-wrapper img,
   .feedback-img-wrapper img {
     position: relative;
-    width: 100%;
-    margin-bottom: -25px; }
+    width: 100%; }
 
 .img-filter {
   position: absolute;
@@ -1904,12 +1928,17 @@ nav {
 
 .testing-video {
   position: relative;
-  padding: 180px 0;
   z-index: 10; }
+  @media screen and (min-width: 768px) {
+    .testing-video {
+      padding: 180px 0; } }
 
 .video-wrapper {
   position: relative;
-  padding-top: 41.25%; }
+  padding-top: 64%; }
+  @media screen and (min-width: 1200px) {
+    .video-wrapper {
+      padding-top: 41.25%; } }
 
 .video-wrapper iframe,
 .video-wrapper object,
@@ -1960,12 +1989,22 @@ nav {
     display: none; }
 
 .wireframes {
+  text-align: center;
   padding-top: 150px;
   padding-bottom: 182px; }
+  @media screen and (min-width: 768px) {
+    .wireframes {
+      text-align: initial; } }
   .wireframes h3 {
+    text-align: left;
     margin-bottom: 117px; }
   .wireframes .wireframe-images img {
-    width: 100%; }
+    width: 40%;
+    margin-top: 40px; }
+    @media screen and (min-width: 768px) {
+      .wireframes .wireframe-images img {
+        width: 100%;
+        margin-top: 0; } }
   .wireframes .trigger-div {
     cursor: pointer; }
 
