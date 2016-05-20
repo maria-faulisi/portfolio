@@ -11,7 +11,10 @@
   padding-top: 154px
 
   .home-hero-text
-    width: 587px
+    width: 100%
+
+    +media-lg
+      width: 587px
 
     h1
       font-size: 46px
@@ -25,9 +28,17 @@
   padding-top: 111px
   padding-bottom: 111px
 
+  .personal-pic
+    text-align: center
+
+    +media-sm
+      text-align: left
+
   .my-quote
     margin-top: 49px
-    padding-right: 11%
+
+    +media-sm      
+      padding-right: 11%
 
 .good-ux-designer
   padding-top: 100px  
@@ -45,7 +56,10 @@
     padding-top: 80px
 
     &.right-trait
-      padding-left: 40px
+      padding-left: 0
+
+      +media-sm
+        padding-left: 40px
 
 .get-in-touch
   padding-top: 121px
