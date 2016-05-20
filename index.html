@@ -21,20 +21,33 @@
     <script src="assets/javascripts/all.js"></script>
   </head>
   <body class='Home'>
-    <nav class='container'>
-      <div class='name-of-site'>
-        <h2 class='nav-name'>
-          Maria Faulisi - UX Architect
-        </h2>
+    <nav>
+      <div class='container'>
+        <div class='name-of-site'>
+          <h2 class='nav-name'>
+            Maria Faulisi - UX Architect
+          </h2>
+        </div>
+        <div class='navigation'>
+          <div class='hamburger-wrapper'>
+            <ul>
+              <li class='hamburger-line'></li>
+              <li class='hamburger-line'></li>
+              <li class='hamburger-line'></li>
+            </ul>
+          </div>
+          <div class='link-container'>
+            <ul class='nav-link-wrapper'>
+              <li class='active nav-link'>
+                <a href="./">home</a>
+              </li>
+              <li class='nav-link'>
+                <a href="case-study.html">case study</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul class='nav-link-wrapper'>
-        <li class='active nav-link'>
-          <a href="./">home</a>
-        </li>
-        <li class='nav-link'>
-          <a href="case-study.html">case study</a>
-        </li>
-      </ul>
     </nav>
     <section class='home-hero' style='background-image: url(assets/images/home-hero.jpg)'>
       <div class='container'>
@@ -51,10 +64,10 @@
     <section class='hard-to-explain' style='background-image: url(assets/images/white-paper.png)'>
       <div class='container'>
         <div class='hard-to-explain-inner row'>
-          <div class='col-sm-collapse-3 col-sm-offset-1'>
+          <div class='col-sm-collapse-3 col-sm-offset-1 personal-pic'>
             <img src="assets/images/me-squared.png" />
           </div>
-          <div class='col-sm-6 col-sm-offset-1'>
+          <div class='col-sm-6 col-sm-offset-1 quote-wrapper'>
             <p class='my-quote'>
               It's hard to explain what a user experience designer does.  A well designed experience is intangible.  It's effortless and comfortable, familiar and engaging.  Wireframes, prototypes, and personas are the artifacts of the work, the feeling you walk away with is the product.
             </p>
