@@ -1620,6 +1620,9 @@ nav {
     position: relative;
     margin-left: 20px;
     z-index: 99; } }
+@media screen and (max-width: 767px) {
+  .name-of-site .title {
+    display: none; } }
 
 .navigation {
   display: inline-block;
@@ -1893,6 +1896,9 @@ body {
           width: initial; } }
       .user-personas .personas-and-text .persona-link-wrapper img {
         float: right; }
+        @media screen and (max-width: 767px) {
+          .user-personas .personas-and-text .persona-link-wrapper img {
+            max-width: 150px; } }
         @media screen and (min-width: 768px) {
           .user-personas .personas-and-text .persona-link-wrapper img {
             float: left; } }
@@ -1994,18 +2000,14 @@ body {
 .script-img-wrapper,
 .feedback-img-wrapper {
   display: block;
-  position: relative; }
+  position: relative;
+  margin-bottom: -20px; }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .script-img-wrapper,
     .feedback-img-wrapper {
       width: 60%;
       margin: 0 auto;
-      margin-top: 50px;
-      margin-bottom: -20px; } }
-  @media screen and (min-width: 992px) {
-    .script-img-wrapper,
-    .feedback-img-wrapper {
-      margin-bottom: -20px; } }
+      margin-top: 50px; } }
   @media screen and (min-width: 768px) {
     .script-img-wrapper:hover .img-filter,
     .feedback-img-wrapper:hover .img-filter {
