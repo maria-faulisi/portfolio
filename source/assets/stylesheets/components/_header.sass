@@ -1,10 +1,70 @@
 nav
   padding: 30px 0px
 
+  .container
+    +media-xs
+      margin: 0
+
 .name-of-site,
 .nav-link-wrapper,
 .nav-link
   display: inline-block
+
+.name-of-site
+  +media-xs
+    position: relative
+    margin-left: 20px
+    z-index: 99    
+
+.navigation
+  display: inline-block
+  float: right
+
+  +media-xs
+    position: relative
+    width: 100%
+    margin-top: -33px
+    z-index: 1
+    background: white
+
+.hamburger-wrapper
+  display: none
+
+  +media-xs
+    display: block
+    position: absolute
+    right: 20px
+    top: 7px
+    z-index: 99
+
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+    li
+      height: 3px
+      width: 30px
+      background-color: $color-tundora
+
+      &:nth-of-type(2)
+        margin: 5px 0
+
+.link-container
+  +media-xs
+    position: absolute
+    width: 100vw
+    height: 100vh
+    right: -110vw
+    background: white
+    z-index: 50
+    display: none
+    +transition()
+    +transition-duration(1s)
+
+    &.show-mobile-nav
+      display: block
+      right: -20px
 
 .nav-link-wrapper
   display: inline-block
@@ -12,12 +72,27 @@ nav
   padding: 0
   margin: 0
 
+  +media-xs
+    position: absolute
+    top: 18%
+    left: 50%
+    +transform(translate(-50%))
+
 .nav-link
   margin-left: 45px
   padding-bottom: 2px
 
+  +media-xs
+    display: block
+    margin-left: 0
+    margin-top: 40px
+    text-align: center
+
   &.active
     border-bottom: 3px solid $color-gallery
+
+    +media-xs
+      padding-bottom: 10px
 
 .nav-link a
   text-decoration: none

@@ -1,10 +1,18 @@
-%nav.container
-  .name-of-site
-    %h2.nav-name
-      Maria Faulisi - UX Architect
+%nav
+  .container
+    .name-of-site
+      %h2.nav-name
+        Maria Faulisi - UX Architect
 
-  %ul.nav-link-wrapper
-    %li.nav-link{class: "#{'active' if current_page.url == '/'}"}
-      = link_to "home", "/index.html"
-    %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
-      = link_to "case study", "/case-study.html", relative: true
+    .navigation
+      .hamburger-wrapper
+        %ul
+          %li.hamburger-line
+          %li.hamburger-line
+          %li.hamburger-line
+      .link-container
+        %ul.nav-link-wrapper
+          %li.nav-link{class: "#{'active' if current_page.url == '/'}"}
+            = link_to "home", "/index.html"
+          %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
+            = link_to "case study", "/case-study.html", relative: true
