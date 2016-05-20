@@ -17,9 +17,15 @@
       width: 587px
 
     h1
-      font-size: 46px
+      font-size: 40px
+      line-height: 1.2
       color: white
       font-weight: $font-weight-bold
+
+      +media-sm
+        font-size: 46px
+        line-height: inherit
+        
 
       span
         color: $color-turbo
@@ -32,28 +38,55 @@
     text-align: center
 
     +media-sm
+      margin-top: 39px
       text-align: left
 
-  .my-quote
-    margin-top: 49px
+    +media-lg
+      margin-top: 0
 
-    +media-sm      
+    img
+      width: 200px
+
+      +media-sm
+        width: 100%
+
+  .my-quote
+    margin-top: 40px 
+
+    +media-sm   
+      margin-top: 0   
       padding-right: 11%
+
+    +media-md
+      margin-top: 49px
+
+    +media-lg
+      margin-top: 63px
 
 .good-ux-designer
   padding-top: 100px  
   padding-bottom: 114px
 
-  h2    
-    margin-bottom: 50px
+  h2  
+    margin-bottom: 40px
+
+    +media-sm
+      margin-bottom: 0
 
   .trait-explaination-list
     font-size: 19px
     color: $color-dove-gray
     margin-top: 24px
 
+    +media-sm-only
+      padding-left: 20px
+      font-size: 18px
+
   .single-trait
-    padding-top: 80px
+    padding-top: 40px
+
+    +media-sm
+      padding-top: 80px
 
     &.right-trait
       padding-left: 0
