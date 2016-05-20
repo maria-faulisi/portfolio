@@ -1822,8 +1822,12 @@ body {
       font-weight: 300; }
 
 .case-study-about {
-  padding-top: 101px;
-  padding-bottom: 150px; }
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .case-study-about {
+      padding-top: 101px;
+      padding-bottom: 150px; } }
   .case-study-about h3 {
     margin-bottom: 55px; }
   .case-study-about .overview-paragraph {
@@ -1842,8 +1846,12 @@ body {
         column-gap: 40px; } }
 
 .user-personas {
-  padding-top: 100px;
-  padding-bottom: 132px; }
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .user-personas {
+      padding-top: 100px;
+      padding-bottom: 132px; } }
   @media screen and (max-width: 767px) {
     .user-personas h3 {
       margin-left: 20px; } }
@@ -1888,7 +1896,10 @@ body {
       display: block;
       overflow: auto; }
   .user-personas .personas-and-text {
-    margin-top: 75px; }
+    margin-top: 42px; }
+    @media screen and (min-width: 768px) {
+      .user-personas .personas-and-text {
+        margin-top: 75px; } }
     .user-personas .personas-and-text .persona-link-wrapper {
       width: 50%; }
       @media screen and (min-width: 992px) {
@@ -1976,14 +1987,17 @@ body {
     padding: 0 20px; }
     @media screen and (min-width: 768px) {
       .user-personas .persona-text {
-        margin-top: 0;
+        margin-top: 50px;
         padding: 0; } }
     .user-personas .persona-text p:nth-of-type(2) {
       margin-top: 20px; }
 
 .testing {
-  padding-top: 100px;
+  padding-top: 60px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+  @media screen and (min-width: 768px) {
+    .testing {
+      padding-top: 100px; } }
   .testing h3 {
     margin-bottom: 42px; }
     @media screen and (min-width: 768px) {
@@ -2007,7 +2021,8 @@ body {
     .feedback-img-wrapper {
       width: 60%;
       margin: 0 auto;
-      margin-top: 50px; } }
+      margin-top: 50px;
+      margin-bottom: -20px; } }
   @media screen and (min-width: 768px) {
     .script-img-wrapper:hover .img-filter,
     .feedback-img-wrapper:hover .img-filter {
@@ -2052,7 +2067,11 @@ body {
 
 .testing-video {
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  padding: 30px 0; }
+  @media screen and (max-width: 767px) {
+    .testing-video {
+      background: black; } }
   @media screen and (min-width: 768px) {
     .testing-video {
       padding: 180px 0; } }
@@ -2075,7 +2094,10 @@ body {
 
 .user-feedback {
   overflow: hidden;
-  padding-top: 104px; }
+  padding-top: 60px; }
+  @media screen and (min-width: 768px) {
+    .user-feedback {
+      padding-top: 104px; } }
 
 .feedback-text-and-img {
   margin-top: 49px; }
@@ -2099,8 +2121,14 @@ body {
   z-index: 10; }
   .iteration h3 {
     margin-bottom: 97px; }
+    @media screen and (max-width: 767px) {
+      .iteration h3 {
+        margin-bottom: 40px; } }
   .iteration #iteration-slider {
     position: relative; }
+    @media screen and (max-width: 767px) {
+      .iteration #iteration-slider {
+        margin-bottom: 22px; } }
     .iteration #iteration-slider img {
       width: 100%; }
   .iteration .unslider-nav {
@@ -2112,22 +2140,35 @@ body {
     -ms-transform: translate(-50%);
     -o-transform: translate(-50%);
     transform: translate(-50%); }
+    @media screen and (max-width: 767px) {
+      .iteration .unslider-nav {
+        display: none; } }
   .iteration .unslider-nav ol li {
     height: 10px;
     width: 10px; }
   .iteration .unslider-arrow {
     display: none; }
+    @media screen and (max-width: 767px) {
+      .iteration .unslider-arrow {
+        display: block; } }
 
 .wireframes {
   text-align: center;
   padding-top: 150px;
   padding-bottom: 182px; }
+  @media screen and (max-width: 767px) {
+    .wireframes {
+      padding-top: 60px;
+      padding-bottom: 80px; } }
   @media screen and (min-width: 768px) {
     .wireframes {
       text-align: initial; } }
   .wireframes h3 {
     text-align: left;
     margin-bottom: 117px; }
+    @media screen and (max-width: 767px) {
+      .wireframes h3 {
+        margin-bottom: 40px; } }
   .wireframes .wireframe-images img {
     width: 47%;
     margin-top: 40px; }
