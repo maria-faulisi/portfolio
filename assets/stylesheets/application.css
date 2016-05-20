@@ -1610,10 +1610,16 @@ h4.green-header {
 .section-mortar {
   background: #534254; }
 
-nav {
-  padding: 30px 0px; }
+nav.main-nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: white;
+  width: 100%;
+  padding: 30px 0px;
+  box-shadow: 0px 2px 4px 0px rgba(236, 235, 235, 0.5); }
   @media screen and (max-width: 767px) {
-    nav .container {
+    nav.main-nav .container {
       margin: 0; } }
 
 .name-of-site,
@@ -1664,7 +1670,7 @@ nav {
 @media screen and (max-width: 767px) {
   .link-container {
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     right: -110vw;
     background: white;
@@ -1736,6 +1742,8 @@ body {
     @media screen and (min-width: 768px) {
       body .container {
         margin: auto; } }
+  body .hero {
+    margin-top: 93px; }
 
 .intro-paragraph {
   white-space: pre-wrap; }
@@ -1827,13 +1835,23 @@ body {
   padding-bottom: 156px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
   .get-in-touch p {
-    width: 337px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      .get-in-touch p {
+        width: 337px; } }
   .get-in-touch .btn-wrapper {
     margin-top: 55px; }
+    @media screen and (max-width: 767px) {
+      .get-in-touch .btn-wrapper a {
+        display: block; } }
     .get-in-touch .btn-wrapper a:first-of-type {
-      margin-right: 21px; }
+      margin-bottom: 30px; }
+      @media screen and (min-width: 768px) {
+        .get-in-touch .btn-wrapper a:first-of-type {
+          margin-right: 21px;
+          margin-bottom: 0px; } }
 
 .Case-Study h3 {
   margin-left: 20px; }
@@ -2170,7 +2188,8 @@ body {
       width: 100%; }
   .iteration .unslider-nav {
     position: absolute;
-    bottom: 0;
+    padding: 0;
+    bottom: 30px;
     left: 50%;
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
