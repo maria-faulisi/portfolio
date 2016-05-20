@@ -82,6 +82,9 @@
       img
         float: right
 
+        +media-xs
+          max-width: 150px 
+          
         +media-sm
           float: left
 
@@ -197,15 +200,12 @@
 .feedback-img-wrapper
   display: block
   position: relative
-
+  margin-bottom: -20px
+  
   +media-sm-only
     width: 60%
     margin: 0 auto
     margin-top: 50px
-    margin-bottom: -20px
-
-  +media-md
-    margin-bottom: -20px
 
   &:hover .img-filter
     +media-sm
