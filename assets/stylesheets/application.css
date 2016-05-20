@@ -1575,6 +1575,9 @@ p {
   font-size: 35px;
   color: #6C6C6C;
   font-weight: 400; }
+  @media screen and (max-width: 767px) {
+    .h2-gray {
+      font-size: 26px; } }
 
 h3 {
   font-size: 26px;
@@ -1591,6 +1594,9 @@ h4.green-header {
   color: #215446;
   font-weight: 600;
   margin: 0px; }
+  @media screen and (max-width: 767px) {
+    h4.green-header {
+      font-size: 22px; } }
 
 .text-center {
   text-align: center; }
@@ -1748,9 +1754,14 @@ body {
       .home-hero .home-hero-text {
         width: 587px; } }
     .home-hero .home-hero-text h1 {
-      font-size: 46px;
+      font-size: 40px;
+      line-height: 1.2;
       color: white;
       font-weight: 600; }
+      @media screen and (min-width: 768px) {
+        .home-hero .home-hero-text h1 {
+          font-size: 46px;
+          line-height: inherit; } }
       .home-hero .home-hero-text h1 span {
         color: #F3E200; }
 
@@ -1761,24 +1772,50 @@ body {
     text-align: center; }
     @media screen and (min-width: 768px) {
       .hard-to-explain .personal-pic {
+        margin-top: 39px;
         text-align: left; } }
+    @media screen and (min-width: 1200px) {
+      .hard-to-explain .personal-pic {
+        margin-top: 0; } }
+    .hard-to-explain .personal-pic img {
+      width: 200px; }
+      @media screen and (min-width: 768px) {
+        .hard-to-explain .personal-pic img {
+          width: 100%; } }
   .hard-to-explain .my-quote {
-    margin-top: 49px; }
+    margin-top: 40px; }
     @media screen and (min-width: 768px) {
       .hard-to-explain .my-quote {
+        margin-top: 0;
         padding-right: 11%; } }
+    @media screen and (min-width: 992px) {
+      .hard-to-explain .my-quote {
+        margin-top: 49px; } }
+    @media screen and (min-width: 1200px) {
+      .hard-to-explain .my-quote {
+        margin-top: 63px; } }
 
 .good-ux-designer {
   padding-top: 100px;
   padding-bottom: 114px; }
   .good-ux-designer h2 {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .good-ux-designer h2 {
+        margin-bottom: 0; } }
   .good-ux-designer .trait-explaination-list {
     font-size: 19px;
     color: #6C6C6C;
     margin-top: 24px; }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .good-ux-designer .trait-explaination-list {
+        padding-left: 20px;
+        font-size: 18px; } }
   .good-ux-designer .single-trait {
-    padding-top: 80px; }
+    padding-top: 40px; }
+    @media screen and (min-width: 768px) {
+      .good-ux-designer .single-trait {
+        padding-top: 80px; } }
     .good-ux-designer .single-trait.right-trait {
       padding-left: 0; }
       @media screen and (min-width: 768px) {
