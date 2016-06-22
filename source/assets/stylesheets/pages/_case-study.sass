@@ -6,12 +6,32 @@
       margin-left: 0px
 
 .case-study-hero
+  position: relative
   height: 215px
   background-position: center
   background-size: cover
 
   +media-sm
     height: 479px
+
+  .case-study-hero-inner
+    position: absolute
+    top: 48%
+    +transform(translateY(-50%))
+    padding-left: 60px
+
+  h1
+    font-size: 95px
+    color: $color-mortar
+    font-weight: $font-weight-bold
+    letter-spacing: 0px
+    margin: 0
+
+  h2
+    font-size: 45px
+    color: $color-dusty-gray
+    letter-spacing: 0px
+    margin-top: -8px
 
   h3    
     color: $color-mortar
@@ -20,10 +40,25 @@
   padding: 30px 0px
 
   h3    
+    text-align: center
     color: $color-mortar      
+    font-weight: $font-weight-regular
 
-    span
-      font-weight: $font-weight-regular
+.work-stats-and-deliverables
+  background-color: $color-gallery
+  padding-top: 40px
+  padding-bottom: 64px
+  
+  h3
+    margin-top: 33px
+
+  .deliverables
+    font-size: 26px
+    font-weight: $font-weight-regular
+    color: #534254
+    letter-spacing: 0px
+    line-height: 39px
+    margin: 0
 
 .case-study-about
   padding-top: 60px
