@@ -3,8 +3,8 @@ title: "Case-Study"
 ---
 
 %section.hero.case-study-hero{style: "background-image: url(#{image_path "work-hero-bg.jpg"})"}
-  .case-study-hero-inner.col-sm-6.col-sm-offset-5
-    %h1 Work
+  .case-study-hero-inner.col-sm-6.col-sm-offset-4.col-md-offset-5
+    %h1 Work:
     %h2 Commonwealthfelt.com
 
 %section.case-study-header.section-alabaster
@@ -29,7 +29,7 @@ title: "Case-Study"
           %span 
             Three weeks
 
-      .col-sm-5.col-sm-offset-1
+      .col-sm-6.col-md-5.col-md-offset-1
         %h3.h3-mortar
           Deliverables
         %ul.deliverables
@@ -46,7 +46,7 @@ title: "Case-Study"
     Overview
   %p.overview-paragraph.col-sm-10.col-sm-centered
     Commonwealthfelt.com is the retail site for the National Nonwovens textile manufacturing corporation.  Founded in 1905 as the National Felt Company, they have a long history of high quality felts and have been supplying material to the U.S. government since World War I.
-    Being a manufacturer, National Nonwovens typically goes to market via sales representatives and wholesale companies. Today, like most American manufacturers, they are starting to target small volume consumers such as crafters and boutique businesses who specialize in handmade goods.  It is this desire to sell small volumes of product to a large number of consumers that created the Commonwealthfelt.com website
+    Being a manufacturer, National Nonwovens typically goes to market via sales representatives and wholesale companies. Today, like some American manufacturers, they are starting to target small volume consumers such as crafters and boutique businesses who specialize in handmade goods.  It is this desire to sell small volumes of product to a large number of consumers that created the Commonwealthfelt.com website
 
 %section.the-challenge
   .container.row
@@ -54,35 +54,29 @@ title: "Case-Study"
       %h3.h3-white
         The Challenge
       %p
-        Tootsie roll croissant cotton candy chocolate bar candy canes cupcake donut chocolate bar. Toffee cake dessert muffin fruitcake macaroon gingerbread.
+        Delivering a solution for two completely different age groups and technology comfort levels.
 
     .col-sm-5.col-sm-offset-1
       = image_tag "thunderbolt_display.png"
 
 %section.user-personas.section-alabaster{style: "background-image: url(#{image_path "white-paper.png"})"}
-  .container
-    %h3.h3-mortar
-      User Personas
-    .personas-and-text.row
-      .personas.col-md-4.col-md-offset-1
-        .row.persona-link-wrapper
-          %a{href: "http://maria-faulisi.github.io/portfolio/assets/images/user-bonnie.pdf", target: "blank"}
-            =image_tag "bonnie-square.png", {class: "col-sm-6 persona-img"}
-            .persona-type-and-arrow.primary.col-sm-6
-              =image_tag "arrow-point-left.png"
-              %h4 Primary Persona
-        .row.persona-link-wrapper
-          %a{href: "http://maria-faulisi.github.io/portfolio/assets/images/user-whitney.pdf", target: "blank"}
-            .persona-type-and-arrow.secondary.col-sm-6            
-              %h4 Secondary Persona
-              =image_tag "arrow-point-right.png"
-            =image_tag "whitney-square.png", {class: "col-sm-6 persona-img"}      
+  .personas-and-text.row
+    .persona-left
+      %a{href: "http://maria-faulisi.github.io/portfolio/assets/images/user-bonnie.pdf", target: "blank"}
+        = image_tag "bonnie-squared.jpg"
 
-      .persona-text.col-md-5.col-md-offset-1
+    .persona-text
+      .persona-text-inner
+        %h3.h3-mortar
+          User Personas
         %p
-          Because this case study is a redesign, I started the UX design process by creating user personas.
+          The UX design process started with creating user personas.
         %p
           The user personas reflect two main types of customers most intereseted in buying felt online.  An older more experienced crafter who doesn't have access to quality material and a younger, more entrepreneurial user who is comfortable with tech.
+
+    .persona-right
+      %a{href: "http://maria-faulisi.github.io/portfolio/assets/images/user-whitney.pdf", target: "blank"}
+        = image_tag "whitney-squared.jpg"          
 
 %section.testing
   .container

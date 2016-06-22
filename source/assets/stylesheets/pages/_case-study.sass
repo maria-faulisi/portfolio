@@ -3,13 +3,18 @@
     margin-left: 20px
 
     +media-xs
-      margin-left: 0px
+      margin-left: 0px      
 
 .case-study-hero
   position: relative
   height: 215px
   background-position: center
   background-size: cover
+  background-repeat: no-repeat
+
+  +media-xs
+    height: 500px
+    background-position: right
 
   +media-sm
     height: 479px
@@ -20,18 +25,30 @@
     +transform(translateY(-50%))
     padding-left: 60px
 
+    +media-xs
+      padding-left: 20px
+
   h1
-    font-size: 95px
+    font-size: 65px
     color: $color-mortar
     font-weight: $font-weight-bold
     letter-spacing: 0px
     margin: 0
 
+    +media-xs
+      font-size: 35px
+
   h2
-    font-size: 45px
+    font-size: 35px
     color: $color-dusty-gray
     letter-spacing: 0px
-    margin-top: -8px
+    margin-top: -13px
+    margin-left: 20px
+
+    +media-xs
+      font-size: 25px
+      margin-top: 0
+      color: $color-tundora
 
   h3    
     color: $color-mortar
@@ -46,18 +63,21 @@
 
 .work-stats-and-deliverables
   background-color: $color-gallery
-  padding-top: 40px
+  padding-top: 53px
   padding-bottom: 64px
 
   h3
-    margin-top: 33px
+    margin-top: 20px
+
+    span
+      font-size: 22px
 
   .deliverables
-    font-size: 26px
+    font-size: 22px
     font-weight: $font-weight-regular
     color: #534254
     letter-spacing: 0px
-    line-height: 39px
+    line-height: 36px
     margin: 0
 
 .the-challenge
@@ -65,13 +85,27 @@
   padding-top: 134px
   padding-bottom: 133px
 
+  +media-xs
+    padding-top: 60px
+    padding-bottom: 60px
+
   .challenge-text
     margin-top: 70px
+
+    +media-xs
+      margin-top: 0
 
     p
       color: white
       margin-top: 19px
       margin-left: 20px
+
+      +media-xs
+        margin: 19px 0
+        margin-bottom: 40px
+
+  img
+    width: 100%
 
 .case-study-about
   padding-top: 60px
@@ -84,159 +118,139 @@
   h3
     margin-bottom: 55px
 
+    +media-xs
+      margin-bottom: 19px
+
   .overview-paragraph
     font-size: 22px
     color: $color-dove-gray    
+    white-space: pre-wrap
 
     +media-md
+      white-space: normal
       +column-count(2)
       +column-span(5)
       +column-gap(40px)
 
 .user-personas
-  padding-top: 60px
-  padding-bottom: 80px
-
-  +media-sm
-    padding-top: 100px
-    padding-bottom: 132px  
-
   h3
     +media-xs
       margin-left: 20px
 
-  .container
-    +media-xs
-      margin: 0
-
-  .personas
+  .personas-and-text
     position: relative
-    overflow: auto
-    +display(flex)
+    overflow: hidden
 
     +media-xs
-      +align-items(center)
-      +justify-content(space-around)
+      padding-bottom: 80px
 
-    +media-md
-      display: block
+  .persona-left,
+  .persona-right
+    position: absolute
+    display: inline-block
 
     a
-      position: relative
-      display: block
-      overflow: auto
-
-  .personas-and-text
-    margin-top: 42px
-
-    +media-sm
-      margin-top: 75px
-
-    .persona-link-wrapper
-      width: 50%
-
-      +media-md
-        width: initial  
-
-      img
-        float: right
-
-        +media-xs
-          max-width: 150px 
-
-        +media-sm
-          float: left
-
-    .persona-link-wrapper:last-of-type
-      img
-        float: left
-        
-        +media-sm
-          float: right
-
-  .persona-type-and-arrow
-    position: absolute    
-    top: 50%
-    +transform(translateY(-50%))
-    width: 150px
-
-    +media-xs
-      display: none
-
-    +media-sm
-      display: initial
+      display: inline-block
 
     img
-      vertical-align: middle
+      +media-sm
+        height: 200px
 
-    h4
-      display: inline-block
-      font-size: 22px
-      font-weight: $font-weight-semi-bold
-      line-height: 27px
-      color: $color-mortar
+      +media-md
+        height: 400px
 
-      &:visited
-        color: $color-mortar
+      +media-lg
+        height: 586px
 
-    &.primary
-      right: 0
+  .persona-left
+    +media-xs
+      display: inline
+      position: relative
 
-      img
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-
-        +media-sm
-          left: 5px
-
-        +media-lg
-          left: -21px
-
-      h4
-
-        +media-sm
-          padding-left: 35px
-
-        +media-lg
-          padding-left: 10px
-
-    &.secondary
-      left: 0
+      a
+        width: 50%
+        display: inline-block
 
       img
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-
-        +media-sm
-          right: 0px
-
-        +media-lg
-          right: -21px
-
-      h4        
-        +media-sm
-          padding-right: 35px
-
-        +media-md
-          text-align: right
-
-        +media-lg
-          padding-right: 10px
-
-  .persona-text
-    margin-top: 50px
-    padding: 0 20px
+        width: 100%
 
     +media-sm
-      padding: 0
+      left: 0
 
     +media-md
-      margin-top: 0
+      left: -175px
+
+    +media-lg
+      left: -195px
+
+  .persona-right
+    +media-xs
+      a
+        width: 100%
+
+      img
+        width: 100% 
+
+    +media-sm
+      right: initial
+      left: 0
+      top: 200px
+
+    +media-md
+      right: -175px
+      left: initial
+      top: initial
+
+    +media-lg
+      right: -195px
+
+  .persona-text
+    width: 100%
+    display: inline-block
+    float: left
+
+    +media-xs
+      display: block
+      position: relative
+      margin-top:  50px
+
+    +media-sm
+      height: 400px
+      padding-left: 200px
+      padding-right: 0
+
+    +media-md
+      padding-left: 225px
+      padding-right: 225px
+
+    +media-lg
+      height: 586px
+      padding-left: 391px
+      padding-right: 391px
+
+  .persona-text-inner
+    width: 80%
+    display: block
+    margin: 0 auto 
+
+    +media-sm
+      margin-top: 40px
+
+    +media-lg
+      margin-top: 115px 
+
+    h3
+      margin-left: 0
+
+      +media-xs
+        margin-bottom: 20px
+
+      +media-lg
+        margin-bottom: 30px
 
     p:nth-of-type(2)
-      margin-top: 20px
+      margin-top: 15px
+
 
 .testing
   padding-top: 60px
@@ -246,7 +260,7 @@
     padding-top: 100px
 
   h3
-    margin-bottom: 42px
+    margin-bottom: 19px
 
     +media-sm
       margin-bottom: 69px
@@ -344,6 +358,9 @@
 
 .feedback-text-and-img
   margin-top: 49px
+
+  +media-xs
+    margin-top: 19px
 
 .feedback-text
   margin-bottom: 50px
@@ -470,6 +487,10 @@
 .see-wf-in-action
   padding-top: 158px
   padding-bottom: 176px
+
+  +media-sm
+    padding-top: 225px
+    padding-bottom: 225px
 
   p
     font-size: 26px
