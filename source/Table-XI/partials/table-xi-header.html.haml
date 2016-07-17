@@ -8,7 +8,7 @@
 .restaurant-nav
   %ul.row
     =link_to 'Table-XI/floor.html', {relative: true} do 
-      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor'}"} Floor
+      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor' or current_page.data.tableInner == 'floor-3'}"} Floor
 
     %li{class: "col-xs-collapse-3"} Reservations
 
