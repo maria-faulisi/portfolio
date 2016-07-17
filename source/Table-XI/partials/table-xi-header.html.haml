@@ -7,9 +7,12 @@
 
 .restaurant-nav
   %ul.row
-    %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor'}"} 
-      =link_to 'Floor', 'Table-XI/floor.html', relative: true
+    =link_to 'Table-XI/floor.html', {relative: true} do 
+      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor'}"} Floor
+
     %li{class: "col-xs-collapse-3"} Reservations
-    %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'walk-in'}"} 
-      =link_to 'Walk-In', 'Table-XI/walk-in.html', relative: true
+
+    =link_to 'Table-XI/walk-in.html', {relative: true} do
+      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'walk-in'}"} Walk-In
+
     %li{class: "col-xs-collapse-3"} Admin
