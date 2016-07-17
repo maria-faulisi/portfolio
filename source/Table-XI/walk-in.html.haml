@@ -9,17 +9,18 @@ tableInner: "walk-in"
   .how-many
     %h3 How many people are in the party?
     %input{type: 'text', class: 'party-num', placeholder: '3'}
-    %a{href: '#', class: 'btn tbl-green submit'} Submit
+    %a{href: '#', class: 'btn tbl-green submit', id: 'walk-in-trigger'} Submit
 
-  .estimated-wait
-    %h3
-      Estimated wait time for a new party of 3:
-      %span 22 Minutes
+  .wait-details
+    .estimated-wait
+      %h3
+        Estimated wait time for a new party of 3:
+        %span 22 Minutes
 
-  .confirm-wait
-    %h4 Would the customer like to wait?
-    %a{href: '#', class: 'btn tbl-gray no-thx'} No Thanks.
-    %a{href: '#', class: 'btn tbl-green sure', 'data-toggle': 'modal', 'data-target': '#walkIn'} Sure!
+    .confirm-wait
+      %h4 Would the customer like to wait?
+      %a{href: '#', class: 'btn tbl-gray no-thx'} No Thanks.
+      %a{href: '#', class: 'btn tbl-green sure', 'data-toggle': 'modal', 'data-target': '#walkIn'} Sure!
 
 #walkIn.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
   .modal-dialog{:role => "document"}
@@ -35,4 +36,4 @@ tableInner: "walk-in"
           .modal-input-row            
             %input{type: 'text', placeholder: 'Party Size'}            
             %input{type: 'text', placeholder: 'Phone Number'}
-          %a{"data-dismiss" => "modal", :type => "button", class: 'btn tbl-green tbl-modal-close'} Submit  
+          = link_to 'Submit','/Table-XI/floor.html', relative: true, class: 'btn tbl-green tbl-modal-close'
