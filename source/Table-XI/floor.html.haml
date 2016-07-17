@@ -7,6 +7,8 @@ tableInner: "floor"
 
 .tables-wrapper
   .row.row-of-tables
+    .info-alert 
+      =image_tag "info-icon.svg"
     - counter = 0
     - data.floorOne.rows.each do |t|
       .table.col-xs-2{class: "#{t.tblColor} #{'blank' if t.tblBlank == 'true'}" "#{'col-xs-offset-1' if counter % 5 == 0}" }

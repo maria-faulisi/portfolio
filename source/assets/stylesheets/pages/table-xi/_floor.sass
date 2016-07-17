@@ -1,8 +1,25 @@
 .floor
   .row-of-tables
+    position: relative
     padding-top: 47px
     padding-bottom: 47px
     background-color: $color-gallery
+
+    .info-alert
+      position: absolute
+      top: 32px
+      right: 30px
+      height: 31px
+      width: 31px
+      background-color: $color-tundora
+      color: white
+      border-radius: 50%
+
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform(translate(-50%, -50%))
 
   .table
     position: relative
