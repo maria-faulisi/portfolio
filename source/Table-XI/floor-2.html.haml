@@ -1,0 +1,119 @@
+---
+title: "table-xi"
+tableInner: "floor-2"
+---
+
+= partial "Table-XI/partials/table-xi-header"
+
+.tables-wrapper
+  .row.row-of-tables
+    .info-alert 
+      =image_tag "info-icon.svg"
+    - counter = 0
+    - data.floorTwo.rows.each do |t|
+      - if(counter == 4)
+        %a{href: '#', 'data-toggle': 'modal', 'data-target': '#assignTbl'}
+          .table.col-xs-2{class: "#{t.tblColor} #{'blank' if t.tblBlank == 'true'}" "#{'col-xs-offset-1' if counter % 5 == 0}" }
+            - unless t.tblBlank
+              .table-inner{class: "#{'circle' if t.tblRound == 'true'}"}
+                .table-top
+                  .left
+                    %span #
+                    = t.tblNum
+                  .right
+                    = t.tblSeats
+                    = image_tag 'seats-people.png' 
+                .table-time
+                  %h3 
+                    = t.tblTime         
+                -if(t.tblReservation)
+                  %p.reservation
+                    = t.tblReservation
+                    Reservation
+                    = image_tag 'check.svg'
+              .table-border{class: "#{t.tblColor} #{'circle' if t.tblRound == 'true'}"}
+      - else
+        .table.col-xs-2{class: "#{t.tblColor} #{'blank' if t.tblBlank == 'true'}" "#{'col-xs-offset-1' if counter % 5 == 0}" }
+          - unless t.tblBlank
+            .table-inner{class: "#{'circle' if t.tblRound == 'true'}"}
+              .table-top
+                .left
+                  %span #
+                  = t.tblNum
+                .right
+                  = t.tblSeats
+                  = image_tag 'seats-people.png' 
+              .table-time
+                %h3 
+                  = t.tblTime         
+              -if(t.tblReservation)
+                %p.reservation
+                  = t.tblReservation
+                  Reservation
+                  = image_tag 'check.svg'
+            .table-border{class: "#{t.tblColor} #{'circle' if t.tblRound == 'true'}"}
+      - counter = counter +1
+
+.slide-up-section
+  = image_tag "hamburger.svg"
+
+#assignTbl.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        .tbl5-modal-inner
+          .tbl-5-details
+            %h4 Table #5
+            %h5 Server: Paulette
+            %h5 Seats: 4
+          .est-wait-time
+            %h4
+              Est Wait Time: 
+              %span Available Now
+        .combine-tbl
+          %h4 Combine Table
+          .fake-checkbox
+        .unassigned-header
+          %ul.unassigned-list
+            %li.unassigned-item
+              Party
+            %li.unassigned-item
+              Size
+            %li.unassigned-item
+              Type
+            %li.unassigned-item
+              Wait time
+        .unassigned-item-wrapper          
+          %ul.unassigned-list.ua-item-row
+            %li.unassigned-item
+              Faulisi
+            %li.unassigned-item
+              3
+            %li.unassigned-item
+              Walk
+            %li.unassigned-item
+              20:03
+          .unassigned-actions
+            =image_tag "envelope.svg", {class: 'envelope'}
+            %a{href: '#', class:'btn tbl-green tiny tiny-btn'} Assign
+            =image_tag "garbage.svg", {class: 'garbage'}
+
+        - 4.times do 
+          .unassigned-item-wrapper            
+            %ul.unassigned-list.ua-item-row
+              %li.unassigned-item
+                Smith
+              %li.unassigned-item
+                3
+              %li.unassigned-item
+                Walk
+              %li.unassigned-item
+                10:03
+            .unassigned-actions
+              =image_tag "envelope.svg", {class: 'envelope'}
+              %a{href: '#', class:'btn tbl-green tiny tiny-btn'} Assign
+              =image_tag "garbage.svg", {class: 'garbage'}            
+
+        .tbl5-footer
+          = link_to 'Cancel','', relative: true, class: 'btn tbl-gray tbl5-modal', 'data-dismiss': 'modal'
+          = link_to 'Save','/Table-XI/floor-3.html', relative: true, class: 'btn tbl-green tbl5-modal'

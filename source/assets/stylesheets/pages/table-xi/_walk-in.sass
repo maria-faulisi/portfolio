@@ -64,7 +64,8 @@
       padding: 12px 57px 11px 58px
 
 //bootstrap modal styling
-#walkIn
+#walkIn,
+#assignTbl
   .modal-content    
     top: 50%
     +transform(translate(-50%, -50%))
@@ -124,3 +125,111 @@
     right: 122px
     bottom: 82px
     +appearance(none)
+
+#assignTbl
+  h4,
+  h5
+    margin: 0
+
+  h5
+    font-size: 26px
+    color: $color-dusty-gray
+    letter-spacing: 0px
+    font-weight: $font-weight-semi-bold
+
+  .modal-content
+    text-align: left
+
+  .modal-body
+    height: auto
+    width: 785px
+    padding: 0
+
+    img.envelope
+      width: 41px
+      margin-right: 48px
+
+    img.garbage
+      width: 19px
+
+    .tiny-btn   
+      margin-right: 39px
+
+  .tbl5-modal-inner
+    background-color: $color-alabaster
+    padding: 40px 42px 24px 42px
+
+  .tbl-5-details,
+  .est-wait-time
+    display: inline-block
+
+  .est-wait-time
+    float: right
+
+    h4 span
+      display: block
+
+  .combine-tbl
+    padding: 24px 42px 27px 42px
+
+    h4
+      display: inline-block
+      margin-right: 20px
+
+    .fake-checkbox
+      display: inline-block
+      background: white
+      border: 3px solid $color-french-gray
+      height: 25px
+      width: 25px
+      vertical-align: sub
+
+  .unassigned-header
+    background-color: $color-gallery
+    padding: 12px 42px
+
+  .unassigned-list,
+  .unassigned-actions
+    display: inline-block
+
+  .unassigned-list
+    li
+      display: inline-block
+      font-size: 24px
+      color: $color-dusty-gray
+      letter-spacing: 0px
+
+      &:nth-of-type(1)
+        margin-right: 71px      
+      
+      &:nth-of-type(2)
+        margin-right: 45px
+
+      &:nth-of-type(3)
+        margin-right: 37px
+
+  .unassigned-item-wrapper
+    padding: 30px 42px
+    border-bottom: 2px solid $color-gallery
+
+    li
+      &:nth-of-type(2)
+        margin-right: 63px
+
+      &:nth-of-type(3)
+        margin-right: 40px      
+
+  .unassigned-actions
+    float: right
+
+    img
+      vertical-align: sub
+    
+  .tbl5-footer
+    text-align: right
+    padding-top: 39px
+    padding-bottom: 45px
+    padding-right: 42px
+
+    .tbl-green
+      margin-left: 15px
