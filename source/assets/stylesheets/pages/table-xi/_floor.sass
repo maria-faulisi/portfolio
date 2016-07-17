@@ -1,10 +1,13 @@
 .floor
   .row-of-tables
-    margin-top: 47px
+    padding-top: 47px
+    padding-bottom: 47px
+    background-color: $color-gallery
 
   .table
     position: relative
     margin-top: 40px 
+    height: 176px
 
     .table-inner
       position: relative
@@ -12,7 +15,51 @@
       height: 157px
       width: 157px
       margin: 0 auto
-      z-index: 9
+      text-align: center
+      z-index: 9   
+
+      margin: 0
+      position: absolute
+      top: 50%
+      left: 50%
+      +transform(translate(-50%, -50%))
+
+      .table-top
+        width: 77px
+        margin: 0 auto
+        margin-top: 13px
+        font-size: 20px
+        color: $color-dusty-gray
+        letter-spacing: 0px
+
+        span
+          margin-right: -4px
+
+        img
+          margin-left: -2px
+
+      h3
+        font-size: 35px
+        color: $color-dusty-gray
+        letter-spacing: 0px
+        line-height: 50px    
+
+      img
+        height: 15px
+
+
+      .reservation
+        position: absolute
+        left: 50%
+        bottom: 0
+        +transform(translateX(-50%))
+        width: 86px
+        margin: 0 auto
+        margin-bottom: 3px
+        font-size: 16px
+        color: $color-dusty-gray
+        letter-spacing: 0px
+        line-height: 17px
 
     .circle
       border-radius: 50%
@@ -42,3 +89,9 @@
       .table-inner
         background: none
         border: none
+
+  .slide-up-section
+    height: 76px
+    padding-top: 27px
+    text-align: center
+    background-color: $color-alto

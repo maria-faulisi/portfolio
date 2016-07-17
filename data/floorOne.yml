@@ -3,84 +3,84 @@ rows:
     tblSeats: '4'
     tblTime: '1:15'
     tblReservation: '7:00pm'
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '2'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '1:02'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '3'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:55'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '4'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:25'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'yellow'
     tblRound: 'true'
 
   - tblNum: '5'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:18'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'gray'
     tblRound: 'true'
 
   - tblNum: '6'
-    tblSeats: '4'
-    tblTime: ':15'
+    tblSeats: '2'
+    tblTime: 'Open'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'gray'
     tblRound: 'false'
 
   - tblNum: '0'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'true'
+    tblBlank: true
     tblColor: null
     tblRound: 'true'
 
   - tblNum: '7'
-    tblSeats: '4'
-    tblTime: ':15'
+    tblSeats: '2'
+    tblTime: '0:15'
     tblReservation: null      
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'green'
     tblRound: 'false'
 
   - tblNum: '0'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'true'
+    tblBlank: true
     tblColor: null
     tblRound: 'true'
 
   - tblNum: '8'
-    tblSeats: '4'
-    tblTime: ':15'
+    tblSeats: '2'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'yellow'
     tblRound: 'false'
 
   - tblNum: '9'
-    tblSeats: '4'
+    tblSeats: '2'
     tblTime: '1:15'
     tblReservation: '7:00pm'
     tblBlank:
@@ -89,72 +89,72 @@ rows:
 
   - tblNum: '0'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'true'
+    tblBlank: true
     tblColor: 
     tblRound: 'true'
 
   - tblNum: '10'
-    tblSeats: '4'
-    tblTime: ':15'
-    tblReservation: null
-    tblBlank: 'false'
-    tblColor: 'red'
+    tblSeats: '2'
+    tblTime: '0:33'
+    tblReservation: '6:30'
+    tblBlank: false
+    tblColor: 'yellow'
     tblRound: 'false'
 
   - tblNum: '0'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'true'
+    tblBlank: true
     tblColor: null
     tblRound: 'false'
 
   - tblNum: '11'
-    tblSeats: '4'
-    tblTime: ':15'
+    tblSeats: '2'
+    tblTime: '0:15'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'yellow'
     tblRound: 'false'
 
   - tblNum: '12'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '1:05'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '13'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '1:00'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '0'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:15'
     tblReservation: null      
-    tblBlank: 'true'
+    tblBlank: true
     tblColor: null
     tblRound: 'true'
 
   - tblNum: '14'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:45'
     tblReservation: null
-    tblBlank: 'false'
+    tblBlank: false
     tblColor: 'red'
     tblRound: 'true'
 
   - tblNum: '15'
     tblSeats: '4'
-    tblTime: ':15'
+    tblTime: '0:11'
     tblReservation: null
-    tblBlank: 'false'
-    tblColor: 'red'
+    tblBlank: false
+    tblColor: 'green'
     tblRound: 'true'
