@@ -61,6 +61,7 @@ activate :relative_assets
 
 set :relative_links, true
 
+page "/Table-XI/*", :layout => "tableXI"
 
 # Build-specific configuration
 configure :build do
@@ -78,5 +79,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
 end
 

@@ -1,0 +1,22 @@
+---
+title: "table-xi"
+tableInner: "walk-in"
+---
+
+= partial "Table-XI/partials/table-xi-header"
+
+.walk-in-wrapper
+  .how-many
+    %h3 How many people are in the party?
+    %input{type: 'text', class: 'party-num', placeholder: '3'}
+    %a{href: '#', class: 'btn tbl-green submit'} Submit
+
+  .estimated-wait
+    %h3
+      Estimated wait time for a new party of 3:
+      %span 22 Minutes
+
+  .confirm-wait
+    %h4 Would the customer like to wait?
+    %a{href: '#', class: 'btn tbl-gray no-thx'} No Thanks.
+    %a{href: '#', class: 'btn tbl-green sure'} Sure!
