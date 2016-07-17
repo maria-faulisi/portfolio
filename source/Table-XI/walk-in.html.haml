@@ -19,4 +19,20 @@ tableInner: "walk-in"
   .confirm-wait
     %h4 Would the customer like to wait?
     %a{href: '#', class: 'btn tbl-gray no-thx'} No Thanks.
-    %a{href: '#', class: 'btn tbl-green sure'} Sure!
+    %a{href: '#', class: 'btn tbl-green sure', 'data-toggle': 'modal', 'data-target': '#walkIn'} Sure!
+
+#walkIn.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %a.close{href: '#', "data-dismiss" => "modal", :type => "button", class: 'no-appearance'}
+          %span{"aria-hidden" => "true", class: 'tbl-modal-x'} ×
+        .tbl-modal-wi-inner
+          %h4 Waiting Party Information
+          .modal-input-row
+            %input{type: 'text', placeholder: 'First Name'}            
+            %input{type: 'text', placeholder: 'Last Name'}
+          .modal-input-row            
+            %input{type: 'text', placeholder: 'Party Size'}            
+            %input{type: 'text', placeholder: 'Phone Number'}
+          %a{"data-dismiss" => "modal", :type => "button", class: 'btn tbl-green tbl-modal-close'} Submit  

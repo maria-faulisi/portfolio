@@ -5,5 +5,4 @@ $(window).ready(function(){
     var modal = $(this);
     modal.find('.modal-body img').attr('src', "assets/images/wf-full/" + dataSrc);
   });
-
 });
