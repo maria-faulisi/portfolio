@@ -1,0 +1,18 @@
+---
+title: "table-xi"
+tableInner: "floor"
+---
+
+= partial "Table-XI/partials/table-xi-header"
+
+.tables-wrapper
+  .row.row-of-tables
+    - counter = 0
+    - data.floorOne.rows.each do |t|
+      .table.col-xs-2{class: "#{t.tblColor} #{'blank' if t.tblBlank == 'true'}" "#{'col-xs-offset-1' if counter % 5 == 0}" }
+        .table-inner{class: "#{'circle' if t.tblRound == 'true'}"}
+          = t.tblReservation
+        .table-border{class: "#{t.tblColor} #{'circle' if t.tblRound == 'true'}"}
+      - counter = counter +1 
+
+

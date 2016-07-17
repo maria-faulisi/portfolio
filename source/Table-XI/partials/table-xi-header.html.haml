@@ -1,0 +1,13 @@
+.restaurant-header
+  %h1 Restaurant Name
+  %ul.date-and-time
+    %li July 18, 2016
+    %li Current Time: 5:34pm
+    %li Avg Wait Time: 33min
+
+.restaurant-nav
+  %ul.row.container
+    %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor'}"} Floor
+    %li{class: "col-xs-collapse-3"} Reservations
+    %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'walk-in'}"} Walk-In
+    %li{class: "col-xs-collapse-3"} Admin

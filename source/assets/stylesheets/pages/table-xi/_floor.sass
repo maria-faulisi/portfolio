@@ -1,0 +1,44 @@
+.floor
+  .row-of-tables
+    margin-top: 47px
+
+  .table
+    position: relative
+    margin-top: 40px 
+
+    .table-inner
+      position: relative
+      background: white      
+      height: 157px
+      width: 157px
+      margin: 0 auto
+      z-index: 9
+
+    .circle
+      border-radius: 50%
+
+    .table-border
+      position: absolute
+      top: 50%
+      left: 50%
+      z-index: 1      
+      height: 168px
+      width: 168px
+      +transform(translate(-50%, -50%))
+
+      &.red
+        background-color: $color-mexican-red
+
+      &.gray
+        background-color: $color-dusty-gray
+
+      &.green
+        background-color: $color-vida-loca
+
+      &.yellow
+        background-color: $color-sunflower
+
+    &.blank
+      .table-inner
+        background: none
+        border: none

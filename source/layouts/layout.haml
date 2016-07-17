@@ -11,6 +11,10 @@
   = partial "layouts/partials/head"
 
   %body{class: current_page.data.title || 'page'}
-    = partial "layouts/partials/header"
-    = yield
-    = partial "layouts/partials/footer"
+    = unless(current_page.data.title == 'table-xi')
+      = partial "layouts/partials/header"
+      = yield
+      = partial "layouts/partials/footer"
+    
+    .table-xi-inner{class: current_page.data.tableInner}
+      = yield    
