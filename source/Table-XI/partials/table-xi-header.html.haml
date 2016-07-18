@@ -1,0 +1,21 @@
+.back
+  = link_to "Intro", 'Table-XI/intro.html'
+  = link_to "High Fidelity Mockup", 'Table-XI/mockup.html', {class: 'right'}
+.restaurant-header
+  %h1 Restaurant Name
+  %ul.date-and-time
+    %li July 18, 2016
+    %li Current Time: 5:34pm
+    %li Avg Wait Time: 33min
+
+.restaurant-nav
+  %ul.row
+    =link_to 'Table-XI/floor.html', {relative: true} do 
+      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'floor' or current_page.data.tableInner == 'floor-3'}"} Floor
+
+    %li{class: "col-xs-collapse-3"} Reservations
+
+    =link_to 'Table-XI/walk-in.html', {relative: true} do
+      %li{class: "col-xs-collapse-3 #{'active' if current_page.data.tableInner == 'walk-in'}"} Walk-In
+
+    %li{class: "col-xs-collapse-3"} Admin

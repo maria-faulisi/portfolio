@@ -1,0 +1,39 @@
+---
+title: "table-xi"
+tableInner: "walk-in"
+---
+
+= partial "Table-XI/partials/table-xi-header"
+
+.walk-in-wrapper
+  .how-many
+    %h3 How many people are in the party?
+    %input{type: 'text', class: 'party-num', placeholder: '3'}
+    %a{href: '#', class: 'btn tbl-green submit', id: 'walk-in-trigger'} Submit
+
+  .wait-details
+    .estimated-wait
+      %h3
+        Estimated wait time for a new party of 
+        %span 22 Minutes
+
+    .confirm-wait
+      %h4 Would the guest like to wait?
+      %a{href: '#', class: 'btn tbl-gray no-thx'} No Thanks.
+      %a{href: '#', class: 'btn tbl-green sure', 'data-toggle': 'modal', 'data-target': '#walkIn'} Sure!
+
+#walkIn.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-body
+        %a.close{href: '#', "data-dismiss" => "modal", :type => "button", class: 'no-appearance'}
+          %span{"aria-hidden" => "true", class: 'tbl-modal-x'} ×
+        .tbl-modal-wi-inner
+          %h4 Waiting Party Information
+          .modal-input-row
+            %input{type: 'text', placeholder: 'First Name'}            
+            %input{type: 'text', placeholder: 'Last Name'}
+          .modal-input-row            
+            %input{type: 'text', placeholder: 'Party Size'}            
+            %input{type: 'text', placeholder: 'Phone Number'}
+          = link_to 'Submit','/Table-XI/floor-2.html', relative: true, class: 'btn tbl-green tbl-modal-close'

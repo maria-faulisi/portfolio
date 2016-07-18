@@ -8,9 +8,8 @@
 %html{lang: 'en', class: 'no-js'}
   /<![endif]
       
-  = partial "layouts/partials/head"
+= partial "layouts/partials/head"
 
-  %body{class: current_page.data.title || 'page'}    
-    = partial "layouts/partials/header"
+%body{class: current_page.data.title || 'page'}
+  .table-xi-inner{class: current_page.data.tableInner}
     = yield
-    = partial "layouts/partials/footer"
