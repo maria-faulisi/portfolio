@@ -61,8 +61,6 @@ activate :relative_assets
 
 set :relative_links, true
 
-page "/Table-XI/*", :layout => "tableXI"
-
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -81,4 +79,3 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 
 end
-
