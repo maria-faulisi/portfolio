@@ -2,55 +2,40 @@ nav.main-nav
   position: fixed
   top: 0
   z-index: 99
-  background: white
   width: 100%
-  padding: 30px 0px
+  padding: 45px 0px 61px 0px
   box-shadow: 0px 2px 4px 0px rgba($color-gallery, 0.5)
 
-  .container
-    +media-xs
-      margin: 0
 
 .name-of-site,
 .nav-link-wrapper,
 .nav-link
   display: inline-block
-
-.name-of-site
-  +media-xs
-    position: relative
-    margin-left: 20px
-    z-index: 99   
+  
 
   .nav-name
-    font-weight: $font-weight-semi-bold
+    position: relative
+    color: $color-tundora
 
   .title
     font-weight: $font-weight-regular
 
-    +media-xs
-      display: none 
+
+  .phonetics
+    position: absolute
+    top: 25px
+    left: 50%
+    transform: translateX(-100%)
+    font-size: 14px
+    padding-right: 10px
 
 .navigation
   display: inline-block
   float: right
 
-  +media-xs
-    position: relative
-    width: 100%
-    margin-top: -33px
-    z-index: 1
-    background: white
-
 .hamburger-wrapper
   display: none
 
-  +media-xs
-    display: block
-    position: absolute
-    right: 20px
-    top: 7px
-    z-index: 99
 
   ul
     padding: 0
@@ -66,20 +51,7 @@ nav.main-nav
         margin: 5px 0
 
 .link-container
-  +media-xs
-    position: absolute
-    width: 110vw
-    height: 100vh
-    right: -110vw
-    background: white
-    z-index: 50
-    display: none
-    +transition()
-    +transition-duration(1s)
 
-    &.show-mobile-nav
-      display: block
-      right: -20px
 
 .nav-link-wrapper
   display: inline-block
@@ -87,27 +59,15 @@ nav.main-nav
   padding: 0
   margin: 0
 
-  +media-xs
-    position: absolute
-    top: 18%
-    left: 50%
-    +transform(translate(-50%))
 
 .nav-link
   margin-left: 45px
   padding-bottom: 2px
 
-  +media-xs
-    display: block
-    margin-left: 0
-    margin-top: 40px
-    text-align: center
 
   &.active
     border-bottom: 3px solid $color-gallery
 
-    +media-xs
-      padding-bottom: 10px
 
 .nav-link a
   text-decoration: none

@@ -1,21 +1,23 @@
-%nav.main-nav
-  .container
-    .name-of-site
+%nav.main-nav.bg-gray.container
+  .name-of-site
+    = link_to  "/index.html" do
       %h2.nav-name
         Maria Faulisi 
         %span.title 
           | UX Designer
+        %span.phonetics
+          Fah-lee-see
 
-    .navigation
-      .hamburger-wrapper
-        %ul
-          %li.hamburger-line
-          %li.hamburger-line
-          %li.hamburger-line
-      .link-container
-        %ul.nav-link-wrapper
-          %li.nav-link{class: "#{'active' if current_page.url == '/'}"}
-            = link_to "home", "/index.html"
-          %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
-            = link_to "work", "/case-study.html", relative: true
-            
+  .navigation
+    .hamburger-wrapper
+      %ul
+        %li.hamburger-line
+        %li.hamburger-line
+        %li.hamburger-line
+    .link-container
+      %ul.nav-link-wrapper
+        %li.nav-link
+          %a Projects
+        %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
+          = link_to "contact", "/case-study.html", relative: true
+          
