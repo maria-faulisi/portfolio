@@ -1,0 +1,469 @@
+---
+title: "ShedWool"
+---
+
+.container
+  %section.project-details
+    .project-details-inner
+      %h1 ShedWool project
+      %h3
+        February 2017
+        %span 
+          Role: UX Designer
+        %span
+          Project timeframe: 3 weeks
+  
+  %section.timeline
+    .timeline
+      %hr.timeline-hr
+      .timeline-item
+        .timeline-number
+          0.0
+        .timeline-header.uppercase
+          project background
+      .timeline-item
+        .timeline-number
+          1.0
+        .timeline-header.uppercase
+          starting research
+      .timeline-item
+        .timeline-number
+          1.1
+        .timeline-header.uppercase
+          testing takeaways
+      .timeline-item
+        .timeline-number
+          1.2
+        .timeline-header.uppercase
+          user interviews
+      .timeline-item
+        .timeline-number
+          1.3
+        .timeline-header.uppercase
+          interview takeaways
+      .timeline-item
+        .timeline-number
+          2.0
+        .timeline-header.uppercase
+          beginning to ideate
+      .timeline-item
+        .timeline-number
+          2.1
+        .timeline-header.uppercase
+          main concept takeaways
+      .timeline-item
+        .timeline-number
+          3.0
+        .timeline-header.uppercase
+          final design
+      .timeline-item
+        .timeline-number
+          4.0
+        .timeline-header.uppercase
+          moving forward
+      .timeline-item
+        .timeline-number
+          5.0
+        .timeline-header.uppercase
+          final reflection
+
+  %section.sw-project-bg
+    %h2.section-header.bold
+      0.0
+      %span.uppercase.light
+        project background
+    %p.two-col-p
+      ShedWool is an app born out of necessity when our client’s employer decided to stop using a similar app because of cost constraints. Most apps that solve for shift scheduling issues are subscription based. ShedWool is different because it is a free app that relies on ad revenue. This opens the platform up to small and large companies alike. Prior to apps like ShedWool, shift work employees and their managers had to create schedules the “old school” way. Tracking shifts using spreadsheets, paper print-outs with written corrections, Post-it notes with requests and planner “books” for future requests.
+      %br
+      When DESIGNATION was approached, ShedWool had already been available on iTunes and Google Play for five months.The client wanted to simplify its interface and emulate apps he enjoyed, like Twitter and Snapchat. The working version was built on wireframes he drew himself and featured functionality inspired by apps he used as an employee of a major Chicago restaurant chain. He realized he had to make ShedWool stand on its own. That’s where we came in.
+      %br
+      We were asked to talk with users and identify areas of improvement. The scope and focus area were up to us, but we were asked to target restaurant employees as the primary users. I was excited to work on an app that was already in the market, had users and was more robust than an MVP.
+    .tldr
+      %h2.h2-tldr
+        tl;dr:
+        %span.span-tldr
+          Redesign ShedWool a shift scheduling app currently on iTunes and Google Play.
+
+%section.sw-research.bg-gray
+  .container
+    %h2.section-header.bold
+      1.0
+      %span.uppercase.light
+        starting research
+    %p
+      We had a very specific target user, a client who was intimately familiar with the landscape and a product based on other successful products. I felt confident that we could move directly into usability testing.
+    .image-and-caption
+      .images.row
+        .img.col
+          =image_tag "shedwool/departments-page.png"
+        .img.col
+          =image_tag "shedwool/shift-block-page.png"
+        .img.col
+          =image_tag "shedwool/schedule-page.png"
+      .row
+        .caption
+          The application as it looked the first day we started the project. Shown here left to right (departments page, shift blocks page and schedule page).
+    %p
+      As we developed our test plan I walked through some of the tasks we intended to ask of the users. While I had never worked in a restaurant, or managed a team of shift work employees myself, I assumed I could navigate the app without issue. I was surprised to find that I was confused by the schedule view and the concept of shift blocks. Our tests integrated each of our assumptions. My assumption was that users would want to see a calendar view of some kind.
+
+    .image-and-text-row.row
+      .image-and-caption.col
+        .img
+          =image_tag "shedwool/testing-stas.jpg"
+        .caption
+          Usability testing the initial ShedWool app.
+      .text.col
+        %p
+          We tested five people from the restaurant industry, two managers and three waitstaff. Using the current app we asked users to complete a simple series of tasks. For management, we asked them to add a new employee, schedule that new employee and check the staff coverage for Valentine’s Day. For employees, we asked them to find the next day and time they were working, pick up a shift and request time off for a specific day. At the end of testing we asked retrospective questions around the overall function and expectations of the app.
+        
+%section.sw-testing-ta.container
+  %h2.section-header.bold
+    1.1
+    %span.uppercase.light
+      testing takeaways
+  .four-takeaways
+    .row
+      .one-takeaway.col
+        =image_tag "shedwool/alarm-clock-icon.svg"
+        %h3.h3-bold
+          Availability vs. Time off
+        %p
+          Users were confused between the two. Every tester clicked availability to request time off.
+      .one-takeaway.col
+        =image_tag "shedwool/check-icon.svg"
+        %h3.h3-bold
+          "Free" shift
+        %p
+          Needed context. Was free indicating the user was free that day, or that there was a free shift to pickup?
+    .row
+      .one-takeaway.col
+        =image_tag "shedwool/calendar-icon.svg"
+        %h3.h3-bold
+          Week View
+        %p
+          Users were confused by the vertical arrangement of days. Prefer a calendar view for dates.
+      .one-takeaway.col
+        =image_tag "shedwool/nav-icon.svg"
+        %h3.h3-bold
+          Navigation
+        %p
+          Duplication of navigation links between dashboard and hamburger menu confused users.
+  %p
+    The testing helped us validate some of our assumptions and uncover basic issues users had with the overall app. My assumption about the calendar view was validated; however shift blocks were commonplace for managers and were not an area of concern. We were ready for some in depth interviews.
+
+%section.sw-user-interviews.bg-gray
+  .container
+    %h2.section-header.bold
+      1.2
+      %span.uppercase.light
+        user interviews
+    %p
+      We spoke with four managers and five employees. Our questions for management focused around building schedules, common issues or pain points and specific app usage. Questions for employees focused on how they communicated their scheduling needs to managers, managed changes and general attitudes on the scheduling process. The interviews gave us a solid understanding of the shift schedule lifespan.
+
+    .shift-life-cycle
+      .cycle-image.row
+        .img.col-sm-3
+          =image_tag "shedwool/description.png"
+        .img.col-sm-3
+          =image_tag "shedwool/Stage-1.png"
+        .img.col-sm-3
+          =image_tag "shedwool/Stage-2.png"
+        .img.col-sm-3
+          =image_tag "shedwool/Stage-3.png"
+      .caption.row
+        Shift schedule journey map
+
+%section.sw-interview-takeaways.container
+  %h2.section-header.bold
+    1.3
+    %span.uppercase.light
+      interview takeaways
+  .img
+    =image_tag "shedwool/affinity-diagramming.jpg"
+  .row
+    .mgmt-takeaways
+      .header-and-icon
+        =image_tag "shedwool/speech-bubble-alt.svg"
+        %h2 Management takeaways:
+        %hr.timeline-hr
+  .row
+    .paragraph-and-bullets
+      %p
+        Managers were stressed early in the schedule lifecycle but they had ways to manage the situation. Typically, managers created set schedules for their long term career servers. It was the part-time staff they had to worry about and after schedules were made, they placed responsibility of finding scheduling changes on the servers. 
+      %ul.bulleted-list
+        %li Rely on employees to give accurate data before making schedule.
+        %li Stressed by gathering data and synthesizing into a schedule.
+        %li Try not to overwork employees.
+        %li Post schedules in advance whenever possible to avoid last minute conflicts.
+  .row
+    .employee-takeaways
+      .header-and-icon
+        =image_tag "shedwool/speech-bubbles-round.svg"
+        %h2 Employee takeaways:
+        %hr.timeline-hr
+  .row
+    .paragraph-and-bullets 
+      %ul.bulleted-list
+        %li Stressed when they are unsure about their schedule.
+        %li Prefer direct communication for immediacy.
+        %li Find remote communication frustrating.
+        %li Want more info on management decision making process.
+      %p
+        For employees, finding resolutions to scheduling conflicts meant reaching out to one another and negotiating. Interviewees said negotiating in person during work was the best way to handle this. Face to face communication while at work allowed employees to review the most current version of the schedule, negotiate a swap and gain management approval quickly.
+  .row
+    .employee-takeaways
+      .header-and-icon
+        =image_tag "shedwool/app-icon-with-bubble.svg"
+        %h2 ShedWool takeaways:
+        %hr.timeline-hr
+  .row
+    .paragraph-and-bullets 
+      %ul.bulleted-list
+        %li Unnecessarily complex.
+        %li Too many ways to access same functionality.
+        %li Verbiage is unclear
+        %li Employees won’t use all of the tools they are given.
+        %li User interface lacks recognition and taxes user’s memory.
+      %p
+        Having worked with small businesses in the past, I saw an opportunity for ShedWool to set itself apart by improving these actions. I considered the challenge facing ShedWool one of overcoming the issues that remote negotiating posed.
+
+%section.sw-focus-on-employees.bg-gray
+  .container 
+    %h2.light Focus on employee side
+    %p
+      The team discussed our options and decided to focus on the employee side of the app. We would focus specifically on shift actions such as swapping a shift, dropping a shift and picking up a shift. 
+
+%section.sw-beginning-to-ideate.container
+  %h2.section-header.bold
+    2.0
+    %span.uppercase.light
+      beginning to ideate
+  .image-and-text-row.row
+    .text.col
+      %p
+        From my previous projects I had come to love concept testing as a great way to get early feedback on rough ideas. We spent one of our three weeks testing the current product and interviewing users. We agreed as a team to spend the second week testing concepts and refining them. We didn’t want to take a lot of valuable time crafting clickable prototypes and focusing heavily on interactions. During this week we went through three rounds of concept testing. Each round built on the previous and introduced a new flow.
+    .image-and-caption.col
+      .img
+        =image_tag "shedwool/whiteboard-wireframe.png"
+      .caption
+        Working together to sketch out a cohesive experience.
+
+  .round-one
+    %h2.h2-bold Round One
+    .row.paragraph-and-bullets
+      %p.col
+        For our first round of testing we focused on the shift schedule view. This would be the default screen a user saw after logging in, and it was the primary starting point for all shift action flows. This was also the best time to introduce our various navigation styles so we had plenty of time to iterate.
+      .bullets.col
+        %p We tested:    
+        %ul.bulleted-list
+          %li Menu type and options
+          %li Employee shift schedule view
+          %li How to pick up a shift flow
+    .image-and-caption
+      .images.row
+        .img.col
+          =image_tag "shedwool/r1-concept1.png"
+        .img.col
+          =image_tag "shedwool/r1-concept2.png"
+        .img.col
+          =image_tag "shedwool/r1-concept3.png"
+      .row
+        .caption.col
+          Round one concept sketches from left to right (concept 1, concept 2, concept3).
+
+    .icon-takeaways.row
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Bottom navigation
+        %p
+          Bottom navigation was universally favored by test participants.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Icons plus text
+        %p
+          Icons plus text gave users clarity on navigation items.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Playful
+        %p
+          Playful icon of a man in a hammock made app feel friendly.
+
+  .round-two
+    %hr.r2-hr-top
+    %h2.h2-bold Round Two
+    .row.paragraph-and-bullets
+      %p.col
+        Each team member iterated on their concept. The feedback I received on my concept was pretty positive. I made a few tiny tweaks to the wording on the pick up shift indicator which was the main pain point for users. 
+      .bullets.col
+        %p We tested:    
+        %ul.bulleted-list
+          %li Shift swap flow
+          %li Pick up shift changes
+          %li Shift schedule view updates
+    .image-and-caption
+      .images.row
+        .img.col
+          =image_tag "shedwool/r2-concept1.png"
+        .img.col
+          =image_tag "shedwool/r2-concept2.png"
+        .img.col
+          =image_tag "shedwool/r2-concept3.png"
+      .row
+        .caption.col
+          Round two concept sketches from left to right (concept 1, concept 2, concept3).
+
+    .icon-takeaways.row
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Week view
+        %p
+          Users liked choosing a shift to swap with from a list broken down by week.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Swap status
+        %p
+          Desire for visible list of swap status steps and confirmation of what step the swap was on.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Pick up shifts
+        %p
+          Picking up shift action should happen from within the schedule view.
+    %hr.r2-hr-bottom
+
+  .round-three
+    %h2.h2-bold Round Three
+    .row.paragraph-and-bullets
+      %p.col
+        Much of my first two concepts had received positive feedback. My iterations focused on the new concepts introduced with each round of testing. For the final round we were looking at the time off flow which had a completely different start point and series of screens. I hoped to learn the most about what worked for this flow.
+      .bullets.col
+        %p We tested:    
+        %ul.bulleted-list
+          %li Schedule view improvements
+          %li Drop shift flow
+          %li Time off flow
+          %li Time off view
+    .image-and-caption
+      .images.row
+        .img.col
+          =image_tag "shedwool/r3-concept1.png"
+        .img.col
+          =image_tag "shedwool/r3-concept2.png"
+        .img.col
+          =image_tag "shedwool/r3-concept3.png"
+      .row
+        .caption.col
+          Round three concept sketches from left to right (concept 1, concept 2, concept3).
+
+    .icon-takeaways.row
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Upcoming shift
+        %p
+          Positive reaction to viewing upcoming shift at a glance.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Total hours
+        %p
+          Users want to see  hours scheduled and worked.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Shift status
+        %p
+          Shift status from any view is important.
+    %hr.hr-takeaways
+    .icon-takeaways.row
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Month view
+        %p
+          Positive reaction to month view option.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Time off titles
+        %p
+          Titles for time off requests should be optional.
+      .icon-takeaway.col
+        =image_tag "shedwool/check-circle.svg"
+        %h3.h3-bold Shift view actions
+        %p
+          Initiating actions from shift view was useful.
+
+%section.sw-main-takeaways.bg-gray
+  .container
+    %h2.section-header.bold
+      2.1
+      %span.uppercase.light
+        main concept takeaways
+    .bullets.row
+      .col
+        %ul.bulleted-list
+          %li Integrate a full week view and a month view.
+          %li Give users request status at a glance.
+          %li Maintain the ability to request time off from within the app.
+      .col
+        %ul.bulleted-list
+          %li Users prefer to complete all shift related actions from within the specific shift.
+          %li Available pickup shifts should be integrated into the calendar views.
+          %li Include visibility of total hours scheduled/worked for the week.      
+
+%section.sw-main-takeaways.bg-gray
+  .container
+    %h2.section-header.bold
+      3.0
+      %span.uppercase.light
+        final design
+    .final-design-text-and-video.row
+      .final-design-text.col
+        %p
+          Many rounds of concept testing helped us solidify the areas we should focus on and how they should be presented. We busied ourselves with combining the best of what worked. 
+        %p
+          The final prototype integrates a week view, and allows users to initiate all shift actions from the schedule view. It displays available pickup shifts within the week view and integrates all actions from the shift itself. The time off page is clean and features a large CTA for new requests.
+        %p
+          As we ended our final days of the project, we tested the prototype to gauge its effectiveness. We tested two random users and made quick fixes before testing the final three. We asked prototype testers to complete the major employee shift actions.
+
+        .improvements
+          .improvement
+            %h2
+              Pickup shift
+              %span.percentage
+                85%
+              %span.faster
+                faster
+          =image_tag "shedwool/thumbs-up-icon.svg"
+          .improvement
+            %h2
+              Pickup shift
+              %span.percentage
+                85%
+              %span.faster
+                faster
+        %p
+          The current app didn’t have swap shift functionality. Testers enjoyed it and found it easy to use.
+      .final-design-video.col
+
+%section.sw-main-takeaways.bg-gray
+  .container
+    %h2.section-header.bold
+      4.0
+      %span.uppercase.light
+        moving forward
+    .row.paragraph-and-bullets
+      %p.col
+        Overall, I think the app would benefit from more testing of the schedule week view interaction. I’d suggest using real data from a few user schedules to make sure the space required is sufficient. Currently, the week view is tidy having only a single shift scheduled. But from the user interviews I know that there are edge cases where double shifts and open ended shifts are normal considerations. Once the employee side has been finalized, focusing on the manager side of the same interactions would be a natural next step in UX design and development.
+      .bullets.col
+        %p Our closing feedback to ShedWool suggested the following features to integrate in future versions: 
+        %ul.bulleted-list
+          %li Group messaging
+          %li Multiple employers single employee interface
+          %li In-app translations
+          %li Integration of digital schedule board
+          %li Paycheck tracking
+%section.sw-main-takeaways.container
+  %h2.section-header.bold
+    5.0
+    %span.uppercase.light
+      final reflection
+  %p
+    My final project with DESIGNATION was a positive one. I integrated lessons learned about concept testing and working as a team to draw out pages. Iterating using a fast and loose methodology positively affected our final concept. We were able to get to a cleaner better interaction without wasting a lot of time. Getting the concepts pinned down faster allowed my team to test more often and with greater impact.
+    %br
+    The client was happy with the progress we made. He felt that the interface we designed was visibly and functionally better than his competitors and from his current app which was based on those competitors. He felt that his app was overly complex and built using an engineer’s mindset. It was logical, but didn’t focus on usability. The final wireframes are cleaner and focus on minimizing the number of views. While the design itself does not look like the apps he wished to emulate, the changes made are at the heart of what he wanted most. 
