@@ -1,0 +1,305 @@
+---
+title: "Simple Slice"
+---
+
+.container
+  %section.project-details
+    .project-details-inner
+      %h1 Simple slice project
+      %h3
+        December 2016
+        %span 
+          Role: UX Designer
+        %span
+          Project timeframe: 4 weeks
+  
+  %section.timeline
+    .timeline
+      %hr.timeline-hr
+      .timeline-item
+        .timeline-number
+          0.0
+        .timeline-header.uppercase
+          the challenge
+      .timeline-item
+        .timeline-number
+          1.0
+        .timeline-header.uppercase
+          gaining insight
+      .timeline-item
+        .timeline-number
+          2.0
+        .timeline-header.uppercase
+          uncovering the problem
+      .timeline-item
+        .timeline-number
+          3.0
+        .timeline-header.uppercase
+          forming concepts
+      .timeline-item
+        .timeline-number
+          3.1
+        .timeline-header.uppercase
+          paper prototyping
+      .timeline-item
+        .timeline-number
+          3.2
+        .timeline-header.uppercase
+          prototyping takeaways
+      .timeline-item
+        .timeline-number
+          4.0
+        .timeline-header.uppercase
+          refining and testing
+      .timeline-item
+        .timeline-number
+          5.0
+        .timeline-header.uppercase
+          failing then improving
+      .timeline-item
+        .timeline-number
+          6.0
+        .timeline-header.uppercase
+          what i learned
+
+  %section.ss-the-challenge
+    %p
+      The city of Chicago website is an important resource for residents. It provides information on local officials, city council meetings and voting histories. Residents can find service information on permits and inspections and research city budget information. While the site acts as an always ready city employee, things could be better. Sites that provide a lot of information can be hard to navigate. This is why my team and I received the prompt to 
+      %span.semi-bold create a microsite for the city of Chicago. 
+      The site had to streamline access and clarify information listed above.
+
+    .image-and-caption.col
+      .row
+        .img.col
+          =image_tag "simpleslice/coc-homepage.png"
+      .row
+        .caption
+          The City of Chicago website homepage.
+
+%section.ss-insight.bg-gray
+  .container
+    %h2.section-header.bold
+      1.0
+      %span.uppercase.light
+        gaining insight
+    %p.semi-bold
+      Being diligent UX designers, we wanted the users to tell us which area to explore but initially assumed residents would want a microsite on government services or elected officials.
+
+    %p
+      We developed a series of questions with our assumptions in mind. We wanted to get people talking about their relationship with the city and how they felt about it. We inquired on the current city site, asked about government services and local officials, and posed open ended questions about what citizens want to know about the city. We armed ourselves with candy bars and smiles and headed to the Olgilvie Transportation center to conduct interviews.
+
+    %p
+      The city of Chicago is the third largest city in the United States. We had to make sure interviewees were as diverse as the population they represented. African American, Hispanic and Caucasian individuals of both genders were among our interviewees. We made audio recordings to capture all the insights and to allow us to be “present” during the interviews.
+
+    %p
+      This is the part where I tell you that we were wrong. We assumed government services and local official information would be important to residents, but our interviews contradicted those assumptions. The Individuals we interviewed cared about transparency. They didn’t trust the city and they wanted to keep an eye on it. Was there an area of the city that needed transparency more than any other?  Yes, to our surprise, the residents we interviewed wanted budget transparency.
+
+    .tldr
+      %h2.h2-tldr
+        tl;dr:
+        %span.span-tldr
+          Chicago residents wanted a microsite that increased budget transparency.
+
+%section.ss-the-problem.container
+  %h2.section-header.bold
+    2.0
+    %span.uppercase.light
+      uncovering the problem
+  %p
+    We focused on building a City of Chicago budget microsite. We looked at government budget sites and found a few interesting examples.
+  .checkbook-sites.row
+    .image-and-caption.col-6
+      .row
+        .img.col
+          =image_tag "simpleslice/ohio-checkbook.jpg"
+      .row
+        .caption
+          The state of Ohio's budget site.
+    .image-and-caption.col-6
+      .row
+        .img.col
+          =image_tag "simpleslice/checkbook-nyc.jpg"
+      .row
+        .caption
+          New york City's budget site.
+  %p
+    During domain research we learned that Chicago rates high for publishing budget data.  
+    %span.semi-bold If the City of Chicago is doing such a great job of publishing data, why don’t the residents agree?
+    We looked at the Office of Budget and Management page. 
+
+    .image-and-caption.col
+      .row
+        .img.col
+          =image_tag "simpleslice/office-business-mgmt.png"
+      .row
+        .caption
+          The City of Chicago's Office of Budget and Management page.
+
+  .where-was-the-data
+    %h2.semi-bold Where was the data?
+    %p
+      To navigate to the data users must complete the following steps:
+    %ol.numbered-list
+      %li Click Budget & Management under Chicago government
+      %li Click Budget Books under supporting information
+      %li Click Budget Ordinance - Appropriations
+
+    %p
+      Following the links leads you to a giant spreadsheet which users can filter and manipulate. Which is nice if they know what they're looking for.
+
+    .image-and-caption.col
+      .row
+        .img.col
+          =image_tag "simpleslice/city-spreadsheet.png"
+      .row
+        .caption
+          The City of Chicago raw budget data.
+
+    %p
+      It took me around 20 minutes to find the data I was searching for. I would have stopped and turned to Google if I didn't already know the data was there.
+    %p
+      Chicago publishes data along with an annual financial analysis. The analysis explains the raw budget data. But the financial analysis is in a separate file and uses a separate link to get to it. To review both the data and the analysis, users must navigate between the two.
+    %p
+      So it was true that the City of Chicago was publishing its budgetary data, but it was hard to find and even harder to grasp. As one of our interviewees stated:
+
+    %p.quote
+      “You have to be savvy to find this information. The city hides it, buries it in layers.”
+
+    %p
+      This insight led us directly to our problem statement.
+
+    %p.semi-bold
+      The city of Chicago is doing an excellent job of publishing raw budget data. However, residents must invest a lot of time and effort to organize and understand the various documents and how they relate to one another. How might we present city budget information in a way that gives the information context?
+
+%section.ss-forming-concepts.bg-gray
+  .container
+    %h2.section-header.bold
+      3.0
+      %span.uppercase.light
+        forming concepts
+
+    %p
+      Our next step was to begin ideating. We were on week two of four and needed to make some fast decisions on the form the microsite might take. We came up with 6 concepts and sketched them out. Each concept presented budget information by organizing it a different way. Our goal was to make information easier to find and understand.
+
+    .image-and-caption.col-10
+      .row.align-items-center
+        .img.col
+          =image_tag "simpleslice/concept-tests.jpg"
+      .row
+        .caption
+          One concept organized information by topics such as “Safety” and “Education”. Two concepts showed a heat map of the city and allowed users to see where money went. One concept attached budget information to news articles to show how the city spends money in relation to concerns like crime and infrastructure.
+    %p
+      We took the sketches out for concept testing and came away with some very useful feedback. 
+      %span.semi-bold
+        Residents wanted context.
+      They liked concepts which gave them an overview. We learned that residents identified themselves by neighborhood. They enjoyed seeing budget information 
+      %span.semi-bold
+        specific to the neighborhoods
+      where they lived. They want to compare money spent on their neighborhood versus other neighborhoods. For them, this could be a very 
+      %span.semi-bold
+        powerful tool to fight corruption,
+      proving or disproving links between privilege and resource allocation.
+
+%section.ss-paper-prototyping.container
+  %h2.section-header.bold
+    3.1
+    %span.uppercase.light
+      paper prototyping
+  %p
+    In our next round of ideation we took the feedback and developed three paper prototypes from it. The prototypes included neighborhood overviews, topic related organization and in depth budget information. We integrated these features to give context to the information. Information was related to the local area users cared about and gave them the tools to explore further.
+  
+  .paper-prototype-1
+    .row.prototype-imgs
+      .col-4
+        =image_tag "simpleslice/paper-1-left.png"
+      .col-4
+        =image_tag "simpleslice/paper-1-center.png"
+      .col-4
+        =image_tag "simpleslice/paper-1-right.png"
+    %h2.h2-bold Prototype 1
+    %p
+      The first prototype let the user enter a zip code or view the entire city budget. Users could toggle between a neighborhood and city view from all interior pages. More navigation led to budget information based on topic, department, division or category. These breakdowns are current data segments in the Chicago data portal.
+
+  .paper-prototype-2
+    .row.prototype-imgs
+      .col-4
+        =image_tag "simpleslice/paper-2-left.png"
+      .col-4
+        =image_tag "simpleslice/paper-2-center.png"
+      .col-4
+        =image_tag "simpleslice/paper-2-right.png"
+    %h2.h2-bold Prototype 2
+    %p
+      The second prototype used pie charts to give overviews. Topic breakdowns listed percentages and budget numbers. Users could click on a segment list item and drill in for more details.
+
+  .paper-prototype-3
+    .row.prototype-imgs
+      .col-4
+        =image_tag "simpleslice/paper-3-left.png"
+      .col-4
+        =image_tag "simpleslice/paper-3-center.png"
+      .col-4
+        =image_tag "simpleslice/paper-3-right.png"
+    %h2.h2-bold Prototype 3
+    %p
+      My prototype immediately listed the current city of Chicago budget total. It directed users to enter a zip code to get neighborhood specific information. I used simplified pie charts and bar graphs to stratify the spending breakdown. I wanted to diversify the way I displayed the data as an overview to make it more clear and concise. I wanted to gain insights on which visualizations worked better. My goal was to uncover any problems with the amount or type of data displayed.
+
+%section.ss-forming-concepts.bg-gray
+  .container
+    %h2.section-header.bold
+      3.2
+      %span.uppercase.light
+        prototyping takeaways
+    %p
+      The paper prototyping test results revealed something tricky about tests. Not all problems are found in a round of testing. During concept testing users indicated that they understood the topic based organization. But we failed to consider that each user would have different ideas on what budget data belonged under a given topic. For example, we asked the testers to find the annual budget for a program called Graffiti Blasters. Using the City of Chicago site as our guide, we placed the graffiti blaster budget under safety. The city of Chicago considers graffiti a safety concern. Users consider graffiti removal a matter of infrastructure or maintenance. The placement of the data confused users and they had a hard time finding the information.
+
+    %p
+      Furthermore, concept testing didn't uncover that users still found the information hard to interpret. One of our paper prototype testers understood the numbers themselves, but he didn’t understand what the numbers meant to him. We showed users how much graffiti removal costs, but it didn’t mean anything to them personally. The level of data granularity we provided seemed to confuse rather than clarify.
+
+    .tldr
+      %h2.h2-tldr
+        tl;dr:
+        %span.span-tldr
+          Users still found the information hard to interpret.
+
+%section.ss-refining.container
+  %h2.section-header.bold
+    4.0
+    %span.uppercase.light
+      refining and testing
+  %p
+    How could we present data users cared about in a way that gave it context? Our solution was to reduce the amount of data we would show. We removed topic categories and showed more concrete neighborhood-centric budget information. We wanted to show them a simple slice of the city budget. Their slice.
+
+  %p
+    We created a medium fidelity Axure prototype of Simple Slice which featured a search bar on the home page.
+    %span.semi-bold 
+      The idea was to allow users to type in a topic of interest and match it on the back end to departmental spending. We took this idea from the many government sites we had reviewed in our domain research. This eliminated potential errors in matching the data to user mental models.
+
+  .refined-prototype.row.col-10.offset-sm-1
+    .col-sm-6.refined-homepage
+      =image_tag "simpleslice/refined-homepage.jpg"
+    .col-sm-6.refined-homepage
+      =image_tag "simpleslice/chicago-public-library.jpg"
+
+  %p
+    We entered usability testing confident. We were getting close to our final product. Users found the mid-fidelity prototype easy to use. They were able to complete the required tasks and liked the types of budget data we presented. But they 
+    %span.semi-bold
+      didn't like that we had constrained the flow.
+
+%section.ss-improving.bg-gray
+  .container
+    %h2.section-header.bold
+      5.0
+      %span.uppercase.light
+        failing then improving
+    %p
+      We had presented information they cared about in a way they liked, but we didn’t let them explore it enough. For the first time since ideating and testing, users wanted to spend time on the site. That was good news. The bad news was, they couldn’t do it without returning again and again to the homepage to search a new topic. In our quest to simplify, we had over simplified!
+      %br
+      We adjusted our approach to include a more traditional homepage that explains the purpose of the site and gives the user a clear call to action. The navigation expanded to give users the ability to explore. The result is a microsite that uses cards to present data while reducing development overhead.
+
+    =image_tag "simpleslice/simple-slice.gif"
+
+%video{:src => "assets/videos/simple-slice-full.mp4", :controls => "1", :width => "100%", :height => "56.25%", :autoplay=> "1"}
+  
+  Your browser does not support the video tag.
+
