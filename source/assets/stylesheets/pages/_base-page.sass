@@ -7,11 +7,13 @@ body
   .project-details
     margin-top: 220px
 
-    h3
-      line-height: 31px
+    .project-details-inner
+      h3
+        font-weight: $font-weight-light
+        line-height: 31px
 
-      span
-        display: block
+        span
+          display: block
 
   .img
     overflow: auto
@@ -19,8 +21,14 @@ body
     img
       width: 100%
 
-  .bulleted-list
+  .bulleted-list,
+  .numbered-list
     font-weight: $font-weight-light
     color: $color-gray
     line-height: 31px
     font-size: 20px
+
+  p.quote
+    font-size: 32px
+    text-align: center
+    font-weight: $font-weight-semi-bold
