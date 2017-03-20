@@ -1,0 +1,100 @@
+.Home
+  nav.main-nav
+    background-color: white
+
+  .hero
+    height: 800px
+    position: relative
+
+  .cover 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    
+    .hi 
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      
+      color: #fff
+      
+      font-family: 'Roboto Slab', serif
+      font-size: 24px
+      line-height: 26px
+      text-align: center
+      
+      span 
+        color: #ff0
+        cursor: pointer
+        text-decoration: underline
+      
+      
+      em 
+        font-style: normal
+        
+        &.hidden 
+          display: none
+        
+  .tv 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    
+    .screen 
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 1
+      margin: auto
+      opacity: 0
+      transition: opacity .5s
+
+      &.active 
+        opacity: 1
+      
+  .hero-text
+    position: relative
+    z-index: 2
+    float: right
+    width: 30%
+    margin-right: 5%
+    margin-top: 97px
+    text-align: center  
+
+    .hi
+      font-size: 36px
+      font-weight: $font-weight-regular
+
+    p
+      font-size: 20px
+      color: $color-dune
+      text-align: left
+      white-space: pre-line
+
+    .cta-btn
+      display: inline-block
+      background: rgba(247,247,247,0.35)
+      border: 1px solid rgba(43,40,39,0.72)
+      font-size: 18px
+      color: rgba(43,40,39,0.72)
+      padding: 10px 33px
+
+  .h1-projects
+    display: block
+    font-family: $font-weight-light
+    font-size: 18px
+    color: $color-tundora
+
+  .project-detail
+    h2
+      font-size: 18px
+      color: $color-tundora
+      font-weight: $font-weight-semi-bold

@@ -2,5 +2,49 @@
 title: "Home"
 ---
 
-.hero
-  This is my homepage hero
+%section.hero
+  .cover
+    .tv
+      .screen.mute#tv
+  .hero-text
+    %p
+      %span.hi Hi
+      I’m Maria. I wear comfy shoes because I’ve traveled far to get where I am today. I’ve been a super serious fine art student, an account manager in a fortune 500 company and a developer with a very real taco addiction. Now as a designer, I have a skillset that makes me indispensable.
+    %p
+      All my experiences make me want to help users with theirs. I love creating design that’s straightforward, minimal, and easy to use. If you prefer those too, reach out, we’ll grab some tacos.
+
+    .cta-btn
+      Reach out
+
+%section.project-list
+  .container
+    .row
+      .col.offset-sm-2
+        %h1 
+          Projects
+          %span.h1-projects
+            10/2016 - 03/2017
+    .row
+      .project-timeline.col-sm-4.offset-sm-2
+        .project-list-nav
+          %hr.timeline-hr
+          .timeline-item
+            .timeline-number
+              4.0
+            .timeline-header.uppercase
+              shedwool
+          .timeline-item
+            .timeline-number
+              3.0
+            .timeline-header.uppercase
+              collaborate.biz
+          .timeline-item
+            .timeline-number
+              2.0
+            .timeline-header.uppercase
+              simple slice
+      .project-detail.col-sm-5
+        %h2.uppercase shedwool
+        %hr
+        %p
+          A shift scheduling app available on iTunes and Google Play stores. 
