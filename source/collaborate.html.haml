@@ -1,9 +1,9 @@
 ---
-title: "Collaborate.biz"
+title: "collaborate-biz"
 ---
 
 .container
-  %section.project-details
+  %section.project-details.col-sm-10.offset-1
     .project-details-inner
       %h1 Collaborate.biz project
       %h3
@@ -13,8 +13,8 @@ title: "Collaborate.biz"
         %span
           Project timeframe: 3 weeks
   
-  %section.timeline
-    .timeline
+  %section.timeline.row
+    .timeline.col-sm-10.offset-1
       %hr.timeline-hr
       .timeline-item
         .timeline-number
@@ -95,55 +95,60 @@ title: "Collaborate.biz"
           .timeline-header-text.uppercase
             final thoughts
           
-  %section.the-brief
+  %section.first-section.the-brief.col-sm-10.offset-1
     %h2.section-header.bold
       0.0
       %span.uppercase.light
         the brief
     %p.two-col-p
-      When my teammates and I met with Collaborate.biz the client was very forthcoming. He had been working on his concept for 2 years and the vision had changed a few times. Collaborate.biz pairs small business owners with each other to gain access to new clients and larger projects. The current state of the MVP focused on gathering information crucial to a good B2B match. The client wanted to set his product apart by providing quality matches based on a wider set of criteria. He needed to know what outcomes a user considered a good return on time invested, how he could foster continued and frequent engagement with the platform and whether or not users were interested in finding specific collaboration projects on the platform.
+      When my teammates and I met with Collaborate.biz the client was very forthcoming. He had been working on his concept for 2 years and the vision had changed a few times. Collaborate.biz pairs small business owners with each other to gain access to new clients and larger projects. The current state of the MVP focused on gathering information crucial to a good B2B match. 
+      %br
+      The client wanted to set his product apart by providing quality matches based on a wider set of criteria. He needed to know what outcomes a user considered a good return on time invested, how he could foster continued and frequent engagement with the platform and whether or not users were interested in finding specific collaboration projects on the platform.
     .tldr
       %h2.h2-tldr
         tl;dr:
         %span.span-tldr
           Collaborate.biz is an online B2B business partnership matching platform.
 
-%section.starting-research.bg-gray
+%section.starting-research.bg-gray.section
   .container
+    .row
+      .col-sm-10.offset-1
+        %h2.section-header.bold
+          1.0
+          %span.uppercase.light
+            starting research
+        %p
+          Before delving into user research we looked at the current state of the project. In our initial assessment of Collaborate.biz we theorized that the onboarding might be too long.
+        .image-and-caption.collab-start
+          .images.row
+            .img.col
+              =image_tag "collaborate/collaborate-start.png"
+          .row
+            .caption
+              The Collaborate.biz onboarding page on day one.
+        %p
+          It takes a lot of information to get a picture of how a business aligns with another, but a long scrolling list of text fields and inputs is off-putting. I was skeptical that users would take part without seeing examples of business matches. We assumed users would want to judge the quality of matches for themselves.
+
+%section.sme-interviews.container.section
+  .col-sm-10.offset-1
     %h2.section-header.bold
-      1.0
+      1.1
       %span.uppercase.light
-        starting research
-    %p
-      Before delving into user research we looked at the current state of the project. In our initial assessment of Collaborate.biz we theorized that the onboarding might be too long.
-    .image-and-caption
-      .images.row
-        .img.col
-          =image_tag "collaborate/collaborate-start.png"
-      .row
+        sme interviews
+    .image-and-text-row.row
+      .text.col-6
+        %p
+          The team and I kept these points in mind as we moved into the research phase of the project. We spoke with two SMEs, one is a director with the Chicago Small Business Administration, the other a VP of corporate development and innovation. 
+          %br
+          Our interview questions focused on the challenges small business owners face. We were interested in learning about the criteria they consider when seeking to collaborate with other businesses, identify pitfalls of collaboration, and discover how businesses currently form partnerships.
+      .image-and-caption.col-6
+        .img
+          =image_tag "collaborate/sme-interviews.png"
         .caption
-          The Collaborate.biz onboarding page on day one.
-    %p
-      It takes a lot of information to get a picture of how a business aligns with another, but a long scrolling list of text fields and inputs is off-putting. I was skeptical that users would take part without seeing examples of business matches. We assumed users would want to judge the quality of matches for themselves.
+          Creating the SME interview guide.
 
-%section.sme-interviews.container
-  %h2.section-header.bold
-    1.1
-    %span.uppercase.light
-      sme interviews
-  .image-and-text-row.row
-    .text.col
-      %p
-        The team and I kept these points in mind as we moved into the research phase of the project. We spoke with two SMEs, one is a director with the Chicago Small Business Administration, the other a VP of corporate development and innovation. 
-        %br
-        Our interview questions focused on the challenges small business owners face. We were interested in learning about the criteria they consider when seeking to collaborate with other businesses, identify pitfalls of collaboration, and discover how businesses currently form partnerships.
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/sme-interviews.png"
-      .caption
-        Creating the SME interview guide.
-
-%section.sme-takeaways.bg-gray
+%section.sme-takeaways.bg-gray.section
   .container
     %h2.section-header.bold
       1.2
@@ -164,7 +169,7 @@ title: "Collaborate.biz"
     %p.quote
       “It’s culture, their people, processes, product, customers, stakeholders.”
 
-%section.collab-competitors.container
+%section.collab-competitors.container.section
   %h2.section-header.bold
     1.3
     %span.uppercase.light
@@ -201,7 +206,7 @@ title: "Collaborate.biz"
           %li Reduced the time required to network.
           %li They focused on the quality our client was looking to emulate.
 
-%section.collab-users.bg-gray
+%section.collab-users.bg-gray.section
   .container
     %h2.section-header.bold
       1.4
@@ -269,7 +274,7 @@ title: "Collaborate.biz"
         %span.semi-bold Pam wanted warm referrals to fill her pipeline. 
         She was less picky than Brett. She felt comfortable trusting the matches she received from Collaborate.biz. She wanted warm referrals and a way to track them. She would pay for a platform that managed referrals she received and referrals she gave out.
 
-%section.collab-problem.container
+%section.collab-problem.container.section
   %h2.section-header.bold
     2.0
     %span.uppercase.light
@@ -280,7 +285,7 @@ title: "Collaborate.biz"
   %p.semi-bold
     Digital networking platforms save time, but the connections are not high in quality. Bad collaborations can damage reputations, destroy brands and cripple the bottom line. Resource-strapped businesses need a way to vet partners so they can reach objectives.
 
-%section.collab-ideation.bg-gray
+%section.collab-ideation.bg-gray.section
   .container
     %h2.section-header.bold
       3.0
@@ -343,7 +348,7 @@ title: "Collaborate.biz"
             %span.semi-bold insight into another business owner’s thought process.
             Answering questions demonstrates someone’s professionalism and can attract leads.
 
-%section.collab-concept-testing.container
+%section.collab-concept-testing.container.section
   %h2.section-header.bold
     4.0
     %span.uppercase.light
@@ -407,7 +412,7 @@ title: "Collaborate.biz"
         %span.semi-bold Testers didn’t want to have to filter forum posts.
         They wanted the platform to present them with content they cared about.
 
-%section.collab-referrals.bg-gray
+%section.collab-referrals.bg-gray.section
   .container
     %h2.section-header.bold
       5.0
@@ -447,7 +452,7 @@ title: "Collaborate.biz"
       %br
       A personal chef would receive referrals from all others in their group for catering. It’s as close to a guaranteed number of referrals as one could get. Exclusivity coupled with warm leads and a tracking feature would attract users who would pay for such features. That income would help Collaborate.biz become platform it aspired to be.
 
-%section.no-ideas.container
+%section.no-ideas.container.section
   %h2.section-header.bold
     6.0
     %span.uppercase.light
@@ -468,7 +473,7 @@ title: "Collaborate.biz"
     %span.semi-bold While our MVP would be similar to refer.com we didn’t consider it a product ending threat because the referral component of the product was only half of the picture. We were focusing on referrals to fund the development of the collaboration platform.
     Our proposed MVP integrated a robust profile which strategy-minded users would be interested in. If the profiles were robust enough, strategic users could treat Collaborate.biz as the go to source for vetting information. Once that was established, the client could focus on researching and developing the collaboration components.
 
-%section.collab-final.bg-gray
+%section.collab-final.bg-gray.section
   .container
     %h2.section-header.bold
       7.0
@@ -497,7 +502,7 @@ title: "Collaborate.biz"
       .caption
         Final prototype showing accepting and referring a business
 
-%section.final-thoughts.container
+%section.final-thoughts.container.section
   %h2.section-header.bold
     7.0
     %span.uppercase.light

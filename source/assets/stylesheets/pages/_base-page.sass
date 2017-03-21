@@ -17,12 +17,6 @@ body
         span
           display: block
 
-  .img
-    overflow: auto
-
-    img
-      width: 100%
-
   .bulleted-list,
   .numbered-list
     font-weight: $font-weight-light
@@ -45,25 +39,53 @@ body
 .timeline
   position: relative
   margin-top: 58px
-  border-bottom: 1px solid black
 
   .timeline-item
     position: relative
     display: inline-block
-    margin-right: 36px
+    margin-right: 42px
 
-    .timeline-number
-      display: inline-block
-      font-weight: $font-weight-semi-bold
+  .timeline-item:last-of-type
+    margin-right: 0
 
-    .timeline-header
-      height: 324px
-      margin-top: 4px
+  .timeline-number
+    display: inline-block
+    font-weight: $font-weight-semi-bold
 
-      .timeline-header-text
-        position: absolute
-        bottom: -21px
-        width: 300px
-        text-align: right
-        transform: rotate(-90deg)
-        transform-origin: top left
+  .timeline-header
+    height: 324px
+    margin-top: 4px
+
+    .timeline-header-text
+      position: absolute
+      bottom: -21px
+      width: 300px
+      text-align: right
+      transform: rotate(-90deg)
+      transform-origin: top left
+
+.section
+  padding-top: 110px
+  padding-bottom: 130px
+
+.section-header
+  margin-bottom: 44px
+
+.first-section
+  margin-top: 13px
+  padding-bottom: 130px
+
+.tldr
+  border: 1px solid gray
+  padding: 19px
+  margin-top: 69px
+
+.image-and-caption
+  .img
+    text-align: center
+    overflow: auto
+    width: 100%
+
+  .caption
+    font-size: 14px
+    color: $color-tundora
