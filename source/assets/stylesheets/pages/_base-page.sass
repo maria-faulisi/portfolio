@@ -1,10 +1,15 @@
 body
   overflow: auto
+  color: $color-gray
+  font-size: 18px
 
   .project-details
-    margin-top: 220px
+    margin-top: 86px
 
     .project-details-inner
+      h1
+        margin-bottom: 4px
+
       h3
         font-weight: $font-weight-light
         line-height: 31px
@@ -29,3 +34,36 @@ body
     font-size: 32px
     text-align: center
     font-weight: $font-weight-semi-bold
+
+  hr
+    &.timeline-hr
+      border: 0.5px solid $color-french-gray
+      position: absolute
+      width: 100%
+      top: 15px
+
+.timeline
+  position: relative
+  margin-top: 58px
+  border-bottom: 1px solid black
+
+  .timeline-item
+    position: relative
+    display: inline-block
+    margin-right: 36px
+
+    .timeline-number
+      display: inline-block
+      font-weight: $font-weight-semi-bold
+
+    .timeline-header
+      height: 324px
+      margin-top: 4px
+
+      .timeline-header-text
+        position: absolute
+        bottom: -21px
+        width: 300px
+        text-align: right
+        transform: rotate(-90deg)
+        transform-origin: top left
