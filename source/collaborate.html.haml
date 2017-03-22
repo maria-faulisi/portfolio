@@ -121,10 +121,8 @@ title: "collaborate-biz"
         %p
           Before delving into user research we looked at the current state of the project. In our initial assessment of Collaborate.biz we theorized that the onboarding might be too long.
         .image-and-caption.collab-start
-          .images.row
-            .img.col
-              =image_tag "collaborate/collaborate-start.png"
-          .row
+          .img
+            =image_tag "collaborate/collaborate-start.png"
             .caption
               The Collaborate.biz onboarding page on day one.
         %p
@@ -182,13 +180,13 @@ title: "collaborate-biz"
     .image-and-caption.col
       .img
         =image_tag "collaborate/competitor-matrix.jpg"
-      .caption
-        Competitor matrix.
+        .caption
+          Competitor matrix.
 
     .competitor-ends.row
       .the-high-end.col
         .end-header
-          .end-inner
+          .head-inner
             =image_tag "collaborate/diamond-icon.svg"
             %h2 The high end
           %hr.hr-competitor
@@ -201,7 +199,7 @@ title: "collaborate-biz"
             %li They focused on the quality our client was looking to emulate.
       .the-low-end.col
         .end-header
-          .end-inner
+          .head-inner
             =image_tag "collaborate/cent-icon.svg"
             %h2 The low end
           %hr.hr-competitor
@@ -360,167 +358,173 @@ title: "collaborate-biz"
               Answering questions demonstrates someone’s professionalism and can attract leads.
 
 %section.collab-concept-testing.container.section
-  %h2.section-header.bold
-    4.0
-    %span.uppercase.light
-      concept testing
-  %p
-    We developed three divergent concepts to test. Each concept incorporated some of the features we brainstormed. Our client supplied us with five small business owners to test from various industry backgrounds. The testers were shown each concept and asked to think aloud describing what tasks they could perform and how they felt about those tasks. Moderators controlled the flow users were shown to limit the focus to the concept and not the interaction.
-  .concept-and-image-right.row
-    .concept-text.col
-      %h2.semi-bold Concept 1
-      %p
-        %span.semi-bold Focused on basic interactions and creating a robust profile.
-        We tested profile reviews and a collaboration project application feature. This concept focused heavily on the business profile which was aimed at our strategy-minded persona. I thought it displayed the information gathered during onboarding in a thoughtful and clear manner. It demonstrated the payoff for a user who invested the time to complete the onboarding process well.
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/concept-profile.jpg"
-      .caption
-        Concpet 1 profile page
-  .concept-and-image-left.row
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/concept-dashboard.jpg"
-      .caption
-        Concept 2 dashboard
-    .concept-text.col
-      %h2.semi-bold Concept 2
-      %p
-        %span.semi-bold Focused on collaboration projects and visualizing vetting information.
-        We tested the featured wallflower, customizable dash and personality endorsements. This concept was more fleshed out than the first. Showing how the various platform features worked as a whole. It was presented in a simple card configuration which users appreciated.
-  .concept-and-image-right.row
-    .concept-text.col
-      %h2.semi-bold Concept 3
-      %p
-        %span.semi-bold Included the forum to drive user engagement and enhance the vetting process.
-        We tested featured wallflower and featured business concepts. This concept was the most information heavy which emphasized vetting, but made the presentation a little cramped. A few testers felt it was visually overwhelming.
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/concept-profile.jpg"
-      .caption
-        Concept 3 forum page
-  .collab-concept-takeaways
-    .takeaway-header
-      =image_tag "shedwool/speech-bubble-alt.svg"
-      %h2 Concept testing takeaways
-      %hr
-    %ol.numbered-list
-      %li 
-        Nearly all testers assumed business matches were for referrals. During our retrospective inquiry we asked the users about matches and collaboration. 
-        %span.semi-bold They indicated a need to differentiate between a collaboration match and a referral match to make the desired action clear.
-      %li 
-        Don’t show project matches. 
-        %span.semi-bold Users felt constrained by projects.
-        One tester in particular stated that concrete projects felt less like opportunity and more like applying for a job. She wanted to know what type of help businesses are looking for so she could design her own approach to working with them.
-      %li 
-        %span.semi-bold Show types of collaboration criteria.
-        Users indicated that they would have different criteria for different collaboration types. What they looked for in a referral-based relationship would be different from a strategic-based relationship. They need a way to distinguish between the two.
-      %li 
-        Reword the endorsements feature. Consider different ways of presenting this content. This feature was polarizing. Some testers loved it while others didn’t.
-        %span.semi-bold The testers who didn’t felt it was too similar to LinkedIn.
-      %li 
-        Include a forum but be clear about its purpose. Business profile page should show posts. Ensure posts & questions presented to users are relevant to their industry. 
-        %span.semi-bold Testers didn’t want to have to filter forum posts.
-        They wanted the platform to present them with content they cared about.
+  .col-sm-10.offset-1
+    %h2.section-header.bold
+      4.0
+      %span.uppercase.light
+        concept testing
+    %p
+      We developed three divergent concepts to test. Each concept incorporated some of the features we brainstormed. Our client supplied us with five small business owners to test from various industry backgrounds. The testers were shown each concept and asked to think aloud describing what tasks they could perform and how they felt about those tasks. Moderators controlled the flow users were shown to limit the focus to the concept and not the interaction.
+    .concept-and-image-right.row
+      .concept-text.col
+        %h2.semi-bold Concept 1
+        %p
+          %span.semi-bold Focused on basic interactions and creating a robust profile.
+          We tested profile reviews and a collaboration project application feature. This concept focused heavily on the business profile which was aimed at our strategy-minded persona. I thought it displayed the information gathered during onboarding in a thoughtful and clear manner. It demonstrated the payoff for a user who invested the time to complete the onboarding process well.
+      .image-and-caption.col
+        .img
+          =image_tag "collaborate/concept-profile.jpg"
+          .caption
+            Concpet 1 profile page
+    .concept-and-image-left.row
+      .image-and-caption.col
+        .img
+          =image_tag "collaborate/concept-dashboard.jpg"
+          .caption
+            Concept 2 dashboard
+      .concept-text.col
+        %h2.semi-bold Concept 2
+        %p
+          %span.semi-bold Focused on collaboration projects and visualizing vetting information.
+          We tested the featured wallflower, customizable dash and personality endorsements. This concept was more fleshed out than the first. Showing how the various platform features worked as a whole. It was presented in a simple card configuration which users appreciated.
+    .concept-and-image-right.row
+      .concept-text.col
+        %h2.semi-bold Concept 3
+        %p
+          %span.semi-bold Included the forum to drive user engagement and enhance the vetting process.
+          We tested featured wallflower and featured business concepts. This concept was the most information heavy which emphasized vetting, but made the presentation a little cramped. A few testers felt it was visually overwhelming.
+      .image-and-caption.col
+        .img
+          =image_tag "collaborate/concept-forum.jpg"
+          .caption
+            Concept 3 forum page
+    .collab-concept-takeaways
+      .takeaway-header
+        .head-inner
+          =image_tag "shedwool/speech-bubble-alt.svg"
+          %h2 Concept testing takeaways
+        %hr
+      %ol.numbered-list
+        %li 
+          Nearly all testers assumed business matches were for referrals. During our retrospective inquiry we asked the users about matches and collaboration. 
+          %span.semi-bold They indicated a need to differentiate between a collaboration match and a referral match to make the desired action clear.
+        %li 
+          Don’t show project matches. 
+          %span.semi-bold Users felt constrained by projects.
+          One tester in particular stated that concrete projects felt less like opportunity and more like applying for a job. She wanted to know what type of help businesses are looking for so she could design her own approach to working with them.
+        %li 
+          %span.semi-bold Show types of collaboration criteria.
+          Users indicated that they would have different criteria for different collaboration types. What they looked for in a referral-based relationship would be different from a strategic-based relationship. They need a way to distinguish between the two.
+        %li 
+          Reword the endorsements feature. Consider different ways of presenting this content. This feature was polarizing. Some testers loved it while others didn’t.
+          %span.semi-bold The testers who didn’t felt it was too similar to LinkedIn.
+        %li 
+          Include a forum but be clear about its purpose. Business profile page should show posts. Ensure posts & questions presented to users are relevant to their industry. 
+          %span.semi-bold Testers didn’t want to have to filter forum posts.
+          They wanted the platform to present them with content they cared about.
 
 %section.collab-referrals.bg-gray.section
   .container
-    %h2.section-header.bold
-      5.0
-      %span.uppercase.light
-        focus on referrals
-    %p
-      After synthesizing all of our insights we could start making recommendations. We looked at what each of the personas wanted. How were their wants similar and how were they divergent? What path could we develop to increase the user base and monetize it?=image_tag "collaborate/venn-diagram.png"
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/venn-diagram.png"
-      .caption
-        Venn diagram showing user wants for collaborate.biz
-    %p
-      We presented the following recommendations for the MVP:
+    .col-sm-10.offset-1
+      %h2.section-header.bold
+        5.0
+        %span.uppercase.light
+          focus on referrals
+      %p
+        After synthesizing all of our insights we could start making recommendations. We looked at what each of the personas wanted. How were their wants similar and how were they divergent? What path could we develop to increase the user base and monetize it?=image_tag "collaborate/venn-diagram.png"
+      .image-and-caption.col
+        .img
+          =image_tag "collaborate/venn-diagram.png"
+        .caption
+          Venn diagram showing user wants for collaborate.biz
+      %p
+        We presented the following recommendations for the MVP:
 
-    .recommendations.row
-      .recommendation.col
-        %h3.semi-bold 1. Exclusive Referrals
-        %p
-          Focus on an exclusive referral group which limits membership of similar businesses adds value.
-      .recommendation.col
-        %h3.semi-bold 2. Quick Referral Share
-        %p
-          Time is money. Make sure it’s quick and easy to refer others. Fast referrals will keep users engaged with the platform.
-    .recommendations.row
-      .recommendation.col
-        %h3.semi-bold 3. Increased Profile Info
-        %p
-          Strategy-minded users do a lot of research. Keep them engaged by offering as much information as possible within Collaborate.biz.
-      .recommendation.col
-        %h3.semi-bold 4. Two Match Types
-        %p
-          Users need to input match requirements for the two different collaboration types. Inputs and outputs may be different. Show which type a matched business falls under.
-    %p
-      %span.semi-bold During user interviews we discovered that users were looking for steady referrals.
-      Members of competitors like BNI are the only member in the group to offer their product or service. That generates more and better leads.
-      %br
-      A personal chef would receive referrals from all others in their group for catering. It’s as close to a guaranteed number of referrals as one could get. Exclusivity coupled with warm leads and a tracking feature would attract users who would pay for such features. That income would help Collaborate.biz become platform it aspired to be.
+      .recommendations.row
+        .recommendation.col
+          %h3.semi-bold 1. Exclusive Referrals
+          %p
+            Focus on an exclusive referral group which limits membership of similar businesses adds value.
+        .recommendation.col
+          %h3.semi-bold 2. Quick Referral Share
+          %p
+            Time is money. Make sure it’s quick and easy to refer others. Fast referrals will keep users engaged with the platform.
+      .recommendations.row
+        .recommendation.col
+          %h3.semi-bold 3. Increased Profile Info
+          %p
+            Strategy-minded users do a lot of research. Keep them engaged by offering as much information as possible within Collaborate.biz.
+        .recommendation.col
+          %h3.semi-bold 4. Two Match Types
+          %p
+            Users need to input match requirements for the two different collaboration types. Inputs and outputs may be different. Show which type a matched business falls under.
+      %p
+        %span.semi-bold During user interviews we discovered that users were looking for steady referrals.
+        Members of competitors like BNI are the only member in the group to offer their product or service. That generates more and better leads.
+      %p
+        A personal chef would receive referrals from all others in their group for catering. It’s as close to a guaranteed number of referrals as one could get. Exclusivity coupled with warm leads and a tracking feature would attract users who would pay for such features. That income would help Collaborate.biz become platform it aspired to be.
 
 %section.no-ideas.container.section
-  %h2.section-header.bold
-    6.0
-    %span.uppercase.light
-      no new ideas
-  %p
-    Collaborate.biz was onboard. Our client was willing to walk down this path with us and see where it led. Then midway through finalizing our final concept, the client found refer.com.
-  .image-and-caption.col
-    .img
-      =image_tag "collaborate/refer-screenshot.jpg"
-    .caption
-      Refer.com dashboard page.
-  %p
-    %span.semi-bold At first glance, refer.com was exactly what we planned on building.
-    The product is clean, friendly and professional. It incorporates referral teams and reminders. Their Engage Pro subscription offers referral tracking, message builders and more. The price point is $49 per month. Right in line with the $50-$100 monthly price our users said they’d be willing to pay.
-
-    We had less than a week left in our timeframe. We took a minute to gather our thoughts and reviewed refer.com to determine how it related to our recommendations for Collaborate.biz.
-
-    %span.semi-bold While our MVP would be similar to refer.com we didn’t consider it a product ending threat because the referral component of the product was only half of the picture. We were focusing on referrals to fund the development of the collaboration platform.
-    Our proposed MVP integrated a robust profile which strategy-minded users would be interested in. If the profiles were robust enough, strategic users could treat Collaborate.biz as the go to source for vetting information. Once that was established, the client could focus on researching and developing the collaboration components.
+  .col-sm-10.offset-1
+    %h2.section-header.bold
+      6.0
+      %span.uppercase.light
+        no new ideas
+    %p
+      Collaborate.biz was onboard. Our client was willing to walk down this path with us and see where it led. Then midway through finalizing our final concept, the client found refer.com.
+    .image-and-caption.col
+      .img
+        =image_tag "collaborate/refer-screenshot.jpg"
+        .caption
+          Refer.com dashboard page.
+    %p
+      %span.semi-bold At first glance, refer.com was exactly what we planned on building.
+      The product is clean, friendly and professional. It incorporates referral teams and reminders. Their Engage Pro subscription offers referral tracking, message builders and more. The price point is $49 per month. Right in line with the $50-$100 monthly price our users said they’d be willing to pay.
+    %p
+      We had less than a week left in our timeframe. We took a minute to gather our thoughts and reviewed refer.com to determine how it related to our recommendations for Collaborate.biz.
+    %p
+      %span.semi-bold While our MVP would be similar to refer.com we didn’t consider it a product ending threat because the referral component of the product was only half of the picture. We were focusing on referrals to fund the development of the collaboration platform.
+      Our proposed MVP integrated a robust profile which strategy-minded users would be interested in. If the profiles were robust enough, strategic users could treat Collaborate.biz as the go to source for vetting information. Once that was established, the client could focus on researching and developing the collaboration components.
 
 %section.collab-final.bg-gray.section
   .container
-    %h2.section-header.bold
-      7.0
-      %span.uppercase.light
-        final concept
-    .final-concept-imgs.row
-      .image-and-caption.col
+    .col-sm-10.offset-1
+      %h2.section-header.bold
+        7.0
+        %span.uppercase.light
+          final concept
+      .final-concept-imgs.row
+        .image-and-caption.col
+          .img
+            =image_tag "collaborate/final-homepage.jpg"
+            .caption
+              Final prototype homepage
+        .image-and-caption.col
+          .img
+            =image_tag "collaborate/final-onboarding.jpg"
+            .caption
+              Final prototype onboarding with navigation
+      %p
+        Our final design featured a landing page to better describe Collaborate.biz's purpose. Users wanted to see statistics on active users and points that highlight successes.
+      %p
+        We simplified on boarding giving detailed reasons for the information. After supplying the basic information users could continue without finishing. Dot navigation indicates how far a user is in the on boarding process.
+      %p
+        The referral process starts with an email to the referred business. After acceptance the end client receives an email introducing the referred business. The status of this flow is accessible from the referral log page.
+      .final-gif.image-and-caption.col
         .img
-          =image_tag "collaborate/final-homepage.jpg"
-        .caption
-          Refer.com dashboard page.
-      .image-and-caption.col
-        .img
-          =image_tag "collaborate/final-onboarding.jpg"
-        .caption
-          Refer.com dashboard page.
-    %p
-      Our final design featured a landing page to better describe Collaborate.biz's purpose. Users wanted to see statistics on active users and points that highlight successes.
-      %br
-      We simplified on boarding giving detailed reasons for the information. After supplying the basic information users could continue without finishing. Dot navigation indicates how far a user is in the on boarding process.
-      %br
-      The referral process starts with an email to the referred business. After acceptance the end client receives an email introducing the referred business. The status of this flow is accessible from the referral log page.
-    .image-and-caption.col
-      .img
-        =image_tag "collaborate/final-referrals.jpg"
-      .caption
-        Final prototype showing accepting and referring a business
+          =image_tag "collaborate/final-prototype.gif"
+          .caption
+            Final prototype showing accepting and referring a business
 
-%section.final-thoughts.container.section
-  %h2.section-header.bold
-    7.0
-    %span.uppercase.light
-      final thoughts
-  %p
-    Having reviewed the feedback from users, analyzed the competitive landscape and listened to our recommendations, the client decided change direction. In the end, this project became a practice in validating or invalidating a current product state. 
-    %br
-    Looking back I learned a lot. I learned the importance of outlining the UX process in depth with clients in the first meeting. I learned the importance of conducting extra competitive analysis after ideating and how to work with a decisive client who has definite ideas about the product and how it should be positioned. 
-    %br
-    From a design standpoint, I learned how effective and time saving it is to work as a group to outline the large elements of a page. We can together to flesh out the overall placement and function of elements before diverging to get the prototype finished. I used this practice in my final project at DESIGNATION and it helped us acheive a cohesive end result.
+%section.collab-final-thoughts.container.section
+  .col-sm-10.offset-1
+    %h2.section-header.bold
+      8.0
+      %span.uppercase.light
+        final thoughts
+    %p
+      Having reviewed the feedback from users, analyzed the competitive landscape and listened to our recommendations, the client decided change direction. In the end, this project became a practice in validating or invalidating a current product state. 
+    %p
+      Looking back I learned a lot. I learned the importance of outlining the UX process in depth with clients in the first meeting. I learned the importance of conducting extra competitive analysis after ideating and how to work with a decisive client who has definite ideas about the product and how it should be positioned. 
+    %p
+      From a design standpoint, I learned how effective and time saving it is to work as a group to outline the large elements of a page. We can together to flesh out the overall placement and function of elements before diverging to get the prototype finished. I used this practice in my final project at DESIGNATION and it helped us acheive a cohesive end result.
