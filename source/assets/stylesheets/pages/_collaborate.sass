@@ -1,41 +1,90 @@
 .collaborate-biz  
   .starting-research
-    img
-      width: 685px
-
     .collab-start
-      margin-top: 81px
-      margin-bottom: 89px
+      margin: 40px 0      
+
+      +media-md
+        margin-top: 81px
+        margin-bottom: 89px
+
+  .sme-interviews
+    .image-and-text-row
+      flex-direction: column-reverse
+
+      +media-lg
+        flex-direction: row
+
+    .image-and-caption
+      margin-top: 20px
+      margin-bottom: 25px
+
+      +media-lg
+        margin: 0
 
   .sme-takeaways
     .quote
-      margin-top: 61px
+      margin-top: 30px
+
+      +media-md
+        margin-top: 61px
 
   .collab-competitors
     .image-and-caption
+      display: none
       margin-top: 52px
+
+      +media-md
+        display: block
 
   .hr-competitor
     border: 1px solid $color-dusty-gray
-    width: 300px
-    margin: 28px 0px 30px 0px
+    width: 100%
+    margin: 15px 0
+
+    +media-md
+      margin: 28px 0px 30px 0px
+      width: 300px
 
   .competitor-ends
-    margin-top: 104px
+    margin-top: 50px
+
+    +media-md
+      margin-top: 104px
 
   .head-inner
     display: flex
     align-items: center
 
+    img
+      height: 30px
+
+      +media-md
+        height: initial
+
     h2
       display: inline-block
-      font-size: 24px
+      font-size: 20px
       color: $color-tundora
       font-weight: $font-weight-light
-      margin-left: 7px
+      margin-left: 10px
+
+      +media-md
+        margin-left: 7px
+        font-size: 24px
+
+  .the-high-end
+    margin-bottom: 40px
+
+    +media-md
+      margin-bottom: 0
 
   .bulleted-list
-    padding-right: 30px
+    +media-xs
+      font-size: 18px
+      padding-right: 0
+
+    +media-md
+      padding-right: 30px
 
 .collab-users
   .two-col-p
@@ -45,16 +94,25 @@
       margin: 26px 0
 
   .pre-personas
-    margin-top: 78px
+    margin-top: 20px
+
+    +media-md
+      margin-top: 78px
 
   .personas
-    margin-top: 78px
+    margin-top: 50px
 
-    .bulleted-list
-      // list-style-image:  url("#{asset-path('/images/collaborate/dash.svg', image)}")
+    +media-md
+      margin-top: 78px
 
   .persona
     text-align: center
+
+    img
+      width: 100%
+
+      +media-md
+        widows: initial
 
   .type
     span
@@ -63,49 +121,108 @@
       margin-bottom: 18px
       font-size: 20px
 
+  .bullet-group
+    margin-top: 25px
+
+    +media-md
+      margin-top: 0
+
   .bullets
     text-align: left
-    margin-top: 18px
+    margin-top: 30px
+
+    +media-md
+      margin-top: 18px
 
     li
       list-style-type: circle
 
+  .brett-wants,
+  .pam-wants
+    padding: 0 15px
+
+    +media-md
+      padding: 0
+
   .brett-wants
+    margin-top: 25px
+
+    +media-md
+      margin-top: 50px
+
+  .pam
     margin-top: 50px
 
+    +media-sm
+      margin-top: 0
+
   .pam-wants
-    margin-top: 40px
+    margin-top: 25px
+
+    +media-md
+      margin-top: 40px
 
 .collab-problem
   .section-header
-    margin-bottom: 79px
+    margin-bottom: 40px
+
+    +media-md
+      margin-bottom: 79px
 
   p:first-of-type
-    margin-top: 89px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 89px
 
   p:last-of-type
     margin-top: 29px
 
 .collab-ideation
   .image-and-text-row
+    margin: 40px 0
+
+  +media-md
     margin-top: 67px
-    margin-bottom: 85px
 
     img
       height: 330px
 
+    .image-and-bullets
+      padding: 0
+
+      +media-md
+        padding: 0 15px
+
     .text
-      padding-left: 46px
+      padding: 0
+
+      +media-md
+        padding: 0 15px
+        padding-left: 46px
 
   .paragraph-and-bullets
+    margin-top: 40px
+
+    +media-md
+      margin-top: 0
+
     p
       margin-bottom: 9px
 
   .strong-ideas
-    margin-top: 47px
+    margin-top: 40px
     text-align: center
 
+    +media-md
+      margin-top: 47px
+
   .strong-idea
+    margin-top: 40px
+
+    +media-md
+      margin-top: 0
+
     img
       width: 62px
       height: 62px
@@ -114,17 +231,24 @@
       margin: 14px 0
 
     p
+      padding: 0
       text-align: left
-      padding: 0 21px
+
+      +media-md
+        padding: 0 21px
 
   .second-idea-set
-    margin-top: 64px
+    +media-md
+      margin-top: 64px
 
 .collab-concept-testing
   .concept-and-image-right,
   .concept-and-image-left
+    margin-top: 60px
     align-items: center
-    margin-top: 90px
+
+    +media-md
+      margin-top: 90px
 
     .img
       text-align: left
@@ -132,21 +256,42 @@
     h2
       margin-bottom: 21px
 
+    .image-and-caption
+      margin-top: 40px
+
+      +media-md
+        margin-top: 0
+
   .concept-and-image-right
     &:first-of-type
-      margin-top: 108px
+      +media-md
+        margin-top: 108px
+
+  .concept-and-image-left
+    flex-direction: column-reverse
+
+    +media-md
+      flex-direction: row
 
 .collab-concept-takeaways
   margin-top: 94px
 
   .takeaway-header
     hr
+      margin: 15px 0
       border: 1px solid $color-dusty-gray
-      margin-top: 30px
-      margin-bottom: 40px
+
+      +media-md
+        margin-top: 30px
+        margin-bottom: 40px
 
   .numbered-list
-    padding: 0 35px 0 63px
+    padding: 0 15px
+    font-size: 18px
+
+    +media-md
+      padding: 0 35px 0 63px
+      font-size: 20px
 
     li
       margin-bottom: 20px
@@ -156,18 +301,29 @@
 
 .collab-referrals
   .section-header
-    margin-bottom: 62px
+    +media-md
+      margin-bottom: 62px
 
   .image-and-caption
-    margin-top: 86px
-    margin-bottom: 60px
+    display: none
+
+    +media-sm
+      display: block
+      margin-top: 86px
+      margin-bottom: 60px
 
   .recommendations
-    margin-top: 75px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 75px
 
     &:last-of-type
-      margin-top: 58px
-      margin-bottom: 99px
+      margin-top: 0
+
+      +media-md
+        margin-top: 58px
+        margin-bottom: 99px
 
   .recommendation
     text-align: center
@@ -176,8 +332,12 @@
       margin-bottom: 14px
 
     p
+      padding: 0
+      padding-bottom: 40px
       text-align: left
-      padding: 0 28px
+
+      +media-md
+        padding: 0 28px
 
   p:last-of-type
     margin-top: 20px
@@ -186,6 +346,10 @@
   .image-and-caption
     margin-top: 47px
     margin-bottom: 52px
+    padding: 0
+
+    +media-md
+      padding: 0 15px
 
   p
     margin-top: 20px
@@ -196,10 +360,22 @@
 
 .collab-final
   h2
-    margin-bottom: 76px
+    margin-bottom: 40px
+
+    +media-md
+      margin-bottom: 76px
 
   .final-concept-imgs
-    margin-bottom: 89px
+    margin-bottom: 40px
+
+    +media-md
+      margin-bottom: 89px
+
+  .onboarding-img
+    margin-top: 40px
+
+    +media-md
+      margin-top: 0
 
   p
     margin-bottom: 20px
@@ -208,7 +384,11 @@
       margin-bottom: 0
 
   .final-gif
-    margin-top: 89px
+    padding: 0
+    margin-bottom: 50px
+
+    +media-md
+      margin-top: 89px
 
 .collab-final-thoughts
   p

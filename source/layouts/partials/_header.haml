@@ -18,7 +18,14 @@
       .link-container
         %ul.nav-link-wrapper
           %li.nav-link
-            %a Projects
+            = link_to "projects", "#", {class: "test"}
+            %ul.dropdown
+              %li
+                = link_to "collaborate.biz", "/collaborate.html", relative: true
+              %li
+                = link_to "shedwool", "/shedwool.html", relative: true
+              %li
+                = link_to "simple slice", "/simple-slice.html", relative: true
           %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
             = link_to "contact", "/case-study.html", relative: true
             

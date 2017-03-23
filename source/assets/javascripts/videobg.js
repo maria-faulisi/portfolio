@@ -41,10 +41,8 @@ function onPlayerStateChange(e) {
 }
 
 function vidRescale(){
-
   var w = $(window).width()+200,
     h = $(window).height()+200;
-
   if (w/h > 16/9){
     tv.setSize(w, w/16*9);
     $('.tv .screen').css({'left': '0px'});
@@ -55,6 +53,9 @@ function vidRescale(){
 }
 
 $(window).on('load resize', function(){
-  vidRescale();
+  var bodyElement = $('body').hasClass('Home');
+  if(bodyElement == true){
+    vidRescale();
+  }  
 });
 

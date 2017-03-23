@@ -8,7 +8,10 @@ body
     padding-right: 0
 
   .project-details
-    margin-top: 86px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 86px
 
     .project-details-inner
       h1
@@ -29,9 +32,12 @@ body
     font-size: 20px
 
   p.quote
-    font-size: 32px
+    font-size: 20px
     text-align: center
     font-weight: $font-weight-semi-bold
+
+    +media-md
+      font-size: 32px
 
   hr
     &.timeline-hr
@@ -41,13 +47,20 @@ body
       top: 15px
 
 .timeline
+  display: none
   position: relative
   margin-top: 58px
+
+  +media-md
+    display: flex
 
   .timeline-item
     position: relative
     display: inline-block
     margin-right: 42px
+
+    +media-md
+      margin-right: 33px
 
   .timeline-item:last-of-type
     margin-right: 0
@@ -69,23 +82,41 @@ body
       transform-origin: top left
 
 .section
-  padding-top: 110px
-  padding-bottom: 130px
+  padding-top: 66px
+  padding-bottom: 64px
+
+  +media-md
+    padding-top: 110px
+    padding-bottom: 130px
 
 .section-header
-  margin-bottom: 44px
+  margin-bottom: 40px
+
+  +media-md
+    margin-bottom: 44px
 
 .first-section
-  margin-top: 13px
-  padding-bottom: 130px
+  margin-top: 38px
+  padding-bottom: 64px
+
+  +media-md
+    margin-top: 13px
+    padding-bottom: 130px
 
 .tldr
+  display: none
   border: 1px solid gray
   padding: 19px
   margin-top: 69px
 
+  +media-md
+    display: block
+
 .img
   text-align: center
+
+  img
+    width: 100%  
 
 .image-and-caption
   text-align: center
@@ -102,15 +133,30 @@ body
 
 .image-and-text-row
   .text
-    padding-right: 34px
+    +media-md
+      padding-right: 34px
 
     p:first-of-type
       margin-bottom: 26px
 
 .bullets
-  padding-left: 30px
+  margin-top: 40px
+
+  +media-md
+    margin-top: 0px
+    padding: 0 15px
+    padding-left: 30px
 
 .two-col-p
-  margin-top: 45px
-  column-count: 2
-  column-gap: 30px
+  margin-top: 0px
+
+  +media-md
+    margin-top: 45px
+    column-count: 2
+    column-gap: 30px
+
+  p:first-of-type
+    margin-bottom: 20px
+
+    +media-md
+      margin-bottom: 0

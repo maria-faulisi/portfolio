@@ -14,11 +14,17 @@ a
   color: $color-gray
 
 h1
-  font-size: 32px
+  font-size: 24px
   color: $color-tundora
 
+  +media-md
+    font-size: 32px
+
 h2
-  font-size: 24px
+  font-size: 20px
+
+  +media-md
+    font-size: 24px
 
   &.h2-bold
     font-weight: $font-weight-semi-bold
@@ -29,15 +35,24 @@ h2
 
 
 h3
-  font-size: 20px
+  font-size: 18px
+
+  +media-md
+    font-size: 20px
 
   &.h3-bold
     font-weight: $font-weight-semi-bold
 
 p
+  font-size: 18px
+  line-height: 31px
   font-weight: $font-weight-light
   max-width: 870px
   margin: 0 auto
+
+  +media-md
+    font-size: 20px
+    line-height: 1.5
 
 .bg-gray
   p,
@@ -46,10 +61,10 @@ p
 
 p,
 a
-  font-size: 20px
   padding: 0
 
 a
+  font-size: 20px
   text-decoration: none
 
   &:hover
