@@ -3,7 +3,7 @@ title: "Simple Slice"
 ---
 
 .container
-  %section.project-details.col-sm-10.offset-1
+  %section.project-details.col-lg-10.offset-lg-1
     .project-details-inner
       %h1 Simple slice project
       %h3
@@ -14,7 +14,7 @@ title: "Simple Slice"
           Project timeframe: 4 weeks
   
   %section.timeline.row
-    .timeline.col-sm-10.offset-1
+    .timeline.col-lg-10.offset-lg-1
       %hr.timeline-hr
       .timeline-item
         .timeline-number
@@ -71,7 +71,7 @@ title: "Simple Slice"
           .timeline-header-text.uppercase
             what i learned
 
-  %section.ss-the-challenge.first-section.col-sm-10.offset-1
+  %section.ss-the-challenge.first-section.col-lg-10.offset-lg-1
     %h2.section-header.bold
       1.0
       %span.uppercase.light
@@ -90,7 +90,7 @@ title: "Simple Slice"
 
 %section.section.ss-insight.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         1.0
         %span.uppercase.light
@@ -117,7 +117,7 @@ title: "Simple Slice"
             Chicago residents wanted a microsite that increased budget transparency.
 
 %section.section.ss-the-problem.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       2.0
       %span.uppercase.light
@@ -125,12 +125,12 @@ title: "Simple Slice"
     %p
       We focused on building a City of Chicago budget microsite. We looked at government budget sites and found a few interesting examples.
     .checkbook-sites.row
-      .image-and-caption.col-6
+      .image-and-caption.col-md-6
         .img
           =image_tag "simpleslice/ohio-checkbook.jpg"
           .caption
             The state of Ohio's budget site.
-      .image-and-caption.col-6
+      .image-and-caption.col-md-6
         .img
           =image_tag "simpleslice/checkbook-nyc.jpg"
           .caption
@@ -140,8 +140,8 @@ title: "Simple Slice"
       %span.semi-bold If the City of Chicago is doing such a great job of publishing data, why don’t the residents agree?
       We looked at the Office of Budget and Management page. 
 
-    .office-of-budget.row
-      .image-and-caption.col
+    .office-of-budget
+      .image-and-caption
         .img
           =image_tag "simpleslice/office-business-mgmt.png"
           .caption
@@ -159,8 +159,8 @@ title: "Simple Slice"
       %p
         Following the links leads you to a giant spreadsheet which users can filter and manipulate. Which is nice if they know what they're looking for.
 
-      .city-spreadsheet.row
-        .image-and-caption.col
+      .city-spreadsheet
+        .image-and-caption
           .img
             =image_tag "simpleslice/city-spreadsheet.png"
             .caption
@@ -185,7 +185,7 @@ title: "Simple Slice"
 
 %section.section.ss-forming-concepts.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         3.0
         %span.uppercase.light
@@ -213,7 +213,7 @@ title: "Simple Slice"
         proving or disproving links between privilege and resource allocation.
 
 %section.section.ss-paper-prototyping.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       3.1
       %span.uppercase.light
@@ -223,43 +223,46 @@ title: "Simple Slice"
     
     .paper-prototype-1
       .row.prototype-imgs
-        .img.col
+        .img.col-sm-4
           =image_tag "simpleslice/paper-1-left.png"
-        .img.col
+        .img.col-sm-4
           =image_tag "simpleslice/paper-1-center.png"
-        .img.col
+        .img.col-sm-4
           =image_tag "simpleslice/paper-1-right.png"
-      %h2.h2-bold Prototype 1
-      %p
-        The first prototype let the user enter a zip code or view the entire city budget. Users could toggle between a neighborhood and city view from all interior pages. More navigation led to budget information based on topic, department, division or category. These breakdowns are current data segments in the Chicago data portal.
+      .paper-info
+        %h2.h2-bold Prototype 1
+        %p
+          The first prototype let the user enter a zip code or view the entire city budget. Users could toggle between a neighborhood and city view from all interior pages. More navigation led to budget information based on topic, department, division or category. These breakdowns are current data segments in the Chicago data portal.
 
     .paper-prototype-2
       .row.prototype-imgs
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-2-left.png"
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-2-center.png"
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-2-right.png"
-      %h2.h2-bold Prototype 2
-      %p
-        The second prototype used pie charts to give overviews. Topic breakdowns listed percentages and budget numbers. Users could click on a segment list item and drill in for more details.
+      .paper-info
+        %h2.h2-bold Prototype 2
+        %p
+          The second prototype used pie charts to give overviews. Topic breakdowns listed percentages and budget numbers. Users could click on a segment list item and drill in for more details.
 
     .paper-prototype-3
       .row.prototype-imgs
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-3-left.png"
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-3-center.png"
-        .col-4
+        .img.col-sm-4
           =image_tag "simpleslice/paper-3-right.png"
-      %h2.h2-bold Prototype 3
-      %p
-        My prototype immediately listed the current city of Chicago budget total. It directed users to enter a zip code to get neighborhood specific information. I used simplified pie charts and bar graphs to stratify the spending breakdown. I wanted to diversify the way I displayed the data as an overview to make it more clear and concise. I wanted to gain insights on which visualizations worked better. My goal was to uncover any problems with the amount or type of data displayed.
+      .paper-info
+        %h2.h2-bold Prototype 3
+        %p
+          My prototype immediately listed the current city of Chicago budget total. It directed users to enter a zip code to get neighborhood specific information. I used simplified pie charts and bar graphs to stratify the spending breakdown. I wanted to diversify the way I displayed the data as an overview to make it more clear and concise. I wanted to gain insights on which visualizations worked better. My goal was to uncover any problems with the amount or type of data displayed.
 
 %section.section.ss-forming-concepts.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         3.2
         %span.uppercase.light
@@ -277,7 +280,7 @@ title: "Simple Slice"
             Users still found the information hard to interpret.
 
 %section.section.ss-refining.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       4.0
       %span.uppercase.light
@@ -291,9 +294,9 @@ title: "Simple Slice"
         The idea was to allow users to type in a topic of interest and match it on the back end to departmental spending. We took this idea from the many government sites we had reviewed in our domain research. This eliminated potential errors in matching the data to user mental models.
 
     .refined-prototype.row
-      .col.refined-homepage.refined
+      .refined-homepage.refined.col-md-6
         =image_tag "simpleslice/refined-homepage.jpg"
-      .col.refined-library.refined
+      .refined-library.refined.col-md-6
         =image_tag "simpleslice/chicago-public-library.jpg"
 
     %p
@@ -303,7 +306,7 @@ title: "Simple Slice"
 
 %section.section.ss-improving.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         5.0
         %span.uppercase.light
@@ -314,7 +317,7 @@ title: "Simple Slice"
         We adjusted our approach to include a more traditional homepage that explains the purpose of the site and gives the user a clear call to action. The navigation expanded to give users the ability to explore. The result is a microsite that uses cards to present data while reducing development overhead.
 
       .first-prototype
-        .image-and-caption.col
+        .image-and-caption
           .img
             =image_tag "simpleslice/simple-slice.gif"
             .caption
@@ -323,7 +326,7 @@ title: "Simple Slice"
       %p
         The site maintains a visual vernacular and emphasizes recognition over recall. Final user testing shows:
 
-      %ul.final-prototype-results.col-10.offset-1
+      %ul.final-prototype-results
         %li We reduced the time it took users to find the City of Chicago budget by 98.8%. 
         %li Reduced finding the year to date visitors to the Little Village Library by 57.5%. 
         %li Finding the name of the budget director decreased by 15.7%.
@@ -335,7 +338,7 @@ title: "Simple Slice"
         Moving forward, Simple Slice can improve the data visualizations. Icons and numbers illustrate the budget but lack sophistication. The site should inform users on how the budget works and emulate the impact of budget decisions. Comparison tools should expand information statewide and to the country as a whole.
 
 %section.section.ss-learned.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       6.0
       %span.uppercase.light

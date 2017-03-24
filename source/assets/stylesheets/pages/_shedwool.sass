@@ -259,7 +259,10 @@
     hr
       position: absolute
       left: 50%
-      transform: translateX(-50%)      
+      transform: translateX(-50%)
+
+      +media-xs-only
+        display: none      
 
       &.r2-hr-top
         top: 0
@@ -272,6 +275,7 @@
       margin: 24px 0
 
       +media-xs-only
+        width: 100%
         border-color: white
 
       +media-sm

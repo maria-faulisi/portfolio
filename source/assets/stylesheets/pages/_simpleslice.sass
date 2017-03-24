@@ -3,26 +3,54 @@
     margin-top: 59px
 
 .ss-the-problem
+  .section-header
+    span
+      +media-xs-only
+        display: block
+
   .checkbook-sites
     margin-top: 67px
     margin-bottom: 53px
 
+    .image-and-caption:first-of-type
+      margin-bottom: 60px
+
+      +media-md
+        margin-bottom: 0
+
   .office-of-budget
-    margin-top: 72px
-    margin-bottom: 98px
+    margin: 40px 0
+
+    +media-md
+      margin-top: 72px
+      margin-bottom: 98px
 
   .where-was-the-data
     p
       margin: 11px 0
 
-    ol
+    .numbered-list
+      font-size: 18px
       margin-bottom: 59px
+
+      +media-xs-only
+        margin-top: 20px
+        margin-bottom: 40px
+
+      +media-sm
+        font-size: 20px
   
   .city-spreadsheet
-    margin-top: 86px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 86px
 
   .leading-to-problem
-    margin-top: 59px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 59px
 
     p
       margin-bottom: 20px
@@ -31,14 +59,28 @@
       margin-top: 42px
       margin-bottom: 58px
 
+      +media-xs-only
+        margin: 40px 0
+
 .ss-forming-concepts
   .concept-test-group
-    margin: 83px 0
+    margin: 60px 0
+
+    +media-md
+      margin: 83px 0
+
+    +media-xs-only
+      display: none
 
 .ss-paper-prototyping
   .paper-prototype-1,
   .paper-prototype-2,
   .paper-prototype-3
+    +media-xs-only
+      display: flex
+      flex-direction: column-reverse
+      margin-top: 40px
+
     h2
       margin-bottom: 18px
 
@@ -46,8 +88,15 @@
       margin: 0
     
     .prototype-imgs
-      margin-top: 87px
-      margin-bottom: 59px
+      margin: 40px 0
+
+      +media-md
+        margin-top: 87px
+        margin-bottom: 59px
+
+    .img:nth-of-type(2)
+      +media-xs-only
+        margin: 60px 0
 
 
 .ss-insight,
@@ -63,19 +112,45 @@
 
 .ss-refining
   .refined-prototype
-    margin: 83px 0
+    margin: 40px 0
+
+    +media-md
+      margin: 83px 0
+
+    img
+      width: 100%
+      border: 1px solid $color-alto
 
   .refined
     text-align: center
 
+  .refined-library
+    margin-top: 60px
+
+    +media-md
+      margin-top: 0
+
 .ss-improving
   .first-prototype
-    margin-top: 83px
-    margin-bottom: 96px
+    margin: 60px 0
+
+    +media-md
+      margin-top: 83px
+      margin-bottom: 96px
 
   .final-prototype-results
+    max-width: 85%
     font-family: AvenirNext-DemiBold
-    font-size: 20px
+    font-size: 16px
     color: $color-tundora
-    margin-top: 38px
-    margin-bottom: 47px
+    margin: 40px 0
+
+    +media-xs-only
+      max-width: 100%
+      padding-left: 15px
+
+    +media-md
+      font-size: 20px
+      margin-top: 38px
+      margin: 0 auto
+      margin-bottom: 47px
