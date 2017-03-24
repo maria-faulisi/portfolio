@@ -8,10 +8,10 @@
             | UX Designer
           %span.phonetics
             Fah-lee-see
-
+    .nav-link.mobile-nav-trigger
+      = link_to "Menu", "#"
+      
     .navigation
-      .nav-link.mobile-nav-trigger
-        = link_to "Menu", "#"
       .mobile-nav
         .mobile-nav-inner
           .nav-link{class: "#{'active' if current_page.url == '/collaborate.html'}"}
