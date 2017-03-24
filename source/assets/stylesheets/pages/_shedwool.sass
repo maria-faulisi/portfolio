@@ -7,42 +7,90 @@
 
 .sw-research
   .current-state
-    margin-top: 87px
-    margin-bottom: 89px
+    margin: 40px 0
+
+    +media-md
+      margin-top: 87px
+      margin-bottom: 89px
+
+    .img:nth-of-type(2)
+      +media-xs-only
+        margin: 60px 0
+
+      +media-sm
+        margin: 0
 
   .image-and-text-row
     margin-top: 58px
 
   .text
-    padding-left: 38px
-    padding-right: 0
+    padding: 0
+
+    +media-md
+      padding-left: 38px
+      padding-right: 0
 
 .sw-testing-ta
   .four-takeaways
-    padding-left: 24px
+    +media-md
+      padding-left: 24px
 
   .one-takeaway
+    text-align: center
+
+    +media-lg
+      text-align: left
+
     img
-      float: left
-      margin-right: 36px
+      margin: 0 auto
+
+      +media-lg
+        float: left
+        margin-right: 36px
 
   .takeaway-text
-    display: inline
+    margin-top: 20px
+
+    +media-lg
+      margin-top: 0
 
     h3
-      display: inline-block
+      margin-bottom: 7px 
+
+      +media-lg
+        display: block
+        margin-bottom: 0
 
     p
-      max-width: 315px
       display: inline-block
+      max-width: 315px
+      margin-bottom: 40px
+
+      +media-sm
+        text-align: left
+
+      +media-lg
+        margin-bottom: 0
 
   .second-takeaway-set
-    margin-top: 62px
+    +media-lg
+      margin-top: 62px
 
   .takeaways-p
-    margin-top: 59px
+    +media-sm
+      margin-top: 20px
+
+    +media-lg
+      margin-top: 59px
 
 .sw-user-interviews
+  .shift-life-cycle
+    +media-xs
+      display: none
+
+    +media-md
+      display: block
+
   .cycle-image
     margin-top: 82px
 
@@ -51,17 +99,27 @@
 
 .sw-interview-takeaways
   .section-header
-    margin-bottom: 76px
+    margin-bottom: 40px
+    
+    +media-md
+      margin-bottom: 76px
 
   .image-and-caption
-    margin-bottom: 84px
+    margin-bottom: 50px
+
+    +media-md
+      margin-bottom: 84px
 
   .header-inner
     display: flex
     align-items: center
 
     img
+      height: 30px
       margin-right: 14px
+
+      +media-md
+        height: initial
 
     img,
     h2
@@ -69,11 +127,20 @@
 
   .interview-ta-hr
     border: 1px solid $color-french-gray
-    margin-top: 33px
-    margin-bottom: 30px
+    margin: 15px 0
+
+    +media-md
+      margin-top: 33px
+      margin-bottom: 30px
 
   .mgmt-takeaways,
   .shedwool-takeaways
+    .paragraph-and-bullets
+      margin: 0
+
+      +media-md
+        margin: 0 15px
+
     .bulleted-list
       padding-left: 0
 

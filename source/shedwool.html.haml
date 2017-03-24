@@ -3,7 +3,7 @@ title: "shedWool"
 ---
 
 .container
-  %section.project-details.col-sm-10.offset-1
+  %section.project-details.col-sm-10.offset-lg-1
     .project-details-inner
       %h1 ShedWool project
       %h3
@@ -14,7 +14,7 @@ title: "shedWool"
           Project timeframe: 3 weeks
   
   %section.timeline.row
-    .timeline.col-sm-10.offset-1
+    .timeline.col-lg-10.offset-1
       %hr.timeline-hr
       .timeline-item
         .timeline-number
@@ -77,7 +77,7 @@ title: "shedWool"
           .timeline-header-text.uppercase
             final reflection
 
-  %section.first-section.sw-project-bg.col-sm-10.offset-1
+  %section.first-section.sw-project-bg.col-lg-10.offset-lg-1
     %h2.section-header.bold
       0.0
       %span.uppercase.light
@@ -97,7 +97,7 @@ title: "shedWool"
 
 %section.section.sw-research.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         1.0
         %span.uppercase.light
@@ -106,43 +106,43 @@ title: "shedWool"
         We had a very specific target user, a client who was intimately familiar with the landscape and a product based on other successful products. I felt confident that we could move directly into usability testing.
       .image-and-caption.current-state
         .images.row
-          .img.col
+          .img.col-sm-4
             =image_tag "shedwool/departments-page.png"
-          .img.col
+          .img.col-sm-4
             =image_tag "shedwool/shift-block-page.png"
-          .img.col
+          .img.col-sm-4
             =image_tag "shedwool/schedule-page.png"
           .caption
-            The application as it looked the first day we started the project. Shown here left to right (departments page, shift blocks page and schedule page).
+            The application as it looked the first day we started the project.
       %p
         As we developed our test plan I walked through some of the tasks we intended to ask of the users. While I had never worked in a restaurant, or managed a team of shift work employees myself, I assumed I could navigate the app without issue. I was surprised to find that I was confused by the schedule view and the concept of shift blocks. Our tests integrated each of our assumptions. My assumption was that users would want to see a calendar view of some kind.
 
       .image-and-text-row.row.no-gutters
-        .image-and-caption.col
+        .image-and-caption.col-lg-6
           .img
             =image_tag "shedwool/testing-stas.jpg"
             .caption
               Usability testing the initial ShedWool app.
-        .text.col
+        .text.col-lg-6
           %p
             We tested five people from the restaurant industry, two managers and three waitstaff. Using the current app we asked users to complete a simple series of tasks. For management, we asked them to add a new employee, schedule that new employee and check the staff coverage for Valentine’s Day. For employees, we asked them to find the next day and time they were working, pick up a shift and request time off for a specific day. At the end of testing we asked retrospective questions around the overall function and expectations of the app.
         
 %section.section.sw-testing-ta.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       1.1
       %span.uppercase.light
         testing takeaways
     .four-takeaways
       .row
-        .one-takeaway.col
+        .one-takeaway.col-sm-6
           =image_tag "shedwool/alarm-clock-icon.svg"
           .takeaway-text
             %h3.h3-bold
               Availability vs. Time off
             %p
               Users were confused between the two. Every tester clicked availability to request time off.
-        .one-takeaway.col
+        .one-takeaway.col-sm-6
           =image_tag "shedwool/check-icon.svg"
           .takeaway-text
             %h3.h3-bold
@@ -150,14 +150,14 @@ title: "shedWool"
             %p
               Needed context. Was free indicating the user was free that day, or that there was a free shift to pickup?
       .row.second-takeaway-set
-        .one-takeaway.col
+        .one-takeaway.col-sm-6
           =image_tag "shedwool/calendar-icon.svg"
           .takeaway-text
             %h3.h3-bold
               Week View
             %p
               Users were confused by the vertical arrangement of days. Prefer a calendar view for dates.
-        .one-takeaway.col
+        .one-takeaway.col-sm-6
           =image_tag "shedwool/nav-icon.svg"
           .takeaway-text
             %h3.h3-bold
@@ -169,7 +169,7 @@ title: "shedWool"
 
 %section.section.sw-user-interviews.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         1.2
         %span.uppercase.light
@@ -191,7 +191,7 @@ title: "shedWool"
           Shift schedule journey map
 
 %section.section.sw-interview-takeaways.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       1.3
       %span.uppercase.light
@@ -209,9 +209,9 @@ title: "shedWool"
           %h2 Management takeaways:
         %hr.interview-ta-hr
       .paragraph-and-bullets.row
-        %p.col-6
+        %p.col-lg-6
           Managers were stressed early in the schedule lifecycle but they had ways to manage the situation. Typically, managers created set schedules for their long term career servers. It was the part-time staff they had to worry about and after schedules were made, they placed responsibility of finding scheduling changes on the servers.
-        .bullet-wrapper.col-5.offset-1
+        .bullet-wrapper.col-lg-5.offset-lg-1
           %ul.bulleted-list
             %li Rely on employees to give accurate data before making schedule.
             %li Stressed by gathering data and synthesizing into a schedule.
@@ -225,13 +225,13 @@ title: "shedWool"
           %h2 Employee takeaways:
         %hr.interview-ta-hr
       .paragraph-and-bullets.row.no-gutters
-        .bullet-wrapper.col-5
+        .bullet-wrapper.col-lg-5
           %ul.bulleted-list
             %li Stressed when they are unsure about their schedule.
             %li Prefer direct communication for immediacy.
             %li Find remote communication frustrating.
             %li Want more info on management decision making process.
-        .col-6.offset-1
+        .col-lg-6.offset-lg-1
           %p
             For employees, finding resolutions to scheduling conflicts meant reaching out to one another and negotiating. Interviewees said negotiating in person during work was the best way to handle this. Face to face communication while at work allowed employees to review the most current version of the schedule, negotiate a swap and gain management approval quickly.
 
@@ -242,14 +242,15 @@ title: "shedWool"
           %h2 ShedWool takeaways:
         %hr.interview-ta-hr
       .paragraph-and-bullets.row
-        %p.col-6
-          Having worked with small businesses in the past, I saw an opportunity for ShedWool to set itself apart by improving these actions. I considered the challenge facing ShedWool one of overcoming the issues that remote negotiating posed.      
-        %ul.bulleted-list.col-5.offset-1
-          %li Unnecessarily complex.
-          %li Too many ways to access same functionality.
-          %li Verbiage is unclear
-          %li Employees won’t use all of the tools they are given.
-          %li User interface lacks recognition and taxes user’s memory.
+        %p.col-lg-6
+          Having worked with small businesses in the past, I saw an opportunity for ShedWool to set itself apart by improving these actions. I considered the challenge facing ShedWool one of overcoming the issues that remote negotiating posed.
+        .bullet-wrapper.col-lg-5.offset-lg-1 
+          %ul.bulleted-list
+            %li Unnecessarily complex.
+            %li Too many ways to access same functionality.
+            %li Verbiage is unclear
+            %li Employees won’t use all of the tools they are given.
+            %li User interface lacks recognition and taxes user’s memory.
 
 %section.section.sw-focus-on-employees.bg-gray
   .container 
@@ -259,7 +260,7 @@ title: "shedWool"
 
 %section.section.sw-beginning-to-ideate
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         2.0
         %span.uppercase.light
@@ -318,7 +319,7 @@ title: "shedWool"
   .round-two.bg-gray
     %hr.r2-hr-top
     .container
-      .col-sm-10.offset-1
+      .col-lg-10.offset-lg-1
         %h2.h2-bold Round Two
         .row.paragraph-and-bullets
           %p.col-7
@@ -361,7 +362,7 @@ title: "shedWool"
     %hr.r2-hr-bottom
 
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       .round-three
         %h2.h2-bold Round Three
         .row.paragraph-and-bullets
@@ -423,7 +424,7 @@ title: "shedWool"
 
 %section.section.sw-main-takeaways.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-lg-1
       %h2.section-header.bold
         2.1
         %span.uppercase.light
@@ -441,7 +442,7 @@ title: "shedWool"
             %li Include visibility of total hours scheduled/worked for the week.      
 
 %section.section.sw-final-design.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-lg-1
     %h2.section-header.bold
       3.0
       %span.uppercase.light
@@ -482,7 +483,7 @@ title: "shedWool"
 
 %section.section.sw-moving-forward.bg-gray
   .container
-    .col-sm-10.offset-1
+    .col-lg-10.offset-1
       %h2.section-header.bold
         4.0
         %span.uppercase.light
@@ -500,7 +501,7 @@ title: "shedWool"
             %li Paycheck tracking
 
 %section.section.sw-final-reflection.container
-  .col-sm-10.offset-1
+  .col-lg-10.offset-1
     %h2.section-header.bold
       5.0
       %span.uppercase.light
