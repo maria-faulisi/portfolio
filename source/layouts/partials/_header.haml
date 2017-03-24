@@ -10,22 +10,31 @@
             Fah-lee-see
 
     .navigation
-      .hamburger-wrapper
-        %ul
-          %li.hamburger-line
-          %li.hamburger-line
-          %li.hamburger-line
+      .nav-link.mobile-nav-trigger
+        = link_to "Menu", "#"
+      .mobile-nav
+        .mobile-nav-inner
+          .nav-link{class: "#{'active' if current_page.url == '/collaborate.html'}"}
+            = link_to "collaborate.biz", "/collaborate.html", relative: true
+          .nav-link{class: "#{'active' if current_page.url == '/shedwool.html'}"}
+            = link_to "shedwool", "/shedwool.html", relative: true
+          .nav-link{class: "#{'active' if current_page.url == '/simple-slice.html'}"}
+            = link_to "simple slice", "/simple-slice.html", relative: true
+          .nav-link{class: "#{'active' if current_page.url == '/contact.html'}"}
+            = link_to "contact", "/contact.html", relative: true        
+
       .link-container
         %ul.nav-link-wrapper
-          %li.nav-link
-            = link_to "projects", "#", {class: "test"}
-            %ul.dropdown
+          %li.dropdown.nav-link
+            %a#dropdownMenuLink.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"}
+              Projects
+            %ul.dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
               %li
                 = link_to "collaborate.biz", "/collaborate.html", relative: true
               %li
                 = link_to "shedwool", "/shedwool.html", relative: true
               %li
                 = link_to "simple slice", "/simple-slice.html", relative: true
-          %li.nav-link{class: "#{'active' if current_page.url == '/case-study.html'}"}
-            = link_to "contact", "/case-study.html", relative: true
+          %li.nav-link{class: "#{'active' if current_page.url == '/contact.html'}"}
+            = link_to "contact", "/contact.html", relative: true
             

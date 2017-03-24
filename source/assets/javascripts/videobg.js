@@ -53,7 +53,7 @@ function vidRescale(){
 }
 
 $(window).on('load resize', function(){
-  var bodyElement = $('body').hasClass('Home');
+  var bodyElement = $('body').hasClass('home');
   if(bodyElement == true){
     vidRescale();
   }  

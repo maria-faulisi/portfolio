@@ -11,6 +11,10 @@ nav.main-nav
   margin: 0 auto
   padding: 0 37px
 
+.name-of-site
+  +media-xs-only
+    margin-left: 15px
+
 .name-of-site,
 .nav-link-wrapper,
 .nav-link
@@ -23,6 +27,8 @@ nav.main-nav
   .title
     font-weight: $font-weight-regular
 
+    +media-xs-only
+      display: none
 
   .phonetics
     position: absolute
@@ -32,26 +38,33 @@ nav.main-nav
     font-size: 14px
     padding-right: 10px
 
+    +media-xs-only
+      display: none
+
 .navigation
   display: inline-block
   float: right
 
-.hamburger-wrapper
-  display: none
+  // +media-xs-only
+  //   position: absolute
+  //   left: 0
+  //   top: -11px
+  //   width: 100%
 
+.nav-link.mobile-nav-trigger
+  +media-xs-only
+    position: absolute
+    z-index: 99
+    right: 0
+    top: -10px
 
-  ul
-    padding: 0
-    margin: 0
-    list-style: none
+.mobile-nav
+  background-color: white
+  height: 100vh
 
-    li
-      height: 3px
-      width: 30px
-      background-color: $color-tundora
-
-      &:nth-of-type(2)
-        margin: 5px 0
+.link-container
+  +media-xs-only
+    display: none
 
 .nav-link-wrapper
   display: inline-block
@@ -62,7 +75,6 @@ nav.main-nav
 .nav-link
   position: relative
   margin-left: 45px
-  padding-bottom: 2px
 
   &.active
     border-bottom: 3px solid $color-gallery
@@ -72,20 +84,18 @@ nav.main-nav
   color: $color-tundora
   text-transform: capitalize
 
-.dropdown
-  display: none
-  list-style: none
-  background-color: $color-alto
-  position: absolute
-  top: 100%
+.dropdown-menu
   padding: 0
+  background-color: $color-alto
+  border: none
+  border-radius: 0
 
   li
-    padding: 13px
+    padding: 15px 20px
 
     &:hover
       background-color: $color-alabaster
 
 .home
-  .dropdown
+  .dropdown-menu
     background-color: white
