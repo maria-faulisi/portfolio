@@ -29,7 +29,15 @@ body
     font-weight: $font-weight-light
     color: $color-gray
     line-height: 31px
+
+  .numbered-list
     font-size: 20px
+
+  .bulleted-list
+    font-size: 18px
+
+    +media-md
+      font-size: 20px
 
   p.quote
     font-size: 20px
@@ -125,11 +133,11 @@ body
     display: inline-block
     overflow: auto
 
-  .caption
-    font-size: 14px
-    color: $color-tundora
-    margin-top: 14px
-    text-align: left
+.caption
+  font-size: 14px
+  color: $color-tundora
+  margin-top: 14px
+  text-align: left
 
 .image-and-text-row
   .text
@@ -142,8 +150,10 @@ body
 .bullets
   margin-top: 40px
 
+  +media-sm
+    margin-top: 0
+
   +media-md
-    margin-top: 0px
     padding: 0 15px
 
   +media-lg

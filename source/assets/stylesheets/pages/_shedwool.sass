@@ -24,11 +24,17 @@
     margin-top: 58px
 
   .text
+    margin-top: 40px
     padding: 0
 
     +media-md
+      margin-top: 0
       padding-left: 38px
       padding-right: 0
+
+  .caption
+    +media-xs-only
+      padding: 0 15px
 
 .sw-testing-ta
   .four-takeaways
@@ -127,7 +133,7 @@
 
   .interview-ta-hr
     border: 1px solid $color-french-gray
-    margin: 15px 0
+    margin: 24px 0
 
     +media-md
       margin-top: 33px
@@ -141,8 +147,19 @@
       +media-md
         margin: 0 15px
 
+    p
+      padding: 0
+
+      +media-md
+        padding: inherit
+
     .bulleted-list
-      padding-left: 0
+      padding: inherit
+      margin-top: 24px
+
+      +media-md
+        padding-left: 0
+        margin-top: 0
 
   .employee-takeaways
     margin: 43px 0
@@ -151,6 +168,10 @@
   text-align: center
   padding: 66px 0
 
+  .container
+    +media-xs-only
+      padding: 0 15px
+
   h2
     margin-bottom: 24px    
 
@@ -158,28 +179,65 @@
   .bullets
     padding-left: 46px
 
+  .image-and-text-row
+    .text
+      margin-bottom: 40px
+
+      +media-md
+        margin-bottom: 0
+
   .concept-row
-    margin: 87px 0
+    margin: 40px 0
+
+    +media-md
+      margin: 87px 0
 
   .round-one,
   .round-two,
   .round-three
     h2
       margin-bottom: 36px
+
+    .bulleted-list
+      +media-xs-only
+        padding-left: 30px
+
+    .bullets
+      padding: 0
+
+      +media-md
+        padding: initial
+
+    .image-and-caption
+      .img:nth-of-type(2)
+        +media-xs-only
+          margin: 60px 0
   
   .round-one
-    margin-top: 110px
+    margin-top: 40px
+
+    +media-md
+      margin-top: 110px
 
   .icon-takeaway
     text-align: center
+
+    +media-xs-only
+      margin-bottom: 40px
+
+    &:last-of-type
+      margin-bottom: 0
 
     h3
       margin-top: 10px
       margin-bottom: 14px
 
     p
-      text-align: left
-      max-width: 243px
+      text-align: center
+
+      +media-md
+        text-align: left
+        max-width: 243px
 
   hr
     width: 479px
@@ -188,10 +246,14 @@
 
   .round-two
     position: relative
-    margin-top: 127px
-    margin-bottom: 111px
-    padding-top: 108px
-    padding-bottom: 103px
+    margin: 60px 0
+    padding: 60px 0
+
+    +media-md
+      margin-top: 127px
+      margin-bottom: 111px
+      padding-top: 108px
+      padding-bottom: 103px
 
 
     hr
@@ -207,23 +269,51 @@
         
   .round-three
     .hr-takeaway-divider
-      margin: 47px auto
+      margin: 24px 0
+
+      +media-xs-only
+        border-color: white
+
+      +media-sm
+        margin: 40px auto
+
+      +media-md
+        margin: 47px auto
 
 .sw-main-takeaways
   h2
-    margin-bottom: 57px
+    margin-bottom: 40px
+
+    +media-md
+      margin-bottom: 57px
+
+  span
+    +media-xs-only
+      display: block
+
+  .bulleted-list
+    margin-bottom: 0px
+
+    +media-md
+      margin-bottom: initial
 
 .sw-final-design
   .final-design-text    
     p
-      padding-right: 24px
       margin-bottom: 20px
+
+      +media-md
+        padding-right: 24px
 
       &:last-of-type
         margin-top: 42px
 
   .final-design-video
     text-align: center
+    margin-top: 40px
+
+    +media-md
+      margin-top: 0
 
     .caption
       text-align: center
@@ -231,8 +321,20 @@
   .improvements
     margin-top: 60px
     display: flex
-    max-width: 499px
-    justify-content: space-between
+    max-width: 100%
+    justify-content: space-around
+
+    +media-xs-only
+      flex-direction: column
+      margin-top: 42px
+
+    +media-lg
+      max-width: 499px
+      justify-content: space-between    
+
+    img
+      +media-xs-only
+        margin: 30px 0      
 
   .improvement
     text-align: center
@@ -252,6 +354,13 @@
 
     .faster
       font-size: 20px
+
+.sw-moving-forward
+  .bulleted-list
+    margin-top: 20px
+
+    +media-md
+      margin-top: 0
 
 .sw-final-reflection
   p:first-of-type
