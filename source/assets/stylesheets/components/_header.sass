@@ -6,6 +6,11 @@ nav.main-nav
   box-shadow: 0px 2px 4px 0px rgba($color-gallery, 0.5)
   background-color: $color-alto
 
+  +media-xs-only
+    position: fixed
+    top: 0
+    padding-bottom: 32px
+
 .nav-inner
   max-width: 1280px
   margin: 0 auto
@@ -13,7 +18,9 @@ nav.main-nav
 
 .name-of-site
   +media-xs-only
+    position: relative
     margin-left: 15px
+    z-index: 99
 
 .name-of-site,
 .nav-link-wrapper,
@@ -45,22 +52,39 @@ nav.main-nav
   display: inline-block
   float: right
 
-  // +media-xs-only
-  //   position: absolute
-  //   left: 0
-  //   top: -11px
-  //   width: 100%
+  +media-xs-only
+    height: 100vh
+    width: 100vw
+    position: absolute
+    top: -32px
+    left: 100%
+    background-color: pink
+    transition-duration: 0.25s
+    
+    &.mobile-show
+      left: 0
 
 .nav-link.mobile-nav-trigger
+  display: none
+
   +media-xs-only
+    display: block
     position: absolute
-    z-index: 99
     right: 0
-    top: -10px
+    top: -11px
+    z-index: 99
+    margin-left: 0
 
 .mobile-nav
-  background-color: white
-  height: 100vh
+  display: none
+  width: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-66%)
+
+  +media-xs-only
+    display: block
 
 .link-container
   +media-xs-only
@@ -76,8 +100,17 @@ nav.main-nav
   position: relative
   margin-left: 45px
 
+  +media-xs-only
+    display: block
+    margin-left: 0
+    padding: 0
+    margin: .5em 1em
+
   &.active
     border-bottom: 3px solid $color-gallery
+
+    +media-xs-only
+
 
 .nav-link a
   text-decoration: none
