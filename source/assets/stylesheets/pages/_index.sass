@@ -1,105 +1,60 @@
 .home
   nav.main-nav
     background-color: white
-    
 
   .hero
-    height: 45.5em
     position: relative
-    background-image: url(image_path('still-hero.jpg'))
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
+    margin-top: 123px
 
     +media-xs-only
-      height: 200px
+      margin-top: 67px
 
-  .cover 
-    display: none
+    .hero-bg
+      background-image: url(image_path('still-hero.jpg'))
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top center
+      height: 400px
+      
+      +media-xs-only
+        height: 200px
 
-    +media-lg
-      display: block
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-    
-    .hi 
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translate(-50%,-50%)
-      
-      color: #fff
-      
-      font-family: 'Roboto Slab', serif
-      font-size: 24px
-      line-height: 26px
-      text-align: center
-      
-      span 
-        color: #ff0
-        cursor: pointer
-        text-decoration: underline
-      
-      
-      em 
-        font-style: normal
-        
-        &.hidden 
-          display: none
-        
-  .tv 
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    overflow: hidden
-    
-    .screen 
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      z-index: 1
-      margin: auto
-      opacity: 0
-      transition: opacity .5s
+      +media-md
+        background-image: none
 
-      &.active 
-        opacity: 1
+      +media-lg
+        height: 700px
       
   .hero-text
-    position: relative
-    z-index: 2
-    float: right
-    width: 30%
-    margin-right: 5%
-    margin-top: 97px
-    text-align: center  
+    +media-md
+      margin: 0
+      background-color: white
+      width: 100%
+
+    .hero-text-inner
+      padding: 30px 20px
+      text-align: center
 
     .hi
-      font-size: 36px
+      font-size: 24px
       font-weight: $font-weight-semi-bold
 
+      +media-md
+        font-size: 36px
+
     p
-      font-size: 20px
-      font-weight: $font-weight-regular
+      font-weight: $font-weight-light
       color: $color-dune
       text-align: left
       white-space: pre-line
 
+
     .cta-btn
-      display: inline-block
-      background: rgba(247,247,247,0.35)
-      border: 1px solid rgba(43,40,39,0.72)
-      font-size: 18px
-      color: rgba(43,40,39,0.72)
-      padding: 10px 33px
       margin-top: 50px
+      margin-bottom: 50px
+
+      +media-xs-only
+        margin-bottom: 20px
 
   .h1-projects
     display: block
@@ -112,3 +67,39 @@
       font-size: 18px
       color: $color-tundora
       font-weight: $font-weight-semi-bold
+
+.project-list
+  display: none
+
+
+.video-background
+  display: none
+  background: white
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: -99
+
+  +media-md
+    display: block
+
+.video-foreground, 
+.video-background iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+
+@media (min-aspect-ratio: 16 / 9)
+  .video-foreground
+    height: 300%
+    top: -100%
+
+@media (max-aspect-ratio: 16 / 9)
+  .video-foreground
+    width: 300%
+    left: -100%

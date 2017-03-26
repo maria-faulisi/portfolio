@@ -1,13 +1,16 @@
 .btn
-  font-size: 22px
-  text-decoration: none
-  padding: 17px 44px
+  font-size: 18px
   display: inline-block
 
-  &.green
-    background: $color-blue-diane
-    color: $color-alabaster
 
-  &.purple
-    background: $color-mortar
-    color: $color-alabaster
+.cta-btn
+  display: inline-block
+  background: rgba($color-alabaster,0.35)
+  border: 1px solid rgba(43,40,39,0.72)
+  font-size: 18px
+  color: rgba(43,40,39,0.72)
+  padding: 10px 33px
+  transition-duration: 0.25s
+
+  &:hover
+    background: darken($color-alabaster, 5%)

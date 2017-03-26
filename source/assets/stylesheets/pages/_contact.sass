@@ -1,0 +1,84 @@
+.contact
+  footer
+    display: none
+
+.my-picture
+  background-size: initial
+  background-repeat: no-repeat
+  background-position: top right
+
+h1.h1-contact
+  font-size: 36px
+  margin-bottom: 18px
+
+.contact-section
+  margin-top: 125px
+
+  +media-xs-only
+    margin-top: 67px
+
+  .container
+    background-color: rgba(255,255,255,.65)
+    width: 100%
+
+    +media-xs-only
+      background-color: rgba(255,255,255,1)
+
+    +media-sm
+      background-color: transparent      
+  
+.glad-inner
+  padding-top: 118px
+  padding-bottom: 109px
+
+  +media-xs-only
+    padding-top: 40px
+    padding-bottom: 40px
+
+  a
+    +media-xs-only
+      width: 100%
+      text-align: center  
+
+  p
+    max-width: 100%
+    margin-bottom: 35px
+    line-height: 31px
+    color: black
+
+    +media-md
+      color: inherit
+
+    a
+      font-weight: $font-weight-semi-bold
+
+      &:hover,
+      &:focus,
+      &:visited
+        text-decoration: none
+        color: $color-gray
+
+.in-touch
+  text-align: center
+
+.in-touch-inner
+  display: block
+  padding-top: 147px
+  padding-bottom: 147px
+
+  +media-xs-only
+    padding: 40px 30px
+
+.in-touch-links-wrapper
+  margin-top: 68px
+
+  a
+    +media-xs-only
+      width: 100%
+
+  a:nth-of-type(2)
+    margin-left: 80px
+
+    +media-xs-only
+      margin-left: 0
+      margin-top: 40px

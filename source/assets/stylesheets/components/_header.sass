@@ -1,5 +1,6 @@
 nav.main-nav
-  position: relative
+  position: fixed
+  top: 0
   z-index: 99
   width: 100%
   padding: 32px 0px 43px 0px
@@ -98,18 +99,24 @@ nav.main-nav
 
 .nav-link
   position: relative
-  margin-left: 45px
+  margin-left: 0
+  padding: 0
+  margin: .5em 1em
 
   +media-xs-only
     display: block
-    margin-left: 0
-    padding: 0
-    margin: .5em 1em
+
+  +media-md
+    margin-left: 45px
 
   &.active
-    border-bottom: 3px solid $color-gallery
+    border-bottom: 3px solid white
 
     +media-xs-only
+      border: none
+
+      a
+        font-weight: $font-weight-semi-bold
 
 
 .nav-link a
@@ -123,7 +130,8 @@ nav.main-nav
   border: none
   border-radius: 0
 
-  li
+  a
+    display: block
     padding: 15px 20px
 
     &:hover

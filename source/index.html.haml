@@ -2,19 +2,22 @@
 title: "home"
 ---
 
-%section.hero
-  .cover
-    .tv
-      .screen.mute#tv
-  .hero-text
-    %p
-      %span.hi Hi
-      I’m Maria. I wear comfy shoes because I’ve traveled far to get where I am today. I’ve been a super serious fine art student, an account manager in a fortune 500 company and a developer with a very real taco addiction. Now as a designer, I have a skillset that makes me indispensable.
-    %p
-      All my experiences make me want to help users with theirs. I love creating design that’s straightforward, minimal, and easy to use. If you prefer those too, reach out, we’ll grab some tacos.
+.video-background
+  .video-foreground
+    %iframe{:allowfullscreen => "0", :frameborder => "0", :src => "https://www.youtube.com/embed?listType=playlist&list=PLdiVamodcH3injpjT6VMG8hZHQ71dMRLr&autoplay=1&loop=1"}
 
-    .cta-btn
-      Reach out
+%section.hero
+  .hero-bg
+  .hero-text.container
+    .hero-text-inner
+      %p
+        %span.hi Hi
+        I’m Maria. I wear comfy shoes because I’ve traveled far to get where I am today. I’ve been a super serious fine art student, an account manager in a fortune 500 company and a developer with a very real taco addiction. Now as a designer, I have a skillset that makes me indispensable.
+      %p
+        All my experiences make me want to help users with theirs. I love creating design that’s straightforward, minimal, and easy to use. If you prefer those too, reach out, we’ll grab some tacos.
+
+      .cta-btn
+        =link_to "Reach out", "/contact.html"
 
 %section.project-list
   .container

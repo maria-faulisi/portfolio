@@ -8,13 +8,16 @@ body
     padding-right: 0
 
   .project-details
-    margin-top: 40px
+    margin-top: 186px 
 
     +media-xs-only
       margin-top: 110px
 
     +media-md
-      margin-top: 86px
+      padding: 0
+
+    +media-lg
+      margin-top: 207px
 
     .project-details-inner
       h1
@@ -60,18 +63,21 @@ body
 .timeline
   display: none
   position: relative
-  margin-top: 58px
+  margin-top: 24px
 
   +media-md
     display: flex
 
+  +media-lg
+    margin-top: 32px
+
   .timeline-item
     position: relative
     display: inline-block
-    margin-right: 42px
+    margin-right: 33px
 
-    +media-md
-      margin-right: 33px
+    +media-lg
+      margin-right: 42px
 
   .timeline-item:last-of-type
     margin-right: 0

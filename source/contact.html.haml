@@ -1,1 +1,26 @@
-This is how people contact me...
+---
+title: "contact"
+---
+
+%section.contact-section{style: "background-image: url(#{image_path "me.jpg"})", class: "my-picture"}
+  .container
+    .glad.col-lg-10.offset-lg-1
+      .glad-inner.col-md-6.offset-md-1.col-lg-8.offset-lg-0.col-xl-6.offset-xl-2
+        %h1.h1-contact
+          I'm glad you're here...
+        %p
+          and I'm happy to answer any questions you have about my work, personal interests or favorite taco filling. I coded this site by hand using some of my dev skills, feel free to check out the repo 
+          %a{href: "https://github.com/maria-faulisi/portfolio", target: "_blank", class:"here-link"}here. 
+          You can also email me at 
+          %a{href: "mailto:maria@maria-faulisi.com?Subject=Let's%20Get%20Tacos", target: "_top"}
+            maria@maria-faulisi.com.
+
+        %a{download: "mfaulisi-resume.pdf", href: "#{image_path('mfaulisi-resume.pdf')}", class:"cta-btn"} Resume
+
+%section.in-touch.bg-gray
+  .in-touch-inner
+    %h1.h1-contact
+      Ways to get in touch.
+    .in-touch-links-wrapper
+      =link_to "LinkedIn", "https://www.linkedin.com/in/mariafaulisi/", :target => "_blank", class: "cta-btn"
+      =link_to "Github", "https://github.com/maria-faulisi/", :target => "_blank", class: "cta-btn"
