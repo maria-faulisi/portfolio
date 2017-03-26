@@ -1,5 +1,6 @@
 $(window).ready(function(){
-  $('.hamburger-wrapper').on('click', function(){
-    $(this).parent().find('.link-container').toggleClass('show-mobile-nav');
+  $('.mobile-nav-trigger').click(function(e){
+    e.preventDefault();
+    $('.navigation').toggleClass('mobile-show');
   });
 });

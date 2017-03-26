@@ -11,179 +11,149 @@
     <meta content='IE=edge,chrome=1' http_equiv='X-UA-Compatible'>
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,600,800' rel='stylesheet' type='text/css'" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/stylesheets/application.css" rel="stylesheet" />
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>
     <script src="assets/javascripts/all.js"></script>
   </head>
-  <body class='Home'>
+  <body class='home'>
     <nav class='main-nav'>
-      <div class='container'>
+      <div class='nav-inner container'>
         <div class='name-of-site'>
-          <h2 class='nav-name'>
+          <a href="./"><h2 class='nav-name'>
             Maria Faulisi
             <span class='title'>
               | UX Designer
             </span>
+            <span class='phonetics'>
+              Fah-lee-see
+            </span>
           </h2>
+          </a>
+        </div>
+        <div class='nav-link mobile-nav-trigger'>
+          <a href="#">Menu</a>
         </div>
         <div class='navigation'>
-          <div class='hamburger-wrapper'>
-            <ul>
-              <li class='hamburger-line'></li>
-              <li class='hamburger-line'></li>
-              <li class='hamburger-line'></li>
-            </ul>
+          <div class='mobile-nav'>
+            <div class='mobile-nav-inner'>
+              <div class='nav-link'>
+                <a href="collaborate.html">collaborate.biz</a>
+              </div>
+              <div class='nav-link'>
+                <a href="shedwool.html">shedwool</a>
+              </div>
+              <div class='nav-link'>
+                <a href="simple-slice.html">simple slice</a>
+              </div>
+              <div class='nav-link'>
+                <a href="contact.html">contact</a>
+              </div>
+            </div>
           </div>
           <div class='link-container'>
             <ul class='nav-link-wrapper'>
-              <li class='active nav-link'>
-                <a href="./">home</a>
+              <li class='dropdown nav-link'>
+                <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' id='dropdownMenuLink'>
+                  Projects
+                </a>
+                <ul aria-labelledby='dropdownMenuLink' class='dropdown-menu'>
+                  <li>
+                    <a href="collaborate.html">collaborate.biz</a>
+                  </li>
+                  <li>
+                    <a href="shedwool.html">shedwool</a>
+                  </li>
+                  <li>
+                    <a href="simple-slice.html">simple slice</a>
+                  </li>
+                </ul>
               </li>
               <li class='nav-link'>
-                <a href="case-study.html">work</a>
+                <a href="contact.html">contact</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <section class='hero home-hero' style='background-image: url(assets/images/home-hero.jpg)'>
-      <div class='container'>
-        <div class='home-hero-text'>
-          <h1>
-            What does it mean to design
-            <span>
-              experience?
-            </span>
-          </h1>
+    <div class='video-background'>
+      <div class='video-foreground'>
+        <iframe allowfullscreen='0' frameborder='0' src='https://www.youtube.com/embed?listType=playlist&amp;list=PLdiVamodcH3injpjT6VMG8hZHQ71dMRLr&amp;autoplay=1&amp;loop=1'></iframe>
+      </div>
+    </div>
+    <section class='hero'>
+      <div class='hero-bg'></div>
+      <div class='hero-text container'>
+        <div class='hero-text-inner'>
+          <p>
+            <span class='hi'>Hi</span>
+            I’m Maria. I wear comfy shoes because I’ve traveled far to get where I am today. I’ve been a super serious fine art student, an account manager in a fortune 500 company and a developer with a very real taco addiction. Now as a designer, I have a skillset that makes me indispensable.
+          </p>
+          <p>
+            All my experiences make me want to help users with theirs. I love creating design that’s straightforward, minimal, and easy to use. If you prefer those too, reach out, we’ll grab some tacos.
+          </p>
+          <div class='cta-btn'>
+            <a href="contact.html">Reach out</a>
+          </div>
         </div>
       </div>
     </section>
-    <section class='hard-to-explain' style='background-image: url(assets/images/white-paper.png)'>
+    <section class='project-list'>
       <div class='container'>
-        <div class='hard-to-explain-inner row'>
-          <div class='col-sm-collapse-3 col-sm-offset-1 personal-pic'>
-            <img src="assets/images/me-squared.png" />
+        <div class='row'>
+          <div class='col offset-sm-2'>
+            <h1>
+              Projects
+              <span class='h1-projects'>
+                10/2016 - 03/2017
+              </span>
+            </h1>
           </div>
-          <div class='col-sm-6 col-sm-offset-1 quote-wrapper'>
-            <p class='my-quote'>
-              It's hard to explain what a user experience designer does.  A well designed experience is intangible.  It's effortless and comfortable, familiar and engaging.  Wireframes, prototypes, and personas are the artifacts of the work, the feeling you walk away with is the product.
+        </div>
+        <div class='row'>
+          <div class='project-timeline col-sm-4 offset-sm-2'>
+            <div class='project-list-nav'>
+              <hr class='timeline-hr'>
+              <div class='timeline-item'>
+                <div class='timeline-number'>
+                  4.0
+                </div>
+                <div class='timeline-header uppercase'>
+                  shedwool
+                </div>
+              </div>
+              <div class='timeline-item'>
+                <div class='timeline-number'>
+                  3.0
+                </div>
+                <div class='timeline-header uppercase'>
+                  collaborate.biz
+                </div>
+              </div>
+              <div class='timeline-item'>
+                <div class='timeline-number'>
+                  2.0
+                </div>
+                <div class='timeline-header uppercase'>
+                  simple slice
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='project-detail col-sm-5'>
+            <h2 class='uppercase'>shedwool</h2>
+            <hr>
+            <p>
+              A shift scheduling app available on iTunes and Google Play stores.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section class='good-ux-designer section-alabaster'>
-      <div class='container'>
-        <h2 class='h2-gray text-center'>
-          What makes a good UX designer?
-        </h2>
-        <div class='row designer-traits col-sm-10 col-sm-centered omega-sm-2 omega-md-2 omega-lg-2'>
-          <div class='col-sm-6 single-trait'>
-            <h4 class='green-header'>
-              Mindful
-            </h4>
-            <ul class='trait-explaination-list'>
-              <li class='trait-explaination'>
-                I notice things.  Big and small.
-              </li>
-              <li class='trait-explaination'>
-                I know how to discover what each stakeholder needs (even if they don't know how to express it.)
-              </li>
-              <li class='trait-explaination'>
-                I know the tech behind the product.
-              </li>
-            </ul>
-          </div>
-          <div class='col-sm-6 single-trait right-trait'>
-            <h4 class='green-header'>
-              Empathetic
-            </h4>
-            <ul class='trait-explaination-list'>
-              <li class='trait-explaination'>
-                I'm not designing for myself, I'm designing and advocating for the user
-              </li>
-              <li class='trait-explaination'>
-                I ask questions and never reject the answers.
-              </li>
-              <li class='trait-explaination'>
-                I'm open to the thoughts of others as well as happy accidents
-              </li>
-            </ul>
-          </div>
-          <div class='col-sm-6 single-trait'>
-            <h4 class='green-header'>
-              Curious
-            </h4>
-            <ul class='trait-explaination-list'>
-              <li class='trait-explaination'>
-                I want to know why.
-              </li>
-              <li class='trait-explaination'>
-                Why was that confusing?
-              </li>
-              <li class='trait-explaination'>
-                What made it work?
-              </li>
-              <li class='trait-explaination'>
-                Did my work make a measurable difference?
-              </li>
-            </ul>
-          </div>
-          <div class='col-sm-6 single-trait right-trait'>
-            <h4 class='green-header'>
-              Desire to Delight
-            </h4>
-            <ul class='trait-explaination-list'>
-              <li class='trait-explaination'>
-                Form follows function, but it can be unexpected too.
-              </li>
-              <li class='trait-explaination'>
-                I want a user to feel something.
-              </li>
-              <li class='trait-explaination'>
-                Put some love into it.
-              </li>
-            </ul>
-          </div>
-          <div class='col-sm-6 col-sm-centered single-trait right-trait'>
-            <h4 class='green-header'>
-              Thrives on Complexity
-            </h4>
-            <ul class='trait-explaination-list'>
-              <li class='trait-explaination'>
-                Constraints inspire me.
-              </li>
-              <li class='trait-explaination'>
-                Finding a solution that solves two seemingly different problems...bring it on!
-              </li>
-              <li class='trait-explaination'>
-                Making the complex feel simple is a challenge I gladly accept.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class='get-in-touch text-center'>
-      <div class='container'>
-        <h2 class='h2-gray'>
-          Get in touch
-        </h2>
-        <p>
-          Reach out to me on LinkedIn or view my code samples on Github
-        </p>
-        <div class='btn-wrapper'>
-          <a target="blank" class="btn green" href="https://www.linkedin.com/in/mariafaulisi">LinkedIn</a>
-          <a target="blank" class="btn green" href="https://github.com/maria-faulisi/">Github</a>
-        </div>
-      </div>
-    </section>
-    
   </body>
 </html>
