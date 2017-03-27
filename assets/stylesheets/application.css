@@ -524,7 +524,7 @@ body {
       margin-bottom: 89px; } }
 .collaborate-biz .sme-interviews .image-and-text-row {
   flex-direction: column-reverse; }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .collaborate-biz .sme-interviews .image-and-text-row {
       flex-direction: row; } }
 .collaborate-biz .sme-interviews .image-and-caption {
