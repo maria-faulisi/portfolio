@@ -2,60 +2,6 @@
   nav.main-nav
     background-color: white
 
-  .hero
-    position: relative
-    margin-top: 123px
-
-    +media-xs-only
-      margin-top: 67px
-
-    .hero-bg
-      background-image: url(image_path('still-hero.jpg'))
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: top center
-      height: 400px
-      
-      +media-xs-only
-        height: 200px
-
-      +media-md
-        background-image: none
-
-      +media-lg
-        height: 700px
-      
-  .hero-text
-    +media-md
-      margin: 0
-      background-color: white
-      width: 100%
-
-    .hero-text-inner
-      padding: 30px 20px
-      text-align: center
-
-    .hi
-      font-size: 24px
-      font-weight: $font-weight-semi-bold
-
-      +media-md
-        font-size: 36px
-
-    p
-      font-weight: $font-weight-light
-      color: $color-dune
-      text-align: left
-      white-space: pre-line
-
-
-    .cta-btn
-      margin-top: 50px
-      margin-bottom: 50px
-
-      +media-xs-only
-        margin-bottom: 20px
-
   .h1-projects
     display: block
     font-family: $font-weight-light
@@ -71,35 +17,65 @@
 .project-list
   display: none
 
+.bg-video-wrapper
+  position: relative
+  display: flex
+  margin-top: 123px
+  flex-direction: column
 
-.video-background
-  display: none
-  background: white
-  position: fixed
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  z-index: -99
+  +media-xs-only
+    margin-top: 67px
 
   +media-md
-    display: block
+    flex-direction: row
+    top: 100%
 
-.video-foreground, 
-.video-background iframe
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  pointer-events: none
+  video
+    z-index: 10
+    align-self: flex-start
 
-@media (min-aspect-ratio: 16 / 9)
-  .video-foreground
-    height: 300%
-    top: -100%
+  .video-text
+    position: absolute
+    z-index: 20
+    width: 100%
+    top: 100%
+    left: 0
+    padding: 0 15px
+    text-align: center
 
-@media (max-aspect-ratio: 16 / 9)
-  .video-foreground
-    width: 300%
-    left: -100%
+    +media-lg
+      width: 30%
+      align-self: center
+      right: 40px
+      top: initial
+      left: inherit
+      text-align: left
+
+    .hi
+      display: block
+      margin-bottom: -20px
+      font-size: 24px
+      font-weight: $font-weight-semi-bold      
+
+      +media-md
+        font-size: 36px
+
+    p
+      font-weight: $font-weight-light
+      color: black
+      text-align: left
+      white-space: pre-line
+
+
+    .cta-btn
+      text-align: center
+      margin-top: 50px
+      margin-bottom: 50px
+
+      +media-xs-only
+        width: 100%
+        margin-bottom: 60px
+
+      +media-lg
+        margin-top: 35px
+        
