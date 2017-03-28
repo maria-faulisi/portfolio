@@ -6,7 +6,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(document).off("scroll");
         
-        $('a').each(function () {
+        $('.timeline a').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
@@ -25,11 +25,12 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#timeline a').each(function () {
+    var bodyClass = document.body.className;
+    $('.timeline a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            currLink.removeClass("active");
+            $('.timeline a').removeClass("active");
             currLink.addClass("active");
         }
         else{
