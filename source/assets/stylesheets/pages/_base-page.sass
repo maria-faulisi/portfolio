@@ -90,6 +90,10 @@ body
     height: 324px
     margin-top: 4px
 
+    a.active
+      font-weight: $font-weight-semi-bold
+      color: black    
+
     .timeline-header-text
       position: absolute
       bottom: -21px
@@ -97,6 +101,11 @@ body
       text-align: right
       transform: rotate(-90deg)
       transform-origin: top left
+
+  a:visited,
+  a:hover,
+  a:focus
+    color: $color-gray
 
 .section
   padding-top: 66px
