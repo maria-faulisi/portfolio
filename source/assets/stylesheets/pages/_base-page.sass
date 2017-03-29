@@ -65,6 +65,19 @@ body
   position: relative
   margin-top: 24px
 
+  &.stuck
+    position: fixed
+    display: none
+    top: 57px
+    left: 0
+    width: 100%
+    background-color: white
+    z-index: 80
+    text-align: center
+
+    &.show
+      display: block
+
   +media-md
     display: flex
 
