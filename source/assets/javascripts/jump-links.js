@@ -5,19 +5,26 @@ $(document).ready(function () {
 
   $(window).on('scroll', function() {
     st = $(this).scrollTop();
-    var timeline = $('#timeline.stuck');
-    var timelineStatus = timeline.hasClass('show');
+
+    var timeline = $('#timeline');
+    var timelineStuck = timeline.hasClass('stuck');
+    var timelineShow = timeline.hasClass('show');
+    var timelineHide = timeline.hasClass('hide');
 
     if(st < lastScrollTop) {
       //show links
-      if (timelineStatus){
-        timeline.removeClass('show');
+      if (timelineStuck && timelineHide){
+        timeline.removeClass('hide');
+        timeline.addClass('show');
       }
 
     }
     else {
       //hide links
-      timeline.addClass('show');
+      if(timelineStuck && timelineShow){
+        timeline.removeClass('show');
+        timeline.addClass('hide');
+      }
     }
     lastScrollTop = st;
   });    
@@ -26,10 +33,12 @@ $(document).ready(function () {
     element: $('#timeline')[0],
     entered: function(direction) {
       //collapse nav to original location
+      $(this.element).removeClass('show');
       $(this.element).removeClass('stuck');
     },
-    exit: function(direction) {
-      //expand to fixed position
+    exited: function(direction){
+      //expand nav to stuck position
+      $(this.element).addClass('hide');
       $(this.element).addClass('stuck');
     }
   })    

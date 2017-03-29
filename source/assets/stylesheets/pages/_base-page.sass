@@ -65,19 +65,6 @@ body
   position: relative
   margin-top: 24px
 
-  &.stuck
-    position: fixed
-    display: none
-    top: 57px
-    left: 0
-    width: 100%
-    background-color: white
-    z-index: 80
-    text-align: center
-
-    &.show
-      display: block
-
   +media-md
     display: flex
 
@@ -119,6 +106,21 @@ body
   a:hover,
   a:focus
     color: $color-gray
+
+.timeline.stuck
+  position: fixed
+  top: 57px
+  left: 0
+  width: 100%
+  background-color: white
+  z-index: 80
+  text-align: center
+
+  &.show
+    display: block
+
+  &.hide
+    display: none  
 
 .section
   padding-top: 66px
