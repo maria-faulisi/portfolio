@@ -2,7 +2,7 @@ $(document).ready(function () {
     $(document).on("scroll", onScroll);
     
     //smoothscroll
-    $('.timeline a[href^="#"]').on('click', function (e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
         
