@@ -10,7 +10,18 @@
       
   = partial "layouts/partials/head"
 
-  %body{class: current_page.data.title || 'page'}    
+  %body{class: current_page.data.title || 'page'}  
     = partial "layouts/partials/header"
     = yield
-    
+  :javascript
+    var pinnedElement = document.querySelector("#timeline");
+    var headroom = new Headroom(pinnedElement,{
+      "offset": "0",
+      "classes": {
+        "pinned": "stuck"
+      },
+      onTop: function(){
+        $("#timeline").removeClass('stuck');
+      }
+    });
+    headroom.init(); 
