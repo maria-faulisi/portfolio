@@ -1,53 +1,6 @@
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
-
-  var lastScrollTop = 0;
-
-  $(window).on('scroll', function() {
-    st = $(this).scrollTop();
-
-    var timeline = $('#timeline');
-    var timelineStuck = timeline.hasClass('stuck');
-
-    if(st < lastScrollTop) {
-      //show links
-      if (timelineStuck){
-        timeline.addClass('show');
-      }
-
-    }
-    else {
-      //hide links
-      if(timelineStuck){
-        timeline.removeClass('show');
-      }
-    }
-    lastScrollTop = st;
-  });    
-
-  var inview = new Waypoint.Inview({
-    element: $('#timeline')[0],
-    entered: function(direction) {
-      //collapse nav to original location
-      $(this.element).removeClass('stuck');
-      console.log('timeline remove stuck');
-    },
-    exited: function(direction){
-      //expand nav to stuck position
-      $(this.element).removeClass('show');
-      console.log('timeline remove show');
-    }
-  });
   
-  var stuckInview = new Waypoint.Inview({
-    element: $('.project-details-inner')[0],
-    exit: function(direction){
-      $('#timeline').addClass('stuck show');
-      console.log('project-details add stuck show');
-    }
-  });
-
-    
   //smoothscroll
   $('.timeline a[href^="#"]').on('click', function (e) {
     e.preventDefault();
@@ -62,7 +15,7 @@ $(document).ready(function () {
         menu = target;
     $target = $(target);
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top+2
+        'scrollTop': $target.offset().top+20
     }, 500, 'swing', function () {
       window.location.hash = target;
       $(document).on("scroll", onScroll);
