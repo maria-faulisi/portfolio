@@ -8,22 +8,18 @@ $(document).ready(function () {
 
     var timeline = $('#timeline');
     var timelineStuck = timeline.hasClass('stuck');
-    var timelineShow = timeline.hasClass('show');
-    var timelineHide = timeline.hasClass('hide');
 
     if(st < lastScrollTop) {
       //show links
-      if (timelineStuck && timelineHide){
-        timeline.removeClass('hide');
+      if (timelineStuck){
         timeline.addClass('show');
       }
 
     }
     else {
       //hide links
-      if(timelineStuck && timelineShow){
+      if(timelineStuck){
         timeline.removeClass('show');
-        timeline.addClass('hide');
       }
     }
     lastScrollTop = st;
@@ -33,15 +29,24 @@ $(document).ready(function () {
     element: $('#timeline')[0],
     entered: function(direction) {
       //collapse nav to original location
-      $(this.element).removeClass('show');
       $(this.element).removeClass('stuck');
+      console.log('timeline remove stuck');
     },
     exited: function(direction){
       //expand nav to stuck position
-      $(this.element).addClass('hide');
-      $(this.element).addClass('stuck');
+      $(this.element).removeClass('show');
+      console.log('timeline remove show');
     }
-  })    
+  });
+  
+  var stuckInview = new Waypoint.Inview({
+    element: $('.project-details-inner')[0],
+    exit: function(direction){
+      $('#timeline').addClass('stuck show');
+      console.log('project-details add stuck show');
+    }
+  });
+
     
   //smoothscroll
   $('.timeline a[href^="#"]').on('click', function (e) {
