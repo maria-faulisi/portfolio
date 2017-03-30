@@ -15,6 +15,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/stylesheets/application.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -96,8 +98,8 @@
           </h3>
         </div>
       </section>
-      <section class='timeline row'>
-        <div class='timeline col-lg-10 offset-lg-1'>
+      <section class='timeline row' id='timeline'>
+        <div class='timeline-inner col-lg-10 offset-lg-1'>
           <hr class='timeline-hr'>
           <div class='timeline-item'>
             <div class='timeline-number'>
@@ -105,7 +107,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                the challenge
+                <a href="#the-challenge">the challenge</a>
               </div>
             </div>
           </div>
@@ -115,7 +117,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                gaining insight
+                <a href="#gaining-insight">gaining insight</a>
               </div>
             </div>
           </div>
@@ -125,7 +127,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                uncovering the problem
+                <a href="#uncovering-the-problem">uncovering the problem</a>
               </div>
             </div>
           </div>
@@ -135,7 +137,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                forming concepts
+                <a href="#forming-concepts">forming concepts</a>
               </div>
             </div>
           </div>
@@ -145,7 +147,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                paper prototyping
+                <a href="#paper-prototyping">paper prototyping</a>
               </div>
             </div>
           </div>
@@ -155,7 +157,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                prototyping takeaways
+                <a href="#prototyping-takeaways">prototyping takeaways</a>
               </div>
             </div>
           </div>
@@ -165,7 +167,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                refining and testing
+                <a href="#refining-and-testing">refining and testing</a>
               </div>
             </div>
           </div>
@@ -175,7 +177,7 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                failing then improving
+                <a href="#failing-then-improving">failing then improving</a>
               </div>
             </div>
           </div>
@@ -185,13 +187,13 @@
             </div>
             <div class='timeline-header'>
               <div class='timeline-header-text uppercase'>
-                what i learned
+                <a href="#what-i-learned">what i learned</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class='ss-the-challenge first-section col-lg-10 offset-lg-1'>
+      <section class='ss-the-challenge first-section col-lg-10 offset-lg-1' id='the-challenge'>
         <h2 class='section-header bold'>
           1.0
           <span class='uppercase light'>
@@ -215,7 +217,7 @@
         </div>
       </section>
     </div>
-    <section class='section ss-insight bg-gray'>
+    <section class='section ss-insight bg-gray' id='gaining-insight'>
       <div class='container'>
         <div class='col-lg-10 offset-lg-1'>
           <h2 class='section-header bold'>
@@ -251,7 +253,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-the-problem container'>
+    <section class='section ss-the-problem container' id='uncovering-the-problem'>
       <div class='col-lg-10 offset-lg-1'>
         <h2 class='section-header bold'>
           2.0
@@ -341,7 +343,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-forming-concepts bg-gray'>
+    <section class='section ss-forming-concepts bg-gray' id='forming-concepts'>
       <div class='container'>
         <div class='col-lg-10 offset-lg-1'>
           <h2 class='section-header bold'>
@@ -381,7 +383,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-paper-prototyping container'>
+    <section class='section ss-paper-prototyping container' id='paper-prototyping'>
       <div class='col-lg-10 offset-lg-1'>
         <h2 class='section-header bold'>
           3.1
@@ -451,7 +453,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-forming-concepts bg-gray'>
+    <section class='section ss-forming-concepts bg-gray' id='prototyping-takeaways'>
       <div class='container'>
         <div class='col-lg-10 offset-lg-1'>
           <h2 class='section-header bold'>
@@ -477,7 +479,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-refining container'>
+    <section class='section ss-refining container' id='refining-and-testing'>
       <div class='col-lg-10 offset-lg-1'>
         <h2 class='section-header bold'>
           4.0
@@ -510,7 +512,7 @@
         </p>
       </div>
     </section>
-    <section class='section ss-improving bg-gray'>
+    <section class='section ss-improving bg-gray' id='failing-then-improving'>
       <div class='container'>
         <div class='col-lg-10 offset-lg-1'>
           <h2 class='section-header bold'>
@@ -552,7 +554,7 @@
         </div>
       </div>
     </section>
-    <section class='section ss-learned container'>
+    <section class='section ss-learned container' id='what-i-learned'>
       <div class='col-lg-10 offset-lg-1'>
         <h2 class='section-header bold'>
           6.0
@@ -572,4 +574,17 @@
       </div>
     </section>
   </body>
+  <script>
+    var pinnedElement = document.querySelector("#timeline");
+    var headroom = new Headroom(pinnedElement,{
+      "offset": "0",
+      "classes": {
+        "pinned": "stuck"
+      },
+      onTop: function(){
+        $("#timeline").removeClass('stuck');
+      }
+    });
+    headroom.init();
+  </script>
 </html>

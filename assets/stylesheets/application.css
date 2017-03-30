@@ -59,7 +59,7 @@ a {
   padding: 0; }
 
 a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none; }
   a:hover {
     text-decoration: none;
@@ -164,6 +164,8 @@ nav.main-nav {
       transition-duration: 0.25s; }
       .navigation.mobile-show {
         left: 0; } }
+  .navigation a {
+    font-size: 20px; }
 
 .nav-link.mobile-nav-trigger {
   display: none; }
@@ -268,6 +270,7 @@ body {
   color: #858585;
   font-size: 18px; }
   body .container {
+    position: relative;
     padding-left: 0;
     padding-right: 0; }
   body .project-details {
@@ -323,6 +326,17 @@ body {
   @media (min-width: 1200px) {
     .timeline {
       margin-top: 32px; } }
+  .timeline.stuck {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 80;
+    text-align: center; }
+  .timeline a.active {
+    font-weight: 600;
+    color: black; }
   .timeline .timeline-item {
     position: relative;
     display: inline-block;
@@ -345,6 +359,11 @@ body {
       text-align: right;
       transform: rotate(-90deg);
       transform-origin: top left; }
+  .timeline a:visited,
+  .timeline a:hover,
+  .timeline a:focus {
+    color: #858585;
+    text-decoration: none; }
 
 .section {
   padding-top: 66px;
