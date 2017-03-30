@@ -4,22 +4,23 @@ $(document).ready(function () {
   //smoothscroll
   $('.timeline a[href^="#"]').on('click', function (e) {
     e.preventDefault();
+    var target = this.hash,
+    $target = $(target);    
     $(document).off("scroll");
     
     $('.timeline a').each(function () {
       $(this).removeClass('active');
     })
+
     $(this).addClass('active');
   
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
+        'scrollTop': $target.offset().top+2
     }, 500, 'swing', function () {
       window.location.hash = target;
       $(document).on("scroll", onScroll);
     });
+    $('#timeline').removeClass('stuck');
   });
 });
 
