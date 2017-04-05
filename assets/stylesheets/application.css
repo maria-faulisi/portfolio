@@ -141,7 +141,8 @@ nav.main-nav {
     position: absolute;
     top: 25px;
     left: 50%;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     font-size: 14px;
     padding-right: 10px; }
     @media (max-width: 575px) {
@@ -161,7 +162,8 @@ nav.main-nav {
       top: -32px;
       left: 100%;
       background-color: pink;
-      transition-duration: 0.25s; }
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s; }
       .navigation.mobile-show {
         left: 0; } }
   .navigation a {
@@ -184,7 +186,8 @@ nav.main-nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -66%); }
+  -webkit-transform: translate(-50%, -66%);
+          transform: translate(-50%, -66%); }
   @media (max-width: 575px) {
     .mobile-nav {
       display: block; } }
@@ -261,7 +264,8 @@ footer {
   font-size: 18px;
   color: rgba(43, 40, 39, 0.72);
   padding: 10px 33px;
-  transition-duration: 0.25s; }
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s; }
   .cta-btn:hover {
     background: #ebebeb; }
 
@@ -322,6 +326,8 @@ body {
   margin-top: 24px; }
   @media (min-width: 992px) {
     .timeline {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
   @media (min-width: 1200px) {
     .timeline {
@@ -357,8 +363,10 @@ body {
       bottom: -21px;
       width: 300px;
       text-align: right;
-      transform: rotate(-90deg);
-      transform-origin: top left; }
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left; }
   .timeline a:visited,
   .timeline a:hover,
   .timeline a:focus {
@@ -436,8 +444,12 @@ body {
   @media (min-width: 992px) {
     .two-col-p {
       margin-top: 45px;
-      column-count: 2;
-      column-gap: 30px; } }
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 30px;
+         -moz-column-gap: 30px;
+              column-gap: 30px; } }
   .two-col-p p:first-of-type {
     margin-bottom: 20px; }
     @media (min-width: 992px) {
@@ -461,19 +473,28 @@ body {
 
 .bg-video-wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 123px;
-  flex-direction: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (max-width: 575px) {
     .bg-video-wrapper {
       margin-top: 67px; } }
   @media (min-width: 992px) {
     .bg-video-wrapper {
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       top: 100%; } }
   .bg-video-wrapper video {
     z-index: 10;
-    align-self: flex-start; }
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
   .bg-video-wrapper .video-text {
     position: absolute;
     z-index: 20;
@@ -485,7 +506,9 @@ body {
     @media (min-width: 1200px) {
       .bg-video-wrapper .video-text {
         width: 30%;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         right: 40px;
         top: initial;
         left: inherit;
@@ -522,10 +545,16 @@ body {
       margin-top: 81px;
       margin-bottom: 89px; } }
 .collaborate-biz .sme-interviews .image-and-text-row {
-  flex-direction: column-reverse; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
   @media (min-width: 992px) {
     .collaborate-biz .sme-interviews .image-and-text-row {
-      flex-direction: row; } }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 .collaborate-biz .sme-interviews .image-and-caption {
   margin-top: 20px;
   margin-bottom: 25px; }
@@ -557,8 +586,12 @@ body {
     .collaborate-biz .competitor-ends {
       margin-top: 104px; } }
 .collaborate-biz .head-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .collaborate-biz .head-inner img {
     height: 30px; }
     @media (min-width: 992px) {
@@ -588,7 +621,9 @@ body {
     padding-right: 30px; } }
 
 .collab-users .two-col-p {
-  column-gap: 44px; }
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px; }
   .collab-users .two-col-p p:nth-of-type(2) {
     margin: 26px 0; }
 .collab-users .pre-personas {
@@ -718,7 +753,9 @@ body {
 .collab-concept-testing .concept-and-image-right,
 .collab-concept-testing .concept-and-image-left {
   margin-top: 60px;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 992px) {
     .collab-concept-testing .concept-and-image-right,
     .collab-concept-testing .concept-and-image-left {
@@ -740,10 +777,16 @@ body {
   .collab-concept-testing .concept-and-image-right:first-of-type {
     margin-top: 108px; } }
 .collab-concept-testing .concept-and-image-left {
-  flex-direction: column-reverse; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
   @media (min-width: 992px) {
     .collab-concept-testing .concept-and-image-left {
-      flex-direction: row; } }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .collab-concept-takeaways {
   margin-top: 94px; }
@@ -943,8 +986,12 @@ body {
     .sw-interview-takeaways .image-and-caption {
       margin-bottom: 84px; } }
 .sw-interview-takeaways .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .sw-interview-takeaways .header-inner img {
     height: 30px;
     margin-right: 14px; }
@@ -1069,7 +1116,8 @@ body {
   .sw-beginning-to-ideate .round-two hr {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
     @media (max-width: 575px) {
       .sw-beginning-to-ideate .round-two hr {
         display: none; } }
@@ -1121,17 +1169,25 @@ body {
     text-align: center; }
 .sw-final-design .improvements {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 100%;
-  justify-content: space-around; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   @media (max-width: 575px) {
     .sw-final-design .improvements {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-top: 42px; } }
   @media (min-width: 1200px) {
     .sw-final-design .improvements {
       max-width: 499px;
-      justify-content: space-between; } }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   @media (max-width: 575px) {
     .sw-final-design .improvements img {
       margin: 30px 0; } }
@@ -1223,8 +1279,13 @@ body {
   .ss-paper-prototyping .paper-prototype-1,
   .ss-paper-prototyping .paper-prototype-2,
   .ss-paper-prototyping .paper-prototype-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-top: 40px; } }
 .ss-paper-prototyping .paper-prototype-1 h2,
 .ss-paper-prototyping .paper-prototype-2 h2,
