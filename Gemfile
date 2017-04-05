@@ -6,6 +6,7 @@ gem "middleman", "~>4.2.1"
 gem "middleman-sprockets"
 gem 'middleman-gh-pages'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'middleman-autoprefixer'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.4.3"

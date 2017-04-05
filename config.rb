@@ -59,6 +59,8 @@ activate :sprockets
 
 activate :relative_assets
 
+activate :autoprefixer
+
 set :relative_links, true
 
 # Build-specific configuration
