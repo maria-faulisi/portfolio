@@ -116,16 +116,21 @@
     </section>
   </body>
   <script>
-    var pinnedElement = document.querySelector("#timeline");
-    var headroom = new Headroom(pinnedElement,{
-      "offset": "0",
-      "classes": {
-        "pinned": "stuck"
-      },
-      onTop: function(){
-        $("#timeline").removeClass('stuck');
-      }
+    $(document).ready(function(){
+      var pinnedElement = document.querySelector("#timeline");
+      var headroom = new Headroom(pinnedElement, {
+        tolerance: {
+          up: 60,
+          down: 0
+        },
+        classes: {
+          pinned: "stuck"
+        },
+        onTop: function(){
+          $("#timeline").removeClass('stuck');
+        }
+      });
+      headroom.init(); 
     });
-    headroom.init();
   </script>
 </html>
