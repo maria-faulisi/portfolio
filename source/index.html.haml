@@ -3,7 +3,7 @@ title: "home"
 ---
 
 .bg-video-wrapper
-  %video{:autoplay => "1", :muted=> "1", :loop => "1", :width => "100%", :poster => "#{image_path('still-hero.jpg')}"}
+  %video{:autoplay => "1",:loop => "1", :width => "100%", :poster => "#{image_path('still-hero.jpg')}"}
     %source{:src => "#{image_path('../videos/whiteboard-v4.mp4')}", :type => 'video/mp4'}
       Your browser does not support the video tag.
   .video-text
